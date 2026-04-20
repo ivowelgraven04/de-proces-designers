@@ -47,7 +47,7 @@ const VIJFSTERREN: SterrenPartner[] = [
     locatie: "Den Helder, Noord-Holland",
     samenwerking: "± 1 jaar",
     kleur: "#8664FB",
-    foto: "/js-techniek-hoodie.png",
+    foto: "/js-techniek-hoodie.jpg",
     beschikbaar: true,
     stats: [
       { waarde: "90+", label: "Leads in Q1 2026" },
