@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 const BASE_URL = "https://www.deprocesdesigners.nl";
-const DEFAULT_IMAGE = `${BASE_URL}/og-image.svg`;
+const DEFAULT_IMAGE = `${BASE_URL}/og-image.png`;
 
 interface SEOProps {
   title: string;
