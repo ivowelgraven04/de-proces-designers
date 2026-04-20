@@ -3,13 +3,13 @@
  * Style: Liquid Tech / Futuristic SaaS — Premium Edition
  */
 import { motion } from "framer-motion";
-import { useEffect } from "react";
 import { Link } from "wouter";
 import {
   ArrowRight, CheckCircle2, Star,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { useSEO } from "@/hooks/useSEO";
 import ReviewsSection from "@/components/ReviewsSection";
 import ClientLogos from "@/components/ClientLogos";
 import {
@@ -44,9 +44,11 @@ function AnimatedSection({ children, className = "" }: { children: React.ReactNo
 
 
 export default function Home() {
-  useEffect(() => {
-    document.title = "De Proces Designers | Marketing & Leadgeneratie";
-  }, []);
+  useSEO({
+    title: "De Proces Designers | Leadgeneratie & Marketing voor Lokale Bedrijven",
+    description: "Meer exclusieve leads, slimmer groeien, zonder gedoe. De Proces Designers bouwt geautomatiseerde marketing systemen voor dakdekkers, letselschadekantoren en financiële dienstverleners.",
+    path: "/",
+  });
 
   return (
     <div className="min-h-screen bg-white">

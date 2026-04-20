@@ -8,6 +8,7 @@ import { useState } from "react";
 import { Mail, Phone, MapPin, ArrowRight, CheckCircle2, Clock, MessageSquare } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { useSEO } from "@/hooks/useSEO";
 
 const CTA_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663503644974/J7Udx3KWkNc6vFgqgyECYk/dpd-cta-bg-Lb4Gg2j5Go7MK7hxFMRdVj.webp";
 
@@ -39,6 +40,11 @@ const benefits = [
 ];
 
 export default function Contact() {
+  useSEO({
+    title: "Contact | Gratis Strategiegesprek — De Proces Designers",
+    description: "Plan een gratis strategiegesprek met De Proces Designers. Geen verplichtingen, wel een concreet plan voor meer exclusieve leads en voorspelbare groei.",
+    path: "/contact",
+  });
   const [formData, setFormData] = useState({
     naam: "",
     email: "",

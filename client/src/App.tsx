@@ -10,6 +10,8 @@ import OverOns from "./pages/OverOns";
 import Werkwijze from "./pages/Werkwijze";
 import Contact from "./pages/Contact";
 import Partners from "./pages/Partners";
+import Privacybeleid from "./pages/Privacybeleid";
+import AlgemeneVoorwaarden from "./pages/AlgemeneVoorwaarden";
 import ScrollProgress from "./components/ScrollProgress";
 import { SmoothScroll, CustomCursor, PageTransition } from "./components/premium";
 
@@ -23,6 +25,8 @@ function Router() {
         <Route path="/werkwijze" component={Werkwijze} />
         <Route path="/contact" component={Contact} />
       <Route path="/partners" component={Partners} />
+        <Route path="/privacybeleid" component={Privacybeleid} />
+        <Route path="/algemene-voorwaarden" component={AlgemeneVoorwaarden} />
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
       </Switch>

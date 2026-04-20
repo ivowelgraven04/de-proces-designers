@@ -8,6 +8,7 @@ import { Link } from "wouter";
 import { ArrowRight, Award, Heart, Lightbulb, Target, CheckCircle2 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { useSEO } from "@/hooks/useSEO";
 
 const ABOUT_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663503644974/J7Udx3KWkNc6vFgqgyECYk/dpd-about-visual-79fsXrKoocH5JtGjrRTj4t.webp";
 const CTA_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663503644974/J7Udx3KWkNc6vFgqgyECYk/dpd-cta-bg-Lb4Gg2j5Go7MK7hxFMRdVj.webp";
@@ -72,6 +73,11 @@ const expertise = [
 ];
 
 export default function OverOns() {
+  useSEO({
+    title: "Over Ons | De Proces Designers — 43+ Klanten, 8 Jaar Ervaring",
+    description: "Leer ons kennen. De Proces Designers helpt lokale bedrijven structureel groeien met bewezen marketing systemen. 43+ actieve klanten, 3.4× gemiddelde groei, 98% klanttevredenheid.",
+    path: "/over-ons",
+  });
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
       <Navbar />

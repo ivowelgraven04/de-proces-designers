@@ -14,6 +14,7 @@ import {
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ReviewsSection from "@/components/ReviewsSection";
+import { useSEO } from "@/hooks/useSEO";
 
 // ─── 5-STERREN PARTNERS DATA ──────────────────────────────────────────────────
 // Voeg foto toe: zet het bestand in /public/ en vul het pad in bij `foto`
@@ -475,6 +476,11 @@ function PartnerStory({ partner }: { partner: SterrenPartner }) {
 
 // ─── Hoofdpagina ──────────────────────────────────────────────────────────────
 export default function Partners() {
+  useSEO({
+    title: "Partners & Klanten | Bewezen Resultaten — De Proces Designers",
+    description: "Bekijk de resultaten van onze 5-sterren partners zoals JS Techniek en Fixz24. Echte cases, meetbare groei. 43+ bedrijven die structureel groeien met onze systemen.",
+    path: "/partners",
+  });
   const [activePartner, setActivePartner] = useState<string>("js-techniek");
   const [activeSector, setActiveSector] = useState<SectorId>("dakdekkers");
   const [activeSubtab, setActiveSubtab] = useState<string>("Leadgeneratie");

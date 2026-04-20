@@ -84,10 +84,10 @@ export default function Footer() {
             fontFamily: "Inter, sans-serif",
           }}
         >
-          <span>© {new Date().getFullYear()} De Proces Designers. Alle rechten voorbehouden.</span>
+          <span>© {new Date().getFullYear()} De Proces Designers · KvK 85905119 · Alle rechten voorbehouden.</span>
           <div className="flex gap-6">
-            <span className="hover:text-[#47C8F5] cursor-pointer transition-colors">Privacybeleid</span>
-            <span className="hover:text-[#47C8F5] cursor-pointer transition-colors">Algemene Voorwaarden</span>
+            <Link href="/privacybeleid" className="hover:text-[#47C8F5] transition-colors">Privacybeleid</Link>
+            <Link href="/algemene-voorwaarden" className="hover:text-[#47C8F5] transition-colors">Algemene Voorwaarden</Link>
           </div>
         </div>
       </div>

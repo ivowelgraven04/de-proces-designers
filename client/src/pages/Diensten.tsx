@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { useSEO } from "@/hooks/useSEO";
 
 const CTA_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663503644974/J7Udx3KWkNc6vFgqgyECYk/dpd-cta-bg-Lb4Gg2j5Go7MK7hxFMRdVj.webp";
 
@@ -88,6 +89,11 @@ const mainServices = [
 ];
 
 export default function Diensten() {
+  useSEO({
+    title: "Onze Diensten | Leadgeneratie, Funnels & Automatisering — De Proces Designers",
+    description: "Drie kernservices voor maximale groei: exclusieve Meta leadgeneratie, quiz funnels met 76% kwalificatie en volledige marketing automatisering. Plan een gratis strategiegesprek.",
+    path: "/diensten",
+  });
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
       <Navbar />
