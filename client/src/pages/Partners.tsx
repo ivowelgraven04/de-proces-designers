@@ -47,8 +47,7 @@ const VIJFSTERREN: SterrenPartner[] = [
     locatie: "Den Helder, Noord-Holland",
     samenwerking: "± 1 jaar",
     kleur: "#8664FB",
-    // Voeg hier de URL in van de werkkleding foto:
-    foto: undefined,
+    foto: "/js-techniek-hoodie.png",
     beschikbaar: true,
     stats: [
       { waarde: "90+", label: "Leads in Q1 2026" },
