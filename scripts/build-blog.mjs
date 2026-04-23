@@ -22,6 +22,7 @@ const OUTPUT_JSON = path.join(ROOT, "client", "src", "content", "blog-data.json"
 const PUBLIC_DIR = path.join(ROOT, "client", "public");
 const SITEMAP_PATH = path.join(PUBLIC_DIR, "sitemap.xml");
 const RSS_PATH = path.join(PUBLIC_DIR, "rss.xml");
+const PORTFOLIO_FILE = path.join(ROOT, "content", "portfolio", "projects.json");
 
 const SITE_URL = "https://www.deprocesdesigners.nl";
 
@@ -105,6 +106,16 @@ function estimateReadingTime(text) {
 }
 
 // ─── Sitemap genereren ──────────────────────────────────────────────────────
+function readPortfolioProjects() {
+  if (!fs.existsSync(PORTFOLIO_FILE)) return [];
+  try {
+    const raw = JSON.parse(fs.readFileSync(PORTFOLIO_FILE, "utf-8"));
+    return raw.projects || [];
+  } catch {
+    return [];
+  }
+}
+
 function buildSitemap(posts) {
   const staticPages = [
     { loc: "/", priority: "1.0", changefreq: "weekly" },
@@ -112,12 +123,14 @@ function buildSitemap(posts) {
     { loc: "/over-ons", priority: "0.8", changefreq: "monthly" },
     { loc: "/werkwijze", priority: "0.8", changefreq: "monthly" },
     { loc: "/partners", priority: "0.7", changefreq: "monthly" },
+    { loc: "/portfolio", priority: "0.8", changefreq: "weekly" },
     { loc: "/contact", priority: "0.9", changefreq: "monthly" },
     { loc: "/blog", priority: "0.8", changefreq: "daily" },
     { loc: "/privacybeleid", priority: "0.3", changefreq: "yearly" },
     { loc: "/algemene-voorwaarden", priority: "0.3", changefreq: "yearly" },
   ];
   const today = new Date().toISOString().slice(0, 10);
+  const portfolioProjects = readPortfolioProjects();
 
   const urls = [
     ...staticPages.map(
@@ -126,6 +139,14 @@ function buildSitemap(posts) {
     <lastmod>${today}</lastmod>
     <changefreq>${p.changefreq}</changefreq>
     <priority>${p.priority}</priority>
+  </url>`,
+    ),
+    ...portfolioProjects.map(
+      (p) => `  <url>
+    <loc>${SITE_URL}/portfolio/${p.slug}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>`,
     ),
     ...posts.map(

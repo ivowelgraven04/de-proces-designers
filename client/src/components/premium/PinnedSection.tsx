@@ -1,5 +1,3 @@
-// 1.2 + 1.3 – Pinned scroll section with scroll-driven step reveal
-// To remove: delete this file + replace <PinnedSystemSection> with original system section
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Link } from "wouter";

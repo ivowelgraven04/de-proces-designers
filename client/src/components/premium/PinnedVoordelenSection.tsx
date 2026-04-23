@@ -1,6 +1,3 @@
-// Pinned scroll section: "Waarom De Proces Designers"
-// Cards enter from bottom, exit to top — one at a time, mobile + desktop
-// To remove: delete this file + replace <PinnedVoordelenSection /> with original grid
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Lock, Cpu, TrendingUp, BarChart3, Shield } from "lucide-react";

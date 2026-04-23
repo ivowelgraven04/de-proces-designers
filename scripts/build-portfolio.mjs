@@ -37,17 +37,21 @@ if (!fs.existsSync(PROJECTS_FILE)) {
 
 const raw = JSON.parse(fs.readFileSync(PROJECTS_FILE, "utf-8"));
 const sectors = raw.sectors || [];
-const projects = (raw.projects || []).map((p) => {
-  const desktop = `/portfolio/${p.slug}-desktop.png`;
-  const mobile = `/portfolio/${p.slug}-mobile.png`;
-  const desktopExists = fs.existsSync(path.join(SCREENSHOT_DIR, `${p.slug}-desktop.png`));
-  const mobileExists = fs.existsSync(path.join(SCREENSHOT_DIR, `${p.slug}-mobile.png`));
-  return {
-    ...p,
-    previewDesktop: desktopExists ? desktop : null,
-    previewMobile: mobileExists ? mobile : null,
-  };
-});
+function resolvePreview(slug, variant) {
+  for (const ext of ["webp", "png"]) {
+    const filename = `${slug}-${variant}.${ext}`;
+    if (fs.existsSync(path.join(SCREENSHOT_DIR, filename))) {
+      return `/portfolio/${filename}`;
+    }
+  }
+  return null;
+}
+
+const projects = (raw.projects || []).map((p) => ({
+  ...p,
+  previewDesktop: resolvePreview(p.slug, "desktop"),
+  previewMobile: resolvePreview(p.slug, "mobile"),
+}));
 
 const output = { sectors, projects };
 

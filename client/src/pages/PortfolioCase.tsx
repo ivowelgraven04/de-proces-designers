@@ -93,6 +93,23 @@ export default function PortfolioCase() {
       project?.excerpt ??
       "Een uitgewerkt portfolio-project van De Proces Designers.",
     path: `/portfolio/${slug}`,
+    schema: project
+      ? {
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          name: project.client,
+          url: `https://www.deprocesdesigners.nl/portfolio/${project.slug}`,
+          about: project.url,
+          description: project.excerpt,
+          creator: {
+            "@type": "Organization",
+            name: "De Proces Designers",
+            url: "https://www.deprocesdesigners.nl",
+          },
+          datePublished: project.launched,
+          genre: project.sector,
+        }
+      : undefined,
   });
 
   if (!project) return <NotFound />;

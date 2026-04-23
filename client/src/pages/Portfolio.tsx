@@ -105,6 +105,20 @@ export default function Portfolio() {
     description:
       "Een selectie van websites die wij hebben ontworpen en gebouwd voor lokale bedrijven — van dakdekkers tot juridisch en financieel dienstverleners.",
     path: "/portfolio",
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: "Portfolio — De Proces Designers",
+      url: "https://www.deprocesdesigners.nl/portfolio",
+      description:
+        "Overzicht van websites gebouwd door De Proces Designers voor lokale bedrijven in meerdere sectoren.",
+      hasPart: projects.map((p) => ({
+        "@type": "CreativeWork",
+        name: p.client,
+        url: `https://www.deprocesdesigners.nl/portfolio/${p.slug}`,
+        about: p.url,
+      })),
+    },
   });
 
   return (

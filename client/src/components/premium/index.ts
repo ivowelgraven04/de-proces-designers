@@ -11,4 +11,3 @@ export { RippleButton } from "./RippleButton";
 export { StatTicker } from "./StatTicker";
 export { PinnedSystemSection } from "./PinnedSection";
 export { PinnedVoordelenSection } from "./PinnedVoordelenSection";
-export { HorizontalScrollPackages } from "./HorizontalScroll";

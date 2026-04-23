@@ -4,8 +4,8 @@
  *
  * Neemt automatisch screenshots van alle portfolio-projecten met Playwright.
  * Input:  content/portfolio/projects.json
- * Output: client/public/portfolio/<slug>-desktop.webp (1440x900, retina 2x)
- *         client/public/portfolio/<slug>-mobile.webp  (390x844,  retina 2x)
+ * Output: client/public/portfolio/<slug>-desktop.webp (1440x900, retina 2x, q82)
+ *         client/public/portfolio/<slug>-mobile.webp  (390x844,  retina 2x, q82)
  *
  * Flow per site:
  *   1. Open URL
@@ -21,6 +21,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { chromium } from "playwright";
+import sharp from "sharp";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -78,11 +79,8 @@ async function takeScreenshot(browser, url, viewport, outputPath) {
   });
   await page.waitForTimeout(500);
 
-  await page.screenshot({
-    path: outputPath,
-    type: "png",
-    fullPage: false,
-  });
+  const pngBuffer = await page.screenshot({ type: "png", fullPage: false });
+  await sharp(pngBuffer).webp({ quality: 82, effort: 5 }).toFile(outputPath);
 
   await context.close();
 }
@@ -111,8 +109,8 @@ async function main() {
     const { slug, url, client: clientName } = project;
     console.log(`\n[screenshots] ${clientName} (${url})`);
 
-    const desktopPath = path.join(OUTPUT_DIR, `${slug}-desktop.png`);
-    const mobilePath = path.join(OUTPUT_DIR, `${slug}-mobile.png`);
+    const desktopPath = path.join(OUTPUT_DIR, `${slug}-desktop.webp`);
+    const mobilePath = path.join(OUTPUT_DIR, `${slug}-mobile.webp`);
 
     try {
       console.log(`  → Desktop screenshot…`);
