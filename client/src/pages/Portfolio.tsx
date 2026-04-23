@@ -1,6 +1,7 @@
 /*
  * Portfolio Index – De Proces Designers
  * Grid van gemaakte websites met sector-filter en browser-chrome mockup previews.
+ * Kaartklik opent interne casestudy; ExternalLink-icoon opent live site in nieuw tab.
  */
 import { useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -31,7 +32,7 @@ function BrowserChrome({
 }) {
   return (
     <div
-      className="rounded-2xl overflow-hidden"
+      className="rounded-2xl overflow-hidden transition-shadow duration-500 group-hover:shadow-2xl"
       style={{
         background: "#ffffff",
         border: "1px solid rgba(134,100,251,0.15)",
@@ -64,14 +65,14 @@ function BrowserChrome({
           {project.displayUrl ?? project.url.replace(/^https?:\/\//, "").replace(/\/$/, "")}
         </div>
       </div>
-      {/* Preview */}
+      {/* Preview — hover = scroll from top to bottom */}
       <div className="relative overflow-hidden aspect-[16/10] bg-gray-50">
         {project.previewDesktop ? (
           <img
             src={project.previewDesktop}
             alt={`Preview van ${project.client}`}
             loading={eager ? "eager" : "lazy"}
-            className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]"
+            className="portfolio-preview-img w-full h-full"
           />
         ) : (
           <div className="absolute inset-0 flex items-center justify-center">
@@ -223,12 +224,10 @@ export default function Portfolio() {
                   <motion.article
                     key={project.slug}
                     variants={fadeUp}
-                    className="group"
+                    className="group relative"
                   >
-                    <a
-                      href={project.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <Link
+                      href={`/portfolio/${project.slug}`}
                       className="block"
                     >
                       <BrowserChrome project={project} eager={idx < 2} />
@@ -252,7 +251,7 @@ export default function Portfolio() {
                             {project.client}
                           </h3>
                           <p
-                            className="text-sm leading-relaxed"
+                            className="text-sm leading-relaxed mb-3"
                             style={{
                               color: "#718096",
                               fontFamily: "Inter, sans-serif",
@@ -260,6 +259,31 @@ export default function Portfolio() {
                           >
                             {project.excerpt}
                           </p>
+                          {project.metrics && project.metrics.length > 0 && (
+                            <div className="flex flex-wrap gap-2 mt-3">
+                              {project.metrics.map((m, i) => (
+                                <span
+                                  key={i}
+                                  className="inline-flex items-baseline gap-1.5 px-2.5 py-1 rounded-md text-[11px]"
+                                  style={{
+                                    background: "rgba(71,200,245,0.08)",
+                                    border: "1px solid rgba(71,200,245,0.2)",
+                                    fontFamily: "Inter, sans-serif",
+                                  }}
+                                >
+                                  <span
+                                    className="font-heading font-700"
+                                    style={{ color: "#1A2A33" }}
+                                  >
+                                    {m.value}
+                                  </span>
+                                  <span style={{ color: "#718096" }}>
+                                    {m.label}
+                                  </span>
+                                </span>
+                              ))}
+                            </div>
+                          )}
                         </div>
                         <div
                           className="shrink-0 w-10 h-10 rounded-full flex items-center justify-center transition-all group-hover:scale-110"
@@ -268,9 +292,27 @@ export default function Portfolio() {
                             color: "#8664FB",
                           }}
                         >
-                          <ExternalLink size={16} />
+                          <ArrowRight size={16} />
                         </div>
                       </div>
+                    </Link>
+                    {/* Live-site icon button, separate from card link */}
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      title={`Open ${project.displayUrl ?? project.client} in nieuw tab`}
+                      className="absolute top-3 right-3 z-10 w-8 h-8 rounded-full flex items-center justify-center transition-all hover:scale-110"
+                      style={{
+                        background: "rgba(255,255,255,0.95)",
+                        backdropFilter: "blur(6px)",
+                        color: "#8664FB",
+                        border: "1px solid rgba(134,100,251,0.15)",
+                        boxShadow: "0 4px 12px rgba(26,42,51,0.08)",
+                      }}
+                    >
+                      <ExternalLink size={14} />
                     </a>
                   </motion.article>
                 ))}

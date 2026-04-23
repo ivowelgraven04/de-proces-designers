@@ -13,6 +13,7 @@ import Partners from "./pages/Partners";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import Portfolio from "./pages/Portfolio";
+import PortfolioCase from "./pages/PortfolioCase";
 import Privacybeleid from "./pages/Privacybeleid";
 import AlgemeneVoorwaarden from "./pages/AlgemeneVoorwaarden";
 import ScrollProgress from "./components/ScrollProgress";
@@ -31,6 +32,7 @@ function Router() {
         <Route path="/blog" component={Blog} />
         <Route path="/blog/:slug" component={BlogPost} />
         <Route path="/portfolio" component={Portfolio} />
+        <Route path="/portfolio/:slug" component={PortfolioCase} />
         <Route path="/privacybeleid" component={Privacybeleid} />
         <Route path="/algemene-voorwaarden" component={AlgemeneVoorwaarden} />
         <Route path="/404" component={NotFound} />

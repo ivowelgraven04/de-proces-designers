@@ -598,3 +598,14 @@ textarea::placeholder {
   color: #1A2A33;
   background: rgba(134, 100, 251, 0.05);
 }
+
+/* Portfolio — live scroll-preview on hover */
+.portfolio-preview-img {
+  object-fit: cover;
+  object-position: 50% 0%;
+  transition: object-position 5s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: object-position;
+}
+.group:hover .portfolio-preview-img {
+  object-position: 50% 100%;
+}

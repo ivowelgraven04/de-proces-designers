@@ -5,6 +5,11 @@ export interface PortfolioSector {
   label: string;
 }
 
+export interface PortfolioMetric {
+  value: string;
+  label: string;
+}
+
 export interface PortfolioProject {
   slug: string;
   client: string;
@@ -15,6 +20,12 @@ export interface PortfolioProject {
   featured?: boolean;
   previewDesktop: string | null;
   previewMobile: string | null;
+  launched?: string;
+  metrics?: PortfolioMetric[];
+  challenge?: string;
+  approach?: string[];
+  result?: string;
+  testimonial?: { quote: string; author: string; role?: string } | null;
 }
 
 interface PortfolioData {
@@ -34,4 +45,23 @@ export function getSectors(): PortfolioSector[] {
 
 export function getSectorLabel(key: string): string {
   return data.sectors.find((s) => s.key === key)?.label ?? key;
+}
+
+export function getProjectBySlug(slug: string): PortfolioProject | undefined {
+  return data.projects.find((p) => p.slug === slug);
+}
+
+export function getRelatedProjects(
+  slug: string,
+  limit = 3,
+): PortfolioProject[] {
+  const current = getProjectBySlug(slug);
+  if (!current) return [];
+  const sameSector = data.projects.filter(
+    (p) => p.slug !== slug && p.sector === current.sector,
+  );
+  const others = data.projects.filter(
+    (p) => p.slug !== slug && p.sector !== current.sector,
+  );
+  return [...sameSector, ...others].slice(0, limit);
 }
