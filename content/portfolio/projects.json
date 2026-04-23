@@ -44,6 +44,15 @@
       "featured": false
     },
     {
+      "slug": "dak77",
+      "client": "Dak77",
+      "url": "https://www.dak77.nl/",
+      "displayUrl": "dak77.nl",
+      "sector": "dakdekkers",
+      "excerpt": "Website voor een dakdekkersbedrijf met heldere dienstenstructuur, regionale uitstraling en snelle offerteaanvraag.",
+      "featured": false
+    },
+    {
       "slug": "rechtpunt",
       "client": "Rechtpunt",
       "url": "https://www.rechtpunt.nl/",
