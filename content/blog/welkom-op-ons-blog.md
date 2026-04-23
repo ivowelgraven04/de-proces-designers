@@ -1,7 +1,7 @@
 ---
 title: "Welkom op ons blog — hier delen we hoe wij processen ontwerpen"
 slug: "welkom-op-ons-blog"
-date: "2026-04-23"
+date: "2026-04-13"
 excerpt: "Bij De Proces Designers combineren we proces-denken met slim design. Op ons blog delen we wekelijks inzichten over leadgeneratie, marketing automatisering en hoe je als lokaal bedrijf structureel kunt groeien."
 heroImage: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80"
 heroImageAlt: "Team werkt samen aan een strategie op een whiteboard"

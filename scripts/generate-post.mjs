@@ -27,6 +27,8 @@ const CONTENT_DIR = path.join(ROOT, "content", "blog");
 
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 const UNSPLASH_ACCESS_KEY = process.env.UNSPLASH_ACCESS_KEY;
+const BLOG_THEME_OVERRIDE = (process.env.BLOG_THEME || "").trim().toLowerCase();
+const BLOG_DATE_OVERRIDE = (process.env.BLOG_DATE || "").trim();
 
 if (!ANTHROPIC_API_KEY) {
   console.error("Missing env var: ANTHROPIC_API_KEY");
@@ -61,6 +63,79 @@ Tone of voice:
 Doelgroep: eigenaren van lokale servicebedrijven (5-50 medewerkers) die serieus
 willen groeien maar geen tijd hebben om zelf in marketing te duiken.
 `.trim();
+
+// ─── Thema's — per run wordt er 1 gekozen (random of via BLOG_THEME env) ────
+const THEMES = {
+  leadgen: {
+    name: "Leadgeneratie Marketing voor lokale bedrijven",
+    focus: `Facebook & Instagram Ads, Google Ads, lead funnels, quiz funnels,
+targeting (lookalikes, retargeting), advertentiecopy, creatives, bidding, CPL
+verlagen, lead kwaliteit verhogen, van lead naar afspraak. Alles specifiek voor
+lokale servicebedrijven (dakdekkers, letselschade, financieel advies, installateurs,
+horeca, etc.) — niet e-commerce of SaaS.`,
+    angleHints: [
+      "Waarom lokale leads anders zijn dan online-only leads",
+      "De hook-formule die werkt voor servicebedrijven",
+      "Targeting-fouten die budget weglopen kosten",
+      "Van lead naar klantgesprek binnen 24 uur",
+      "Waarom je CPL eigenlijk niets zegt",
+      "Quiz funnels vs. directe formulieren",
+      "Creatives die werken in 2026 voor lokale niches",
+    ],
+    tagHint: "Leadgeneratie",
+  },
+  webdesign: {
+    name: "Webdesign voor lokale bedrijven",
+    focus: `Landingspagina's, homepage-structuur, UX, mobile-first design, laadsnelheid,
+copy, call-to-actions, formulieren, trust-elementen, reviews-integratie, conversie-
+optimalisatie, visuele hiërarchie, navigatie. Alles in de context van websites voor
+lokale servicebedrijven — geen webshops of SaaS-productpagina's.`,
+    angleHints: [
+      "Waarom je homepage geen landingspagina is",
+      "De 3-seconden regel op mobile",
+      "Formulieren die wel worden ingevuld",
+      "Trust-elementen die conversie verdubbelen",
+      "Waarom meer tekst soms beter converteert",
+      "Call-to-actions voor servicebedrijven",
+      "Snelheid: hoe 1 seconde je omzet kost",
+      "Hoe je reviews inzet zonder te overdrijven",
+    ],
+    tagHint: "Webdesign",
+  },
+  automations: {
+    name: "Automatisering voor lokale bedrijven",
+    focus: `CRM-integraties (HubSpot, Pipedrive, Salesforce), e-mail flows, WhatsApp
+automatisering, afsprakenbots, agenda-koppelingen (Calendly, Google Agenda),
+no-code tools (Zapier, Make, n8n), review-automatisering, lead-opvolging,
+nurturing sequences. Focus op tijd besparen en leads niet laten vallen — voor
+lokale servicebedrijven.`,
+    angleHints: [
+      "Hoe je leads automatisch opvolgt zonder creepy te zijn",
+      "WhatsApp automatisering voor afspraak-booking",
+      "CRM koppelen aan je advertentieplatform",
+      "Automatisch reviews ophalen na een klus",
+      "De 5-minuten regel voor lead response",
+      "Zapier vs. Make vs. n8n voor lokale bedrijven",
+      "E-mail flows die wél geopend worden",
+      "Agenda-integratie: geen dubbele afspraken meer",
+    ],
+    tagHint: "Automatisering",
+  },
+};
+
+function pickTheme() {
+  if (BLOG_THEME_OVERRIDE && THEMES[BLOG_THEME_OVERRIDE]) {
+    return { key: BLOG_THEME_OVERRIDE, ...THEMES[BLOG_THEME_OVERRIDE] };
+  }
+  if (BLOG_THEME_OVERRIDE) {
+    console.warn(
+      `[blog-gen] Onbekend thema "${BLOG_THEME_OVERRIDE}" — kies willekeurig uit ${Object.keys(THEMES).join(", ")}`,
+    );
+  }
+  const keys = Object.keys(THEMES);
+  const key = keys[Math.floor(Math.random() * keys.length)];
+  return { key, ...THEMES[key] };
+}
 
 // ─── Topic pools per lengte/type ────────────────────────────────────────────
 // D2 uit het plan: mix korte tips (~500w) en diepgaande guides (~2000w)
@@ -147,7 +222,7 @@ async function callClaude(systemPrompt, userPrompt, { maxTokens = 6000 } = {}) {
 }
 
 // ─── Topic genereren ────────────────────────────────────────────────────────
-async function generateTopic(postType) {
+async function generateTopic(postType, theme) {
   const existing = getExistingPosts();
   const existingList =
     existing.length > 0
@@ -156,13 +231,23 @@ async function generateTopic(postType) {
 
   const systemPrompt = `${BRAND_CONTEXT}
 
-Je taak: verzin een concreet, waardevol onderwerp voor een blog-artikel. Het
-onderwerp moet voor de doelgroep direct herkenbaar zijn ("oh ja, dát is bij mij
-ook een probleem").`;
+THEMA VOOR DEZE POST: ${theme.name}
+FOCUS-GEBIED (blijf hier binnen):
+${theme.focus}
+
+Je taak: verzin een concreet, waardevol onderwerp dat STRIKT binnen dit thema
+valt. Het onderwerp moet voor de doelgroep direct herkenbaar zijn ("oh ja, dát
+is bij mij ook een probleem"). NIET: algemene marketingadviezen of onderwerpen
+die buiten dit thema vallen.`;
 
   const userPrompt = `Verzin één specifiek blog-onderwerp voor een ${
     postType.type === "tip" ? "korte tip (500-700 woorden)" : "diepgaande guide (1600-2200 woorden)"
   }.
+
+Het thema is: **${theme.name}**.
+
+Voorbeelden van invalshoeken binnen dit thema (ter inspiratie — verzin iets nieuws):
+${theme.angleHints.map((h) => `- ${h}`).join("\n")}
 
 Al gepubliceerde artikelen (VERMIJD duplicatie, ook qua invalshoek):
 ${existingList}
@@ -287,11 +372,14 @@ async function fetchUnsplashImage(query) {
 async function main() {
   console.log("[blog-gen] Start generator");
 
+  const theme = pickTheme();
+  console.log(`[blog-gen] Thema: ${theme.name} (${theme.key})`);
+
   const postType = pickWeightedType();
   console.log(`[blog-gen] Type gekozen: ${postType.type} (${postType.wordCount} woorden)`);
 
   console.log("[blog-gen] Topic genereren…");
-  const topic = await generateTopic(postType);
+  const topic = await generateTopic(postType, theme);
   console.log(`[blog-gen] Topic: ${topic.title}`);
 
   console.log("[blog-gen] Artikel schrijven…");
@@ -312,16 +400,29 @@ async function main() {
     slug = `${slug}-${Date.now().toString(36).slice(-4)}`;
   }
 
-  const today = new Date().toISOString().slice(0, 10);
+  // Datum: BLOG_DATE override (voor backdated posts) of vandaag
+  let postDate = new Date().toISOString().slice(0, 10);
+  if (BLOG_DATE_OVERRIDE) {
+    if (/^\d{4}-\d{2}-\d{2}$/.test(BLOG_DATE_OVERRIDE)) {
+      postDate = BLOG_DATE_OVERRIDE;
+      console.log(`[blog-gen] Datum override: ${postDate}`);
+    } else {
+      console.warn(
+        `[blog-gen] BLOG_DATE="${BLOG_DATE_OVERRIDE}" is geen YYYY-MM-DD — val terug op vandaag (${postDate})`,
+      );
+    }
+  }
+
   const readingTime = Math.max(1, Math.round(wordCount / 220));
 
-  // Bepaal tags op basis van kernservices
-  const tags = determineTagsFromContent(topic.title + " " + body);
+  // Tag-bepaling: eerste tag komt altijd uit thema, extra tags uit contentmatching
+  const contentTags = determineTagsFromContent(topic.title + " " + body);
+  const tags = [theme.tagHint, ...contentTags.filter((t) => t !== theme.tagHint)].slice(0, 3);
 
   const frontmatter = `---
 title: "${escapeYaml(topic.title)}"
 slug: "${slug}"
-date: "${today}"
+date: "${postDate}"
 excerpt: "${escapeYaml(excerpt)}"
 heroImage: "${image.url}"
 heroImageAlt: "${escapeYaml(image.alt)}"
@@ -340,6 +441,8 @@ ${body}
 
   console.log(`[blog-gen] ✓ Post geschreven: ${path.relative(ROOT, filepath)}`);
   console.log(`[blog-gen] ✓ Titel:   ${topic.title}`);
+  console.log(`[blog-gen] ✓ Thema:   ${theme.name}`);
+  console.log(`[blog-gen] ✓ Datum:   ${postDate}`);
   console.log(`[blog-gen] ✓ Type:    ${postType.type} (${wordCount} woorden, ${readingTime} min)`);
   console.log(`[blog-gen] ✓ Tags:    ${tags.join(", ")}`);
 }
