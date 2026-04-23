@@ -9,6 +9,7 @@ export interface PortfolioProject {
   slug: string;
   client: string;
   url: string;
+  displayUrl?: string;
   sector: string;
   excerpt: string;
   featured?: boolean;

@@ -61,7 +61,7 @@ function BrowserChrome({
             border: "1px solid rgba(0,0,0,0.04)",
           }}
         >
-          {project.url.replace(/^https?:\/\//, "").replace(/\/$/, "")}
+          {project.displayUrl ?? project.url.replace(/^https?:\/\//, "").replace(/\/$/, "")}
         </div>
       </div>
       {/* Preview */}
@@ -144,12 +144,29 @@ export default function Portfolio() {
             </motion.h1>
             <motion.p
               variants={fadeUp}
-              className="text-lg max-w-2xl"
+              className="text-lg max-w-2xl mb-4"
               style={{ color: "#718096", fontFamily: "Inter, sans-serif" }}
             >
               Een selectie uit onze projecten. Elk ontwerp start bij het proces
               van jouw klant — wat moeten ze zien, voelen en doen om contact op
               te nemen?
+            </motion.p>
+            <motion.p
+              variants={fadeUp}
+              className="text-sm max-w-2xl inline-flex items-center gap-2 px-3 py-1.5 rounded-full"
+              style={{
+                color: "#8664FB",
+                fontFamily: "Inter, sans-serif",
+                background: "rgba(134,100,251,0.08)",
+                border: "1px solid rgba(134,100,251,0.15)",
+                fontWeight: 500,
+              }}
+            >
+              <span
+                className="w-2 h-2 rounded-full inline-block animate-pulse"
+                style={{ background: "#8664FB" }}
+              />
+              Elke week lanceren wij nieuwe projecten — niet alles staat hier.
             </motion.p>
           </motion.div>
         </div>
