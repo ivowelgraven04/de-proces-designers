@@ -113,3 +113,6 @@ client/public/__manus__/version.json
 
 # Blog: generated data (herbouwd uit /content/blog bij elke build)
 client/src/content/blog-data.json
+
+# Portfolio: generated data + screenshots (herbouwd via pnpm portfolio:build / :screenshot)
+client/src/content/portfolio-data.json

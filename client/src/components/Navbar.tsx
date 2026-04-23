@@ -13,8 +13,8 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/diensten", label: "Diensten" },
   { href: "/over-ons", label: "Over Ons" },
-  { href: "/werkwijze", label: "Werkwijze" },
   { href: "/partners", label: "Partners" },
+  { href: "/portfolio", label: "Portfolio" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];

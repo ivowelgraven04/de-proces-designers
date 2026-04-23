@@ -1,0 +1,221 @@
+{
+  "_comment": "Portfolio-projecten. 'url' = werkelijke link (vercel of live). 'displayUrl' = wat in de browser-mockup getoond wordt (schoon, .nl domein). Metrics/challenge/approach/result zijn placeholder-teksten; per klant aan te passen.",
+  "sectors": [
+    { "key": "dakdekkers", "label": "Dakdekkers" },
+    { "key": "juridisch", "label": "Juridisch" },
+    { "key": "financieel", "label": "Financieel dienstverleners" },
+    { "key": "overig", "label": "Overig" }
+  ],
+  "projects": [
+    {
+      "slug": "beuker-bouw-en-installatie",
+      "client": "Beuker Bouw & Installatie",
+      "url": "https://beuker-bouw-en-installatie.vercel.app/",
+      "displayUrl": "beukerbouw.nl",
+      "sector": "dakdekkers",
+      "excerpt": "Complete website voor een bouw- en installatiebedrijf met focus op vakmanschap, projectgalerij en directe aanvragen.",
+      "featured": false,
+      "launched": "2025",
+      "metrics": [
+        { "value": "< 2s", "label": "Laadtijd" },
+        { "value": "24/7", "label": "Offerteflow actief" }
+      ],
+      "challenge": "Beuker werd voornamelijk via mond-tot-mond gevonden. Er was geen digitale aanvraagroute en de online uitstraling paste niet bij het niveau vakmanschap dat ze leverden — potentiële klanten haakten af voordat ze contact opnamen.",
+      "approach": [
+        "Positionering rond vakmanschap en regionale aanwezigheid, met een helder propositie-verhaal per daktype.",
+        "Dienstenpagina's gestructureerd op klantprobleem in plaats van op intern jargon, met directe offerteaanvraag per pagina.",
+        "Technisch fundament op laadsnelheid, mobiel en local SEO — zodat de site ook op lange termijn vindbaar blijft."
+      ],
+      "result": "De nieuwe site fungeert als volwaardige verlengde van het bedrijf: digitale aanvragen komen rechtstreeks binnen, het opvolgproces is beter te organiseren en de uitstraling past weer bij het werk dat geleverd wordt."
+    },
+    {
+      "slug": "bricks-dakwerk",
+      "client": "Bricks Dakwerk",
+      "url": "https://bricks-dakwerk.vercel.app/",
+      "displayUrl": "bricksdakwerk.nl",
+      "sector": "dakdekkers",
+      "excerpt": "Landingssite voor een dakdekker gericht op snelle lead-aanvragen en regionale zichtbaarheid.",
+      "featured": true,
+      "launched": "2025",
+      "metrics": [
+        { "value": "< 3 klikken", "label": "Tot offerteaanvraag" },
+        { "value": "100%", "label": "Mobielvriendelijk" }
+      ],
+      "challenge": "Bricks wilde actief inzetten op online leadgeneratie, maar miste een website die bezoekers direct richting een aanvraag stuurt. De pijn zat niet in branding, maar in conversie: traffic kwam binnen en ging er ongefilterd weer uit.",
+      "approach": [
+        "Landings-opbouw volgens bewezen lead-patronen: probleem eerst, bewijs direct daarna, actie binnen één scroll.",
+        "Regionale signalen op de hoofdpagina — werkgebied, reactietijd, beschikbaarheid — om twijfel weg te nemen.",
+        "Offerteformulier opgesplitst in korte stappen om drempel te verlagen zonder kwalificatie te verliezen."
+      ],
+      "result": "De site werkt als echte leadfunnel in plaats van een digitaal visitekaartje. Bezoekers die binnenkomen krijgen één duidelijk pad aangeboden, en dat is exact wat een dakdekkersbedrijf in dit werkgebied nodig heeft."
+    },
+    {
+      "slug": "martins-daktechniek",
+      "client": "Martins Daktechniek",
+      "url": "https://martinsdaktechniek.nl/",
+      "displayUrl": "martinsdaktechniek.nl",
+      "sector": "dakdekkers",
+      "excerpt": "Zakelijke website voor een dakdekkersbedrijf met heldere dienstenpagina en directe offerteaanvraag.",
+      "featured": false,
+      "launched": "2025",
+      "metrics": [
+        { "value": "< 2s", "label": "Laadtijd" },
+        { "value": "6+", "label": "Dienstenpagina's" }
+      ],
+      "challenge": "Martins Daktechniek bood veel verschillende daktypes aan, maar alles zat ondergebracht op één overvolle pagina. Potentiële klanten moesten zelf uitzoeken of hun situatie werd gedekt — wat leidde tot telefonisch nog eens hetzelfde verhaal.",
+      "approach": [
+        "Elke dienst een eigen pagina gegeven, met dezelfde kopstructuur zodat vergelijken makkelijk blijft.",
+        "Zakelijke uitstraling behouden maar uitgebreid met visuele projectvoorbeelden en certificeringen.",
+        "Offerteformulier contextueel gemaakt: het daktype wordt automatisch meegegeven vanaf de pagina waar iemand klikt."
+      ],
+      "result": "Klanten komen nu voorbereid binnen — ze weten al welke dienst ze nodig hebben voordat ze bellen. Dat scheelt uitlegtijd en verhoogt de kwaliteit van de aanvragen die binnenkomen."
+    },
+    {
+      "slug": "bouwservice-mako",
+      "client": "Bouwservice Mako",
+      "url": "https://bouwservice-mako.vercel.app/",
+      "displayUrl": "bouwservicemako.nl",
+      "sector": "dakdekkers",
+      "excerpt": "Online visitekaartje voor een bouwservice- en dakdekkersbedrijf met focus op vertrouwen en lokale zichtbaarheid.",
+      "featured": false,
+      "launched": "2025",
+      "metrics": [
+        { "value": "< 4 wkn", "label": "Van brief tot live" },
+        { "value": "100%", "label": "Mobielvriendelijk" }
+      ],
+      "challenge": "Mako had behoefte aan een professionele online basis: niet perse lead-machine, maar wel een plek waar klanten na een tip het bedrijf serieus nemen. De huidige oude site had het tegenovergestelde effect.",
+      "approach": [
+        "Rustige, vertrouwenwekkende vormgeving gebaseerd op echt fotomateriaal van eigen projecten.",
+        "Korte maar scherpe over-ons die het vakmanschap en de regionale aanwezigheid benadrukt.",
+        "Directe contactroutes bovenaan: bellen, WhatsApp, en een beknopt aanvraagformulier."
+      ],
+      "result": "De site staat er als solide online visitekaartje dat past bij het werk. Klanten die via-via binnenkomen haken niet meer af op basis van de digitale indruk."
+    },
+    {
+      "slug": "dak77",
+      "client": "Dak77",
+      "url": "https://www.dak77.nl/",
+      "displayUrl": "dak77.nl",
+      "sector": "dakdekkers",
+      "excerpt": "Website voor een dakdekkersbedrijf met heldere dienstenstructuur, regionale uitstraling en snelle offerteaanvraag.",
+      "featured": false,
+      "launched": "2025",
+      "metrics": [
+        { "value": "< 2s", "label": "Laadtijd" },
+        { "value": "24/7", "label": "Aanvraagroute" }
+      ],
+      "challenge": "Dak77 wilde zich regionaal sterker profileren naast de grotere spelers in het werkgebied. De bestaande site gaf te weinig onderscheidend vermogen en miste een duidelijke aanvraagflow.",
+      "approach": [
+        "Herkenbare regionale positionering in de hero — wie zijn we, waar werken we, waarom ons.",
+        "Diensten gegroepeerd per vraagstuk (nieuwbouw, onderhoud, renovatie) in plaats van per techniek.",
+        "Mobiele offerteflow geoptimaliseerd: het grootste deel van het verkeer komt via de telefoon."
+      ],
+      "result": "De site fungeert als digitaal anker voor de rest van de marketing. Advertenties en mond-tot-mond landen op een plek die het verhaal afmaakt in plaats van het water in te gooien."
+    },
+    {
+      "slug": "rechtpunt",
+      "client": "Rechtpunt",
+      "url": "https://www.rechtpunt.nl/",
+      "displayUrl": "rechtpunt.nl",
+      "sector": "juridisch",
+      "excerpt": "Professionele website voor een juridisch adviesbureau met heldere dienstenstructuur en contactflow.",
+      "featured": true,
+      "launched": "2025",
+      "metrics": [
+        { "value": "8+", "label": "Rechtsgebieden gestructureerd" },
+        { "value": "< 2s", "label": "Laadtijd" }
+      ],
+      "challenge": "Een juridisch adviesbureau heeft een andere uitdaging dan een dakdekker: vertrouwen staat boven snelheid. De oude site oogde gedateerd en maakte de dienstverlening moeilijk vindbaar, waardoor intake-gesprekken veel tijd kostten aan basisuitleg.",
+      "approach": [
+        "Ontwerp dat professionaliteit uitstraalt zonder stoffig te worden — helder, rustig, met focus op leesbaarheid.",
+        "Rechtsgebieden apart uitgewerkt zodat klanten zichzelf al kunnen oriënteren voordat ze contact opnemen.",
+        "Contactflow met een korte intake in plaats van één groot formulier, om drempel te verlagen."
+      ],
+      "result": "Nieuwe aanvragen komen beter voorbereid binnen. Dat scheelt tijd in de eerste gesprekken en maakt dat het bureau zich kan richten op advies in plaats van uitleg."
+    },
+    {
+      "slug": "fixz24",
+      "client": "Fixz24",
+      "url": "https://fixz24.vercel.app/",
+      "displayUrl": "fixz24.nl",
+      "sector": "financieel",
+      "excerpt": "Servicesite voor een financieel dienstverlener met 24/7 aanvraagmogelijkheid en heldere propositie.",
+      "featured": false,
+      "launched": "2025",
+      "metrics": [
+        { "value": "24/7", "label": "Aanvraagroute" },
+        { "value": "100%", "label": "Mobielvriendelijk" }
+      ],
+      "challenge": "Fixz24 richt zich op een doelgroep die vaak snel en op onhandige momenten hulp zoekt. De oude propositie werd niet direct duidelijk en het aanvraagproces was niet afgestemd op mobiel gebruik buiten kantooruren.",
+      "approach": [
+        "Propositie in één regel bovenaan: wat doen we, voor wie, en hoe snel.",
+        "Aanvraagroute geoptimaliseerd voor mobiel — de meeste bezoekers komen via telefoon.",
+        "Geruststellende signalen (reactietijd, werkwijze, veelgestelde vragen) vooraan in plaats van in de footer."
+      ],
+      "result": "Bezoekers komen binnen, zien direct of ze bij het juiste adres zijn en kunnen een aanvraag plaatsen zonder opstopping. Precies het doel dat bij deze doelgroep past."
+    },
+    {
+      "slug": "link2leads",
+      "client": "Link2Leads",
+      "url": "https://link2leads.nl/",
+      "displayUrl": "link2leads.nl",
+      "sector": "overig",
+      "excerpt": "Website voor een lead-marketingbureau met sterke focus op conversie en resultaatgerichte copy.",
+      "featured": false,
+      "launched": "2025",
+      "metrics": [
+        { "value": "100%", "label": "Mobielvriendelijk" },
+        { "value": "< 2s", "label": "Laadtijd" }
+      ],
+      "challenge": "Als leadgeneratie-bureau moet je eigen website per definitie bewijzen wat je verkoopt. De bestaande site vertelde een goed verhaal, maar miste scherpte in conversie — een pijnlijk probleem gezien de dienstverlening.",
+      "approach": [
+        "Copy opgebouwd rond klantresultaat in plaats van dienstverlening — wat levert het op, niet hoe werkt het.",
+        "Social proof en bewijsmateriaal verweven in de scroll, niet opgesloten in een aparte case-sectie.",
+        "CTA-structuur met één helder primair doel per pagina, geen concurrerende knoppen."
+      ],
+      "result": "De site doet zelf wat hij voor klanten moet opleveren: de funnel werkt, bezoekers weten binnen één scroll of het relevant is, en de aanmeldroute ligt er op het juiste moment."
+    },
+    {
+      "slug": "link2talent",
+      "client": "Link2Talent",
+      "url": "https://www.link2talent.nl/",
+      "displayUrl": "link2talent.nl",
+      "sector": "overig",
+      "excerpt": "Recruitment-platform met moderne uitstraling, kandidaat-flow en opdrachtgever-registratie.",
+      "featured": false,
+      "launched": "2025",
+      "metrics": [
+        { "value": "2", "label": "Gebruikersroutes (kandidaat + opdrachtgever)" },
+        { "value": "< 2s", "label": "Laadtijd" }
+      ],
+      "challenge": "Een recruitmentplatform bedient twee heel verschillende doelgroepen op dezelfde website. De oude site behandelde ze hetzelfde, waardoor beide kanten niet goed hun eigen flow vonden en aanmeldingen bleven achter.",
+      "approach": [
+        "Twee duidelijke routes vanaf de homepage: 'ik zoek werk' en 'ik zoek talent', elk met eigen taal en bewijsvoering.",
+        "Kandidaat-flow geoptimaliseerd voor mobiel en snelheid — bij vacatures telt de eerste 30 seconden.",
+        "Opdrachtgever-kant rustiger en zakelijker, met nadruk op werkwijze en kwaliteit van het bestand."
+      ],
+      "result": "Beide doelgroepen komen nu op hun eigen plek terecht zonder kruising. Dat verhoogt zowel de kwaliteit van de aanmeldingen als de conversie van opdrachtgever-gesprekken."
+    },
+    {
+      "slug": "leadhuis",
+      "client": "Leadhuis",
+      "url": "https://leadhuis.vercel.app/",
+      "displayUrl": "leadhuis.nl",
+      "sector": "overig",
+      "excerpt": "Platformsite voor leadhandel met heldere propositie en aanmeldfunnel.",
+      "featured": true,
+      "launched": "2025",
+      "metrics": [
+        { "value": "< 3 klikken", "label": "Tot aanmeldpunt" },
+        { "value": "100%", "label": "Mobielvriendelijk" }
+      ],
+      "challenge": "Leadhandel is een niche waarin vertrouwen en snelheid hand in hand moeten gaan. De oude site vroeg te veel toelichting voordat een bezoeker begreep waar het over ging, wat kostbare aanmeldingen kostte.",
+      "approach": [
+        "Propositie in één oogopslag: wat is Leadhuis, voor wie, en waarom werkt het.",
+        "Aanmeldroute strak gehouden op de minimale stappen die nodig zijn om kwalitatief te filteren.",
+        "Heldere bewijsvoering en werkwijze-uitleg op de tweede vouw, voor twijfelaars die meer context nodig hebben."
+      ],
+      "result": "Bezoekers die écht interesse hebben vinden direct hun weg. Mensen die alleen komen rondkijken haken vanzelf af — beide is precies de bedoeling bij een platform als dit."
+    }
+  ]
+}
