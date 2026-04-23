@@ -1,0 +1,55 @@
+name: Generate Blog Post
+
+on:
+  # Maandag, woensdag, vrijdag om 08:00 Amsterdam-tijd (06:00 UTC)
+  schedule:
+    - cron: "0 6 * * 1,3,5"
+  # Handmatig triggerbaar vanuit de Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.4.1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Generate blog post
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+        run: node scripts/generate-post.mjs
+
+      - name: Commit and push new post
+        run: |
+          git config user.name "De Proces Designers Blog Bot"
+          git config user.email "blog-bot@deprocesdesigners.nl"
+
+          # Alleen committen als er echt iets nieuws is
+          if [[ -n "$(git status --porcelain content/blog/)" ]]; then
+            git add content/blog/
+            git commit -m "chore(blog): auto-generated post $(date +%Y-%m-%d)"
+            git push
+            echo "✓ Nieuwe blog post gepusht"
+          else
+            echo "⚠ Geen nieuwe post om te committen"
+          fi

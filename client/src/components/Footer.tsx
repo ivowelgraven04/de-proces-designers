@@ -38,6 +38,7 @@ export default function Footer() {
                 { href: "/diensten", label: "Diensten" },
                 { href: "/over-ons", label: "Over Ons" },
                 { href: "/werkwijze", label: "Werkwijze" },
+                { href: "/blog", label: "Blog" },
                 { href: "/contact", label: "Contact" },
               ].map((link) => (
                 <li key={link.href}>
