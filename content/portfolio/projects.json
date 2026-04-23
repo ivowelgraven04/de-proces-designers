@@ -1,0 +1,67 @@
+{
+  "_comment": "Portfolio-projecten voor De Proces Designers. Screenshots worden automatisch gegenereerd via scripts/generate-screenshots.mjs.",
+  "sectors": [
+    { "key": "dakdekkers", "label": "Dakdekkers" },
+    { "key": "juridisch", "label": "Juridisch" },
+    { "key": "financieel", "label": "Financieel dienstverleners" },
+    { "key": "overig", "label": "Overig" }
+  ],
+  "projects": [
+    {
+      "slug": "beuker-bouw-en-installatie",
+      "client": "Beuker Bouw & Installatie",
+      "url": "https://beuker-bouw-en-installatie.vercel.app/",
+      "sector": "overig",
+      "excerpt": "Complete website voor een bouw- en installatiebedrijf met focus op vakmanschap, projectgalerij en directe aanvragen.",
+      "featured": false
+    },
+    {
+      "slug": "bricks-dakwerk",
+      "client": "Bricks Dakwerk",
+      "url": "https://bricks-dakwerk.vercel.app/",
+      "sector": "dakdekkers",
+      "excerpt": "Landingssite voor een dakdekker gericht op snelle lead-aanvragen en regionale zichtbaarheid.",
+      "featured": true
+    },
+    {
+      "slug": "rechtpunt",
+      "client": "Rechtpunt",
+      "url": "https://www.rechtpunt.nl/",
+      "sector": "juridisch",
+      "excerpt": "Professionele website voor een juridisch adviesbureau met heldere dienstenstructuur en contactflow.",
+      "featured": true
+    },
+    {
+      "slug": "link2leads",
+      "client": "Link2Leads",
+      "url": "https://link2leads.nl/",
+      "sector": "overig",
+      "excerpt": "Website voor een lead-marketingbureau met sterke focus op conversie en resultaatgerichte copy.",
+      "featured": false
+    },
+    {
+      "slug": "link2talent",
+      "client": "Link2Talent",
+      "url": "https://www.link2talent.nl/",
+      "sector": "overig",
+      "excerpt": "Recruitment-platform met moderne uitstraling, kandidaat-flow en opdrachtgever-registratie.",
+      "featured": false
+    },
+    {
+      "slug": "fixz24",
+      "client": "Fixz24",
+      "url": "https://fixz24.vercel.app/",
+      "sector": "overig",
+      "excerpt": "Servicesite voor een reparatie- en onderhoudsdienst met 24/7 aanvraagmogelijkheid.",
+      "featured": false
+    },
+    {
+      "slug": "leadhuis",
+      "client": "Leadhuis",
+      "url": "https://leadhuis.vercel.app/",
+      "sector": "overig",
+      "excerpt": "Platformsite voor leadhandel met heldere propositie en aanmeldfunnel.",
+      "featured": true
+    }
+  ]
+}

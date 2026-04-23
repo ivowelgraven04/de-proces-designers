@@ -4,14 +4,16 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "dev": "node scripts/build-blog.mjs && vite --host",
-    "build": "node scripts/build-blog.mjs && node scripts/generate-og.mjs && vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
+    "dev": "node scripts/build-blog.mjs && node scripts/build-portfolio.mjs && vite --host",
+    "build": "node scripts/build-blog.mjs && node scripts/build-portfolio.mjs && node scripts/generate-og.mjs && vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
     "start": "NODE_ENV=production node dist/index.js",
     "preview": "vite preview --host",
     "check": "tsc --noEmit",
     "format": "prettier --write .",
     "blog:build": "node scripts/build-blog.mjs",
-    "blog:generate": "node scripts/generate-post.mjs"
+    "blog:generate": "node scripts/generate-post.mjs",
+    "portfolio:build": "node scripts/build-portfolio.mjs",
+    "portfolio:screenshot": "node scripts/generate-screenshots.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
@@ -80,6 +82,7 @@
     "add": "^2.0.6",
     "autoprefixer": "^10.4.20",
     "esbuild": "^0.25.0",
+    "playwright": "^1.59.1",
     "pnpm": "^10.15.1",
     "postcss": "^8.4.47",
     "prettier": "^3.6.2",
