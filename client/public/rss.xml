@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>De Proces Designers — Blog</title>
     <link>https://www.deprocesdesigners.nl/blog</link>
     <description>Inzichten over leadgeneratie, funnels en marketing automatisering.</description>
     <language>nl-NL</language>
     <item>
+      <title>De &apos;boven-de-vouw&apos; test: wat bezoekers zien in 5 seconden</title>
+      <link>https://www.deprocesdesigners.nl/blog/de-boven-de-vouw-test-wat-bezoekers-zien-in-5-seconden</link>
+      <guid>https://www.deprocesdesigners.nl/blog/de-boven-de-vouw-test-wat-bezoekers-zien-in-5-seconden</guid>
+      <pubDate>Fri, 24 Apr 2026 00:00:00 GMT</pubDate>
+      <description>Bezoekers beslissen in 5 seconden of ze blijven of wegklikken. Ontdek welke 4 vragen je boven de vouw moet beantwoorden — en waarom de meeste websites de belangrijkste ruimte verspillen aan een logo.</description>
+      <enclosure url="https://images.unsplash.com/photo-1579667391009-20b3ec82dfa3?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjBzY3JvbGxpbmclMjBwaG9uZXxlbnwxfDB8fHwxNzc3MDE3NjIwfDA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" type="image/jpeg" />
+      <media:thumbnail url="https://images.unsplash.com/photo-1579667391009-20b3ec82dfa3?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjBzY3JvbGxpbmclMjBwaG9uZXxlbnwxfDB8fHwxNzc3MDE3NjIwfDA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" />
+    </item>
+    <item>
       <title>Waarom 80% van je leads nooit reageert (en hoe je dat fixt)</title>
       <link>https://www.deprocesdesigners.nl/blog/waarom-80-van-je-leads-nooit-reageert-en-hoe-je-dat-fixt</link>
       <guid>https://www.deprocesdesigners.nl/blog/waarom-80-van-je-leads-nooit-reageert-en-hoe-je-dat-fixt</guid>
       <pubDate>Thu, 23 Apr 2026 00:00:00 GMT</pubDate>
       <description>De meeste leads gaan niet verloren door slechte marketing, maar door trage opvolging. Ontdek waarom de eerste 5 minuten alles bepalen en hoe je dat structureel oplost.</description>
+      <enclosure url="https://images.unsplash.com/photo-1688762230942-627569c7c1a4?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHw1fHxzbWFydHBob25lJTIwbm90aWZpY2F0aW9uJTIwYnVzaW5lc3N8ZW58MXwwfHx8MTc3Njk1NDc4MXww&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" type="image/jpeg" />
+      <media:thumbnail url="https://images.unsplash.com/photo-1688762230942-627569c7c1a4?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHw1fHxzbWFydHBob25lJTIwbm90aWZpY2F0aW9uJTIwYnVzaW5lc3N8ZW58MXwwfHx8MTc3Njk1NDc4MXww&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" />
     </item>
     <item>
       <title>Zo stuur je automatisch een review-verzoek na elke klus</title>
@@ -18,6 +29,8 @@
       <guid>https://www.deprocesdesigners.nl/blog/zo-stuur-je-automatisch-een-review-verzoek-na-elke-klus</guid>
       <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
       <description>Ontdek hoe je met een simpele automatisering na elke klus een review-verzoek verstuurt — op het juiste moment, zonder dat je er zelf aan hoeft te denken. Meer reviews, meer aanvragen.</description>
+      <enclosure url="https://images.unsplash.com/photo-1654764451028-6044fcb06ccb?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHw1fHxzbWFydHBob25lJTIwbm90aWZpY2F0aW9uJTIwY3VzdG9tZXJ8ZW58MXwwfHx8MTc3Njk1NzE3OHww&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" type="image/jpeg" />
+      <media:thumbnail url="https://images.unsplash.com/photo-1654764451028-6044fcb06ccb?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHw1fHxzbWFydHBob25lJTIwbm90aWZpY2F0aW9uJTIwY3VzdG9tZXJ8ZW58MXwwfHx8MTc3Njk1NzE3OHww&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" />
     </item>
     <item>
       <title>De 5 secties die élke servicepagina nodig heeft (in deze volgorde)</title>
@@ -25,6 +38,8 @@
       <guid>https://www.deprocesdesigners.nl/blog/de-5-secties-die-elke-servicepagina-nodig-heeft-in-deze-volgorde</guid>
       <pubDate>Thu, 16 Apr 2026 00:00:00 GMT</pubDate>
       <description>Veel servicepagina&apos;s falen niet door de tekst of het design, maar door de volgorde. Ontdek de 5 secties die écht werken, en waarom ze in deze volgorde moeten staan.</description>
+      <enclosure url="https://images.unsplash.com/photo-1646041293273-788e7543dd3d?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHw1fHxibHVlcHJpbnQlMjBhcmNoaXRlY3QlMjBkZXNrfGVufDF8MHx8fDE3NzY5NTY3MjR8MA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" type="image/jpeg" />
+      <media:thumbnail url="https://images.unsplash.com/photo-1646041293273-788e7543dd3d?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHw1fHxibHVlcHJpbnQlMjBhcmNoaXRlY3QlMjBkZXNrfGVufDF8MHx8fDE3NzY5NTY3MjR8MA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" />
     </item>
     <item>
       <title>Waarom je Facebook-advertentie pas werkt na 3 dagen stilte</title>
@@ -32,6 +47,8 @@
       <guid>https://www.deprocesdesigners.nl/blog/waarom-je-facebook-advertentie-pas-werkt-na-3-dagen-stilte</guid>
       <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
       <description>Veel lokale ondernemers zetten hun Facebook-ads al na 2 dagen uit omdat er \&quot;niks gebeurt\&quot;. Waarom dat de duurste fout is die je kunt maken — en wat Meta&apos;s algoritme écht nodig heeft om te werken.</description>
+      <enclosure url="https://images.unsplash.com/photo-1667198402062-a7c9d6cdca39?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwyfHxwYXRpZW5jZSUyMGhvdXJnbGFzcyUyMGRlc2t8ZW58MXwwfHx8MTc3Njk1NTk5M3ww&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" type="image/jpeg" />
+      <media:thumbnail url="https://images.unsplash.com/photo-1667198402062-a7c9d6cdca39?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwyfHxwYXRpZW5jZSUyMGhvdXJnbGFzcyUyMGRlc2t8ZW58MXwwfHx8MTc3Njk1NTk5M3ww&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" />
     </item>
     <item>
       <title>Welkom op ons blog — hier delen we hoe wij processen ontwerpen</title>
@@ -39,6 +56,8 @@
       <guid>https://www.deprocesdesigners.nl/blog/welkom-op-ons-blog</guid>
       <pubDate>Mon, 13 Apr 2026 00:00:00 GMT</pubDate>
       <description>Bij De Proces Designers combineren we proces-denken met slim design. Op ons blog delen we wekelijks inzichten over leadgeneratie, marketing automatisering en hoe je als lokaal bedrijf structureel kunt groeien.</description>
+      <enclosure url="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&amp;q=80" type="image/jpeg" />
+      <media:thumbnail url="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&amp;q=80" />
     </item>
   </channel>
 </rss>

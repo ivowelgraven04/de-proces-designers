@@ -171,19 +171,26 @@ ${urls.join("\n")}
 function buildRss(posts) {
   const items = posts
     .slice(0, 20)
-    .map(
-      (p) => `    <item>
+    .map((p) => {
+      const heroUrl = p.heroImage
+        ? p.heroImage.startsWith("http")
+          ? p.heroImage
+          : `${SITE_URL}${p.heroImage.startsWith("/") ? "" : "/"}${p.heroImage}`
+        : `${SITE_URL}/og-image.png`;
+      return `    <item>
       <title>${escapeXml(p.title)}</title>
       <link>${SITE_URL}/blog/${p.slug}</link>
       <guid>${SITE_URL}/blog/${p.slug}</guid>
       <pubDate>${new Date(p.date).toUTCString()}</pubDate>
       <description>${escapeXml(p.excerpt)}</description>
-    </item>`,
-    )
+      <enclosure url="${escapeXml(heroUrl)}" type="image/jpeg" />
+      <media:thumbnail url="${escapeXml(heroUrl)}" />
+    </item>`;
+    })
     .join("\n");
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>De Proces Designers — Blog</title>
     <link>${SITE_URL}/blog</link>
