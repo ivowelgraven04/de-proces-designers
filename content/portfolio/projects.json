@@ -29,25 +29,25 @@
       "result": "De nieuwe site fungeert als volwaardige verlengde van het bedrijf: digitale aanvragen komen rechtstreeks binnen, het opvolgproces is beter te organiseren en de uitstraling past weer bij het werk dat geleverd wordt."
     },
     {
-      "slug": "bricks-dakwerk",
-      "client": "Bricks Dakwerk",
-      "url": "https://bricks-dakwerk.vercel.app/",
-      "displayUrl": "bricksdakwerk.nl",
+      "slug": "js-techniek",
+      "client": "JS Techniek",
+      "url": "https://www.jschoutentechniek.com/",
+      "displayUrl": "jschoutentechniek.com",
       "sector": "dakdekkers",
-      "excerpt": "Landingssite voor een dakdekker gericht op snelle lead-aanvragen en regionale zichtbaarheid.",
+      "excerpt": "Complete website voor een allround dakdekker uit Noord-Holland met dak-, zink- en loodgieterswerk plus directe noodreparatie-route.",
       "featured": true,
       "launched": "2025",
       "metrics": [
-        { "value": "< 3 klikken", "label": "Tot offerteaanvraag" },
-        { "value": "100%", "label": "Mobielvriendelijk" }
+        { "value": "24/7", "label": "Noodreparatie-route" },
+        { "value": "4", "label": "Dienstensilo's (dak, zink, lood, nood)" }
       ],
-      "challenge": "Bricks wilde actief inzetten op online leadgeneratie, maar miste een website die bezoekers direct richting een aanvraag stuurt. De pijn zat niet in branding, maar in conversie: traffic kwam binnen en ging er ongefilterd weer uit.",
+      "challenge": "JS Techniek bediende vier verschillende disciplines — dakwerken, zinkwerk, loodgieterswerk en noodreparaties — maar miste een online plek die per dienst direct duidelijk maakt wat ze leveren en in welk werkgebied. Spoedklanten verwachten bovendien meteen een belroute, geen contactformulier.",
       "approach": [
-        "Landings-opbouw volgens bewezen lead-patronen: probleem eerst, bewijs direct daarna, actie binnen één scroll.",
-        "Regionale signalen op de hoofdpagina — werkgebied, reactietijd, beschikbaarheid — om twijfel weg te nemen.",
-        "Offerteformulier opgesplitst in korte stappen om drempel te verlagen zonder kwalificatie te verliezen."
+        "Aparte dienstenpagina's per discipline (dak, zink, lood, nood) met dezelfde structuur zodat vergelijken makkelijk blijft.",
+        "Regionale focus op Noord-Holland zichtbaar in hero en werkgebied-pagina voor local SEO en herkenbaarheid.",
+        "Noodreparatie-route apart uitgelicht met directe belactie, zodat spoedklanten geen formulier hoeven in te vullen."
       ],
-      "result": "De site werkt als echte leadfunnel in plaats van een digitaal visitekaartje. Bezoekers die binnenkomen krijgen één duidelijk pad aangeboden, en dat is exact wat een dakdekkersbedrijf in dit werkgebied nodig heeft."
+      "result": "De site geeft elk type klant — onderhoud, nieuwbouw of spoed — z'n eigen ingang. Spoedklanten bellen direct, planbare klanten oriënteren zich rustig per discipline. Dat scheelt uitlegtijd en verhoogt de kwaliteit van binnenkomende aanvragen."
     },
     {
       "slug": "martins-daktechniek",
