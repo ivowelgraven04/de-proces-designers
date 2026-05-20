@@ -54,7 +54,7 @@ const VIJFSTERREN: SterrenPartner[] = [
       { waarde: "85%", label: "Conversie lead → offerte" },
     ],
     startsituatie:
-      "JS Techniek startte met een inconsistente opdrachtstroom, afhankelijkheid van externe partijen en geen schaalbaar systeem om zelfstandig leads te genereren. De doelgroepen waren nog niet scherp in kaart gebracht en er was geen voorspelbaar groeipad.",
+      "JS Techniek startte met een opdrachtstroom die slechts dagen tot een week vooruit te plannen was — afhankelijk van externe partijen, zonder schaalbaar systeem om zelfstandig leads te genereren. De doelgroepen waren nog niet scherp in kaart gebracht en er was geen voorspelbaar groeipad.",
     aanpak: [
       "Stap voor stap opbouwen van een eigen, permanent leadgeneratiesysteem",
       "Doelgroepen analyseren en verfijnen op basis van campagnedata",
@@ -64,10 +64,10 @@ const VIJFSTERREN: SterrenPartner[] = [
     resultaten: [
       "90+ gekwalificeerde leads gegenereerd in Q1 2026",
       "85% conversieratio van lead naar offerte — structureel boven marktgemiddelde",
-      "Tienduizenden euro's extra omzet gegenereerd in Q1 2026",
+      "Agenda volgeboekt voor 3 tot 6 maanden vooruit met grote klussen (was: dagen tot een week)",
     ],
     impact: [
-      "Agenda structureel gevuld — weken tot maanden vooruit gepland",
+      "Agenda volgeboekt voor 3 tot 6 maanden met grote, leuke klussen",
       "Volledig overgestapt naar eigen opdrachten",
       "Geen afhankelijkheid meer van externe partijen",
       "Stabiele en voorspelbare groei gerealiseerd",
