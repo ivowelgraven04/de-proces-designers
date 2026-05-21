@@ -4,32 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
 
-    <!-- Primary SEO -->
-    <title>De Proces Designers | Leadgeneratie & Marketing voor Lokale Bedrijven</title>
-    <meta name="description" content="Meer exclusieve leads, slimmer groeien, zonder gedoe. De Proces Designers bouwt geautomatiseerde marketing systemen voor dakdekkers, letselschadekantoren en financiële dienstverleners." />
-    <meta name="keywords" content="leadgeneratie, marketing automatisering, Meta advertenties, funnels, webdesign, lokale marketing, De Proces Designers, online marketing Nederland, conversie optimalisatie, dakdekkers marketing, letselschade leads" />
-    <meta name="robots" content="index, follow" />
+    <!-- Primary SEO (defaults — per-route overrides via <SEO> in pages/*.tsx) -->
+    <title>Leadgeneratie & Webdesign voor Dakdekkers en Boekhouders | De Proces Designers</title>
+    <meta name="description" content="Marketingbureau voor dakdekkers, boekhouders en financieel dienstverleners. Exclusieve leads via Meta, websites en marketingautomatisering. Gevestigd in Ede, actief in heel Nederland." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
     <meta name="author" content="De Proces Designers" />
+    <meta name="theme-color" content="#0f172a" />
 
-    <!-- Canonical -->
+    <!-- Canonical (default — wordt per route door <SEO> overschreven) -->
     <link rel="canonical" href="https://www.deprocesdesigners.nl/" />
+
+    <!-- Google Search Console verificatie (placeholder — vervang content="..." met je eigen GSC token) -->
+    <meta name="google-site-verification" content="REPLACE_WITH_GSC_VERIFICATION_TOKEN" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="nl_NL" />
     <meta property="og:site_name" content="De Proces Designers" />
-    <meta property="og:title" content="De Proces Designers | Leadgeneratie & Marketing voor Lokale Bedrijven" />
-    <meta property="og:description" content="Meer exclusieve leads, slimmer groeien, zonder gedoe. Geautomatiseerde marketing systemen voor lokale bedrijven in Nederland." />
+    <meta property="og:title" content="Leadgeneratie & Webdesign voor Dakdekkers en Boekhouders | De Proces Designers" />
+    <meta property="og:description" content="Marketingbureau voor dakdekkers, boekhouders en financieel dienstverleners. Exclusieve leads via Meta, websites en marketingautomatisering." />
     <meta property="og:url" content="https://www.deprocesdesigners.nl/" />
     <meta property="og:image" content="https://www.deprocesdesigners.nl/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="De Proces Designers — Meer Klanten. Slimmer Groeien. Zonder Gedoe." />
+    <meta property="og:image:alt" content="De Proces Designers — Marketing & Leadgeneratie voor lokale bedrijven" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="De Proces Designers | Leadgeneratie & Marketing voor Lokale Bedrijven" />
-    <meta name="twitter:description" content="Meer exclusieve leads, slimmer groeien, zonder gedoe. Geautomatiseerde marketing systemen voor lokale bedrijven." />
+    <meta name="twitter:title" content="Leadgeneratie & Webdesign voor Dakdekkers en Boekhouders | De Proces Designers" />
+    <meta name="twitter:description" content="Marketingbureau voor dakdekkers, boekhouders en financieel dienstverleners. Exclusieve leads via Meta, websites en marketingautomatisering." />
     <meta name="twitter:image" content="https://www.deprocesdesigners.nl/og-image.png" />
 
     <!-- Favicon -->
@@ -44,70 +47,132 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-    <!-- Structured Data: Organization + LocalBusiness -->
+    <!-- Structured Data: Organization + LocalBusiness + Service catalog -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "De Proces Designers",
-      "url": "https://www.deprocesdesigners.nl",
-      "logo": "https://www.deprocesdesigners.nl/favicon.svg",
-      "image": "https://www.deprocesdesigners.nl/og-image.png",
-      "description": "De Proces Designers helpt lokale bedrijven groeien met exclusieve Meta leadgeneratie, funneloptimalisatie en marketingautomatisering.",
-      "telephone": "+31651369537",
-      "email": "info@deprocesdesigners.nl",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "NL"
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": "Netherlands"
-      },
-      "identifier": {
-        "@type": "PropertyValue",
-        "name": "KvK",
-        "value": "85905119"
-      },
-      "priceRange": "€€",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "15",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Marketing Diensten",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Meta Leadgeneratie",
-              "description": "Exclusieve leads via Facebook en Instagram voor dakdekkers, letselschadekantoren en financiële dienstverleners."
-            }
+      "@graph": [
+        {
+          "@type": ["ProfessionalService", "LocalBusiness", "Organization"],
+          "@id": "https://www.deprocesdesigners.nl/#business",
+          "name": "De Proces Designers",
+          "alternateName": ["De Procesdesigners", "DPD", "Proces Designers"],
+          "url": "https://www.deprocesdesigners.nl",
+          "logo": "https://www.deprocesdesigners.nl/favicon.svg",
+          "image": "https://www.deprocesdesigners.nl/og-image.png",
+          "description": "Marketingbureau voor dakdekkers, boekhouders en financieel dienstverleners. Gespecialiseerd in exclusieve leadgeneratie via Meta, conversiegerichte websites en marketingautomatisering.",
+          "slogan": "Meer Klanten. Slimmer Groeien. Zonder Gedoe.",
+          "telephone": "+31651369537",
+          "email": "info@deprocesdesigners.nl",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Ede",
+            "addressRegion": "Gelderland",
+            "postalCode": "6711",
+            "addressCountry": "NL"
           },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Funnels & Conversie",
-              "description": "Quiz funnels met gemiddeld 60–76% leadkwalificatie en geoptimaliseerde landingspagina's."
-            }
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 52.0333,
+            "longitude": 5.6667
           },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Marketing & Automatisering",
-              "description": "Volledig geautomatiseerde lead opvolging via CRM, e-mail en WhatsApp."
-            }
+          "areaServed": [
+            { "@type": "Country", "name": "Netherlands" },
+            { "@type": "AdministrativeArea", "name": "Gelderland" },
+            { "@type": "AdministrativeArea", "name": "Utrecht" },
+            { "@type": "AdministrativeArea", "name": "Noord-Holland" },
+            { "@type": "AdministrativeArea", "name": "Zuid-Holland" },
+            { "@type": "AdministrativeArea", "name": "Noord-Brabant" }
+          ],
+          "knowsAbout": [
+            "Leadgeneratie voor dakdekkers",
+            "Webdesign voor dakdekkers",
+            "Marketing voor dakdekkers",
+            "Leadgeneratie voor boekhouders",
+            "Webdesign voor boekhouders",
+            "Marketing voor financieel dienstverleners",
+            "Meta-advertenties",
+            "Marketingautomatisering",
+            "Quiz funnels",
+            "Conversie-optimalisatie",
+            "CRM-koppelingen"
+          ],
+          "identifier": {
+            "@type": "PropertyValue",
+            "name": "KvK",
+            "value": "85905119"
+          },
+          "priceRange": "€€",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "15",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Marketing & Webdesign Diensten",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Leadgeneratie voor dakdekkers",
+                  "serviceType": "Leadgeneratie",
+                  "description": "Exclusieve dakdekker-leads via Meta-advertenties (Facebook & Instagram). Geen gedeelde leads, alleen voor jouw bedrijf, binnen jouw werkgebied."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Leadgeneratie voor boekhouders en financieel dienstverleners",
+                  "serviceType": "Leadgeneratie",
+                  "description": "Exclusieve aanvragen voor boekhouders, accountants en financieel adviseurs. Gekwalificeerde leads via Meta en geautomatiseerde opvolging."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Webdesign voor dakdekkers en lokale ondernemers",
+                  "serviceType": "Webdesign",
+                  "description": "Conversiegerichte websites voor dakdekkers, boekhouders en lokale dienstverleners. Snel online, geoptimaliseerd voor mobiel en SEO."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Marketingautomatisering & CRM-koppelingen",
+                  "serviceType": "Marketing automation",
+                  "description": "Volledig geautomatiseerde leadopvolging via CRM, e-mail en WhatsApp. Geen handmatig overtypen, geen gemiste aanvragen."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Quiz-funnels & conversie-optimalisatie",
+                  "serviceType": "Conversie-optimalisatie",
+                  "description": "Quizfunnels met gemiddeld 60–76% leadkwalificatie en geoptimaliseerde landingspagina's voor maximale conversie."
+                }
+              }
+            ]
           }
-        ]
-      }
+        }
+      ]
     }
+    </script>
+
+    <!-- Google Analytics 4 (placeholder — vervang G-XXXXXXXXXX met je echte GA4 Measurement ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX', { anonymize_ip: true });
     </script>
 
     <!-- Meta Pixel Code -->

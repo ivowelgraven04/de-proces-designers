@@ -8,7 +8,7 @@ import { Link } from "wouter";
 import { ArrowRight, Award, Heart, Lightbulb, Target, CheckCircle2 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { useSEO } from "@/hooks/useSEO";
+import { useSEO, breadcrumb } from "@/hooks/useSEO";
 
 const ABOUT_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663503644974/J7Udx3KWkNc6vFgqgyECYk/dpd-about-visual-79fsXrKoocH5JtGjrRTj4t.webp";
 const CTA_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663503644974/J7Udx3KWkNc6vFgqgyECYk/dpd-cta-bg-Lb4Gg2j5Go7MK7hxFMRdVj.webp";
@@ -74,9 +74,17 @@ const expertise = [
 
 export default function OverOns() {
   useSEO({
-    title: "Over Ons | De Proces Designers — 43+ Klanten, 8 Jaar Ervaring",
-    description: "Leer ons kennen. De Proces Designers helpt lokale bedrijven structureel groeien met bewezen marketing systemen. 43+ actieve klanten, 3.4× gemiddelde groei, 98% klanttevredenheid.",
+    title:
+      "Over Ons — Marketingbureau in Ede voor Dakdekkers & Boekhouders | De Proces Designers",
+    description:
+      "Marketingbureau uit Ede dat dakdekkers, boekhouders en financieel dienstverleners helpt structureel te groeien. 43+ actieve klanten, gemiddeld 3,4× groei, 98% klanttevredenheid.",
     path: "/over-ons",
+    imageAlt:
+      "Over De Proces Designers — marketingbureau in Ede voor dakdekkers en boekhouders",
+    schema: breadcrumb([
+      { name: "Home", path: "/" },
+      { name: "Over Ons", path: "/over-ons" },
+    ]),
   });
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">

@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { useSEO } from "@/hooks/useSEO";
+import { useSEO, breadcrumb } from "@/hooks/useSEO";
 
 const PROCESS_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663503644974/J7Udx3KWkNc6vFgqgyECYk/dpd-process-visual-Fe2gecTx6gfDwRQ64oG7nR.webp";
 const CTA_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663503644974/J7Udx3KWkNc6vFgqgyECYk/dpd-cta-bg-Lb4Gg2j5Go7MK7hxFMRdVj.webp";
@@ -117,19 +117,65 @@ const faqs = [
 
 export default function Werkwijze() {
   useSEO({
-    title: "Onze Werkwijze | Van Onboarding naar Exclusieve Leads in 4 Weken — De Proces Designers",
-    description: "In 4 weken van onboarding naar volledig actieve leadcampagnes. Ontdek stap voor stap hoe wij jouw leadgeneratiesysteem bouwen, lanceren en opschalen.",
+    title:
+      "Werkwijze — In 4 weken een leadgeneratiesysteem voor dakdekkers & boekhouders | De Proces Designers",
+    description:
+      "In 4 weken van onboarding naar actieve leadcampagnes. Stap voor stap hoe wij voor dakdekkers en boekhouders het leadgeneratiesysteem bouwen, lanceren en opschalen.",
     path: "/werkwijze",
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        { "@type": "Question", "name": "Wanneer zie ik de eerste leads binnenkomen?", "acceptedAnswer": { "@type": "Answer", "text": "In de meeste gevallen binnen 7 dagen na lancering. Campagnes worden in week 1 al gelanceerd." } },
-        { "@type": "Question", "name": "Wat heb ik zelf nodig te doen?", "acceptedAnswer": { "@type": "Answer", "text": "Toegang verlenen tot jouw Meta-accounts en beschikbaar zijn voor een onboardinggesprek. De rest nemen wij volledig over." } },
-        { "@type": "Question", "name": "Werken jullie met vaste contracten?", "acceptedAnswer": { "@type": "Answer", "text": "Wij werken met maandelijkse overeenkomsten zonder langetermijn lock-in. Je behoudt altijd de controle." } },
-        { "@type": "Question", "name": "Zijn de leads echt exclusief voor mij?", "acceptedAnswer": { "@type": "Answer", "text": "Altijd. Wij bouwen campagnes specifiek voor jouw bedrijf en regio. Geen leadplatforms, geen gedeelde aanvragen." } }
-      ]
-    },
+    imageAlt:
+      "De werkwijze van De Proces Designers — leadgeneratie binnen 4 weken live",
+    schema: [
+      breadcrumb([
+        { name: "Home", path: "/" },
+        { name: "Werkwijze", path: "/werkwijze" },
+      ]),
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "Wanneer zie ik de eerste leads binnenkomen?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "In de meeste gevallen binnen 7 dagen na lancering. Campagnes worden in week 1 al gelanceerd.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Wat heb ik zelf nodig te doen?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Toegang verlenen tot jouw Meta-accounts en beschikbaar zijn voor een onboardinggesprek. De rest nemen wij volledig over.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Werken jullie met vaste contracten?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Wij werken met maandelijkse overeenkomsten zonder langetermijn lock-in. Je behoudt altijd de controle.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Zijn de leads echt exclusief voor mijn bedrijf?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Altijd. Wij bouwen campagnes specifiek voor jouw bedrijf en regio. Geen leadplatforms, geen gedeelde aanvragen.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Werken jullie ook voor boekhouders en financieel dienstverleners?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Ja. Naast dakdekkers werken wij voor boekhouders, accountants, financieel adviseurs en letselschadekantoren. De werkwijze is identiek: een leadcampagne op maat voor jouw niche en regio.",
+            },
+          },
+        ],
+      },
+    ],
   });
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">

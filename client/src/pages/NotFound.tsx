@@ -2,9 +2,21 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { AlertCircle, Home } from "lucide-react";
 import { useLocation } from "wouter";
+import { useSEO } from "@/hooks/useSEO";
 
 export default function NotFound() {
-  const [, setLocation] = useLocation();
+  const [location, setLocation] = useLocation();
+
+  // 404 mag nooit ranken en mag geen homepage-content dupliceren.
+  // Noindex + canonical naar de actuele (foute) URL voorkomt dat Google
+  // deze pagina als duplicate van de homepage indexeert.
+  useSEO({
+    title: "Pagina niet gevonden (404) | De Proces Designers",
+    description:
+      "De pagina die je zoekt bestaat niet (meer). Ga terug naar de homepage van De Proces Designers of bekijk onze diensten voor dakdekkers en boekhouders.",
+    path: location || "/404",
+    index: false,
+  });
 
   const handleGoHome = () => {
     setLocation("/");
@@ -24,13 +36,13 @@ export default function NotFound() {
           <h1 className="text-4xl font-bold text-slate-900 mb-2">404</h1>
 
           <h2 className="text-xl font-semibold text-slate-700 mb-4">
-            Page Not Found
+            Pagina niet gevonden
           </h2>
 
           <p className="text-slate-600 mb-8 leading-relaxed">
-            Sorry, the page you are looking for doesn't exist.
+            Sorry, de pagina die je zoekt bestaat niet (meer).
             <br />
-            It may have been moved or deleted.
+            Hij is mogelijk verplaatst of verwijderd.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -39,7 +51,7 @@ export default function NotFound() {
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
             >
               <Home className="w-4 h-4 mr-2" />
-              Go Home
+              Terug naar homepage
             </Button>
           </div>
         </CardContent>

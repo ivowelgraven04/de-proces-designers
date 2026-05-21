@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { useSEO } from "@/hooks/useSEO";
+import { useSEO, breadcrumb } from "@/hooks/useSEO";
 import ReviewsSection from "@/components/ReviewsSection";
 import ClientLogos from "@/components/ClientLogos";
 import {
@@ -45,9 +45,13 @@ function AnimatedSection({ children, className = "" }: { children: React.ReactNo
 
 export default function Home() {
   useSEO({
-    title: "De Proces Designers | Leadgeneratie & Marketing voor Lokale Bedrijven",
-    description: "Meer exclusieve leads, slimmer groeien, zonder gedoe. De Proces Designers bouwt geautomatiseerde marketing systemen voor dakdekkers, letselschadekantoren en financiële dienstverleners.",
+    title: "Leadgeneratie & Webdesign voor Dakdekkers en Boekhouders | De Proces Designers",
+    description:
+      "Marketingbureau voor dakdekkers, boekhouders en financieel dienstverleners. Exclusieve leads via Meta, conversiegerichte websites en marketingautomatisering. Gevestigd in Ede, actief in heel Nederland.",
     path: "/",
+    imageAlt:
+      "De Proces Designers — Marketingbureau voor dakdekkers en boekhouders",
+    schema: breadcrumb([{ name: "Home", path: "/" }]),
   });
 
   return (

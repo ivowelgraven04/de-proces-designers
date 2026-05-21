@@ -25,8 +25,11 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 export default function Privacybeleid() {
   useSEO({
     title: "Privacybeleid | De Proces Designers",
-    description: "Lees hoe De Proces Designers omgaat met jouw persoonsgegevens conform de AVG/GDPR wetgeving. Transparant, veilig en privacyvriendelijk.",
+    description:
+      "Privacybeleid van De Proces Designers. Hoe wij omgaan met persoonsgegevens conform AVG/GDPR.",
     path: "/privacybeleid",
+    // Juridische pagina: geen SEO-waarde, mag uit de index zodat hij geen autoriteit verdunt.
+    index: false,
   });
 
   return (

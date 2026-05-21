@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { useSEO } from "@/hooks/useSEO";
+import { useSEO, breadcrumb } from "@/hooks/useSEO";
 
 const CTA_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663503644974/J7Udx3KWkNc6vFgqgyECYk/dpd-cta-bg-Lb4Gg2j5Go7MK7hxFMRdVj.webp";
 
@@ -90,9 +90,86 @@ const mainServices = [
 
 export default function Diensten() {
   useSEO({
-    title: "Onze Diensten | Leadgeneratie, Funnels & Automatisering — De Proces Designers",
-    description: "Drie kernservices voor maximale groei: exclusieve Meta leadgeneratie, quiz funnels met 76% kwalificatie en volledige marketing automatisering. Plan een gratis strategiegesprek.",
+    title:
+      "Marketing & Webdesign voor Dakdekkers en Boekhouders | Diensten — De Proces Designers",
+    description:
+      "Leadgeneratie, websites en marketingautomatisering speciaal voor dakdekkers, boekhouders en financieel dienstverleners. Exclusieve leads via Meta, quizfunnels met 60–76% kwalificatie en volledige opvolging via CRM, e-mail en WhatsApp.",
     path: "/diensten",
+    imageAlt:
+      "Diensten van De Proces Designers — leadgeneratie, webdesign en marketingautomatisering",
+    schema: [
+      breadcrumb([
+        { name: "Home", path: "/" },
+        { name: "Diensten", path: "/diensten" },
+      ]),
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        serviceType: "Leadgeneratie, Webdesign en Marketingautomatisering",
+        provider: {
+          "@type": "Organization",
+          name: "De Proces Designers",
+          url: "https://www.deprocesdesigners.nl",
+        },
+        areaServed: { "@type": "Country", name: "Netherlands" },
+        audience: {
+          "@type": "BusinessAudience",
+          audienceType:
+            "Dakdekkers, boekhouders, financieel dienstverleners, lokale ondernemers",
+        },
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "Diensten",
+          itemListElement: [
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Leadgeneratie voor dakdekkers",
+                description:
+                  "Exclusieve dakdekker-leads via Meta-advertenties binnen jouw werkgebied.",
+              },
+            },
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Leadgeneratie voor boekhouders en financieel dienstverleners",
+                description:
+                  "Gekwalificeerde aanvragen voor boekhouders, accountants en financieel adviseurs.",
+              },
+            },
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Webdesign voor lokale ondernemers",
+                description:
+                  "Conversiegerichte websites — snel online, mobiel-first, geoptimaliseerd voor SEO en leadcapture.",
+              },
+            },
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Marketingautomatisering & CRM-koppelingen",
+                description:
+                  "Volledig geautomatiseerde lead-opvolging via CRM, e-mail en WhatsApp.",
+              },
+            },
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Quizfunnels & conversie-optimalisatie",
+                description:
+                  "Quizfunnels met gemiddeld 60–76% leadkwalificatie en hogere conversie.",
+              },
+            },
+          ],
+        },
+      },
+    ],
   });
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">

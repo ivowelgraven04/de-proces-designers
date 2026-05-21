@@ -117,17 +117,19 @@ function readPortfolioProjects() {
 }
 
 function buildSitemap(posts) {
+  // Alleen indexable & SEO-waardevolle pagina's in de sitemap.
+  // /privacybeleid en /algemene-voorwaarden staan op noindex (zie pages/*.tsx)
+  // en horen daarom NIET in de sitemap — anders krijg je conflict-signalen in
+  // Google Search Console ("Submitted URL marked 'noindex'").
   const staticPages = [
     { loc: "/", priority: "1.0", changefreq: "weekly" },
     { loc: "/diensten", priority: "0.9", changefreq: "monthly" },
-    { loc: "/over-ons", priority: "0.8", changefreq: "monthly" },
+    { loc: "/over-ons", priority: "0.7", changefreq: "monthly" },
     { loc: "/werkwijze", priority: "0.8", changefreq: "monthly" },
     { loc: "/partners", priority: "0.7", changefreq: "monthly" },
-    { loc: "/portfolio", priority: "0.8", changefreq: "weekly" },
-    { loc: "/contact", priority: "0.9", changefreq: "monthly" },
-    { loc: "/blog", priority: "0.8", changefreq: "daily" },
-    { loc: "/privacybeleid", priority: "0.3", changefreq: "yearly" },
-    { loc: "/algemene-voorwaarden", priority: "0.3", changefreq: "yearly" },
+    { loc: "/portfolio", priority: "0.8", changefreq: "monthly" },
+    { loc: "/contact", priority: "0.8", changefreq: "monthly" },
+    { loc: "/blog", priority: "0.8", changefreq: "weekly" },
   ];
   const today = new Date().toISOString().slice(0, 10);
   const portfolioProjects = readPortfolioProjects();
@@ -183,6 +185,7 @@ function buildRss(posts) {
       <guid>${SITE_URL}/blog/${p.slug}</guid>
       <pubDate>${new Date(p.date).toUTCString()}</pubDate>
       <description>${escapeXml(p.excerpt)}</description>
+      <content:encoded><![CDATA[${heroUrl}]]></content:encoded>
       <enclosure url="${escapeXml(heroUrl)}" type="image/jpeg" />
       <media:thumbnail url="${escapeXml(heroUrl)}" />
     </item>`;
@@ -190,7 +193,7 @@ function buildRss(posts) {
     .join("\n");
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>De Proces Designers — Blog</title>
     <link>${SITE_URL}/blog</link>

@@ -1,5 +1,33 @@
+# robots.txt — De Proces Designers
+# Sitemap: https://www.deprocesdesigners.nl/sitemap.xml
+
 User-agent: *
 Allow: /
+
+# Manus build/preview interface — niet voor zoekmachines
 Disallow: /__manus__/
+
+# Juridische pagina's: noindex via meta, ook hier blokkeren voor crawl budget
+Disallow: /privacybeleid
+Disallow: /algemene-voorwaarden
+
+# Interne 404-route — bestaat alleen als redirect-doel
+Disallow: /404
+
+# Geef AI-crawlers expliciet toegang (positief signaal voor AI-zoekresultaten)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
 
 Sitemap: https://www.deprocesdesigners.nl/sitemap.xml

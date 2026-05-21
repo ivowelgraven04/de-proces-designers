@@ -8,7 +8,7 @@ import { useState } from "react";
 import { Mail, Phone, MapPin, ArrowRight, CheckCircle2, Clock, MessageSquare } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { useSEO } from "@/hooks/useSEO";
+import { useSEO, breadcrumb } from "@/hooks/useSEO";
 
 const CTA_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663503644974/J7Udx3KWkNc6vFgqgyECYk/dpd-cta-bg-Lb4Gg2j5Go7MK7hxFMRdVj.webp";
 
@@ -41,9 +41,36 @@ const benefits = [
 
 export default function Contact() {
   useSEO({
-    title: "Contact | Gratis Strategiegesprek — De Proces Designers",
-    description: "Plan een gratis strategiegesprek met De Proces Designers. Geen verplichtingen, wel een concreet plan voor meer exclusieve leads en voorspelbare groei.",
+    title:
+      "Contact — Plan een gratis strategiegesprek | De Proces Designers (Ede)",
+    description:
+      "Plan een gratis strategiegesprek met De Proces Designers in Ede. Voor dakdekkers, boekhouders en financieel dienstverleners die meer exclusieve leads willen. Geen verplichtingen.",
     path: "/contact",
+    imageAlt: "Contact opnemen met De Proces Designers — marketingbureau in Ede",
+    schema: [
+      breadcrumb([
+        { name: "Home", path: "/" },
+        { name: "Contact", path: "/contact" },
+      ]),
+      {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        name: "Contact — De Proces Designers",
+        url: "https://www.deprocesdesigners.nl/contact",
+        about: {
+          "@type": "Organization",
+          name: "De Proces Designers",
+          telephone: "+31651369537",
+          email: "info@deprocesdesigners.nl",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Ede",
+            addressRegion: "Gelderland",
+            addressCountry: "NL",
+          },
+        },
+      },
+    ],
   });
   const [formData, setFormData] = useState({
     naam: "",

@@ -25,8 +25,11 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 export default function AlgemeneVoorwaarden() {
   useSEO({
     title: "Algemene Voorwaarden | De Proces Designers",
-    description: "De algemene voorwaarden van De Proces Designers. Van toepassing op alle diensten, offertes en overeenkomsten. KvK 85905119.",
+    description:
+      "Algemene voorwaarden van De Proces Designers. Van toepassing op alle diensten, offertes en overeenkomsten. KvK 85905119.",
     path: "/algemene-voorwaarden",
+    // Juridische pagina: geen SEO-waarde, mag uit de index zodat hij geen autoriteit verdunt.
+    index: false,
   });
 
   return (

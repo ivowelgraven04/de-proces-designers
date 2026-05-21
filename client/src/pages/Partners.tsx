@@ -14,7 +14,7 @@ import {
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ReviewsSection from "@/components/ReviewsSection";
-import { useSEO } from "@/hooks/useSEO";
+import { useSEO, breadcrumb } from "@/hooks/useSEO";
 
 // ─── 5-STERREN PARTNERS DATA ──────────────────────────────────────────────────
 // Voeg foto toe: zet het bestand in /public/ en vul het pad in bij `foto`
@@ -476,9 +476,17 @@ function PartnerStory({ partner }: { partner: SterrenPartner }) {
 // ─── Hoofdpagina ──────────────────────────────────────────────────────────────
 export default function Partners() {
   useSEO({
-    title: "Partners & Klanten | Bewezen Resultaten — De Proces Designers",
-    description: "Bekijk de resultaten van onze 5-sterren partners zoals JS Techniek en Fixz24. Echte cases, meetbare groei. 43+ bedrijven die structureel groeien met onze systemen.",
+    title:
+      "Klanten & Cases — Dakdekkers, Boekhouders & Lokale Bedrijven | De Proces Designers",
+    description:
+      "Cases van onze 5-sterren partners — dakdekkers zoals JS Techniek en Fixz24, plus boekhouders en financieel dienstverleners. 43+ bedrijven die structureel groeien met onze leadgeneratie en webdesign.",
     path: "/partners",
+    imageAlt:
+      "Klanten van De Proces Designers — dakdekkers, boekhouders en financieel dienstverleners",
+    schema: breadcrumb([
+      { name: "Home", path: "/" },
+      { name: "Partners & Klanten", path: "/partners" },
+    ]),
   });
   const [activePartner, setActivePartner] = useState<string>("js-techniek");
   const [activeSector, setActiveSector] = useState<SectorId>("dakdekkers");

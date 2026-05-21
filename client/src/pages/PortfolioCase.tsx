@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, ExternalLink, Check } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { useSEO } from "@/hooks/useSEO";
+import { useSEO, breadcrumb } from "@/hooks/useSEO";
 import {
   getProjectBySlug,
   getRelatedProjects,
@@ -87,28 +87,48 @@ export default function PortfolioCase() {
 
   useSEO({
     title: project
-      ? `${project.client} | Casestudy — De Proces Designers`
+      ? `Case: ${project.client} — Website & Marketing (${getSectorLabel(project.sector)}) | De Proces Designers`
       : "Casestudy — De Proces Designers",
     description:
       project?.excerpt ??
       "Een uitgewerkt portfolio-project van De Proces Designers.",
     path: `/portfolio/${slug}`,
+    image: project?.previewDesktop ?? undefined,
+    imageAlt: project ? `Screenshot van de website van ${project.client}` : undefined,
+    ogType: "article",
+    index: !!project, // niet-bestaande case → noindex (NotFound wordt gerenderd)
     schema: project
-      ? {
-          "@context": "https://schema.org",
-          "@type": "CreativeWork",
-          name: project.client,
-          url: `https://www.deprocesdesigners.nl/portfolio/${project.slug}`,
-          about: project.url,
-          description: project.excerpt,
-          creator: {
-            "@type": "Organization",
-            name: "De Proces Designers",
-            url: "https://www.deprocesdesigners.nl",
+      ? [
+          breadcrumb([
+            { name: "Home", path: "/" },
+            { name: "Portfolio", path: "/portfolio" },
+            { name: project.client, path: `/portfolio/${project.slug}` },
+          ]),
+          {
+            "@context": "https://schema.org",
+            "@type": "CreativeWork",
+            name: `Website voor ${project.client}`,
+            url: `https://www.deprocesdesigners.nl/portfolio/${project.slug}`,
+            about: project.url,
+            description: project.excerpt,
+            creator: {
+              "@type": "Organization",
+              name: "De Proces Designers",
+              url: "https://www.deprocesdesigners.nl",
+            },
+            datePublished: project.launched,
+            inLanguage: "nl-NL",
+            genre: getSectorLabel(project.sector),
+            keywords: [
+              getSectorLabel(project.sector),
+              "webdesign",
+              "leadgeneratie",
+              `marketing ${getSectorLabel(project.sector).toLowerCase()}`,
+              project.client,
+            ].join(", "),
+            image: project.previewDesktop,
           },
-          datePublished: project.launched,
-          genre: project.sector,
-        }
+        ]
       : undefined,
   });
 

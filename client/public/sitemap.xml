@@ -2,121 +2,223 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.deprocesdesigners.nl/</loc>
-    <lastmod>2026-04-23</lastmod>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/diensten</loc>
-    <lastmod>2026-04-23</lastmod>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/over-ons</loc>
-    <lastmod>2026-04-23</lastmod>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/werkwijze</loc>
-    <lastmod>2026-04-23</lastmod>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/partners</loc>
-    <lastmod>2026-04-23</lastmod>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/portfolio</loc>
-    <lastmod>2026-04-23</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/contact</loc>
-    <lastmod>2026-04-23</lastmod>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.deprocesdesigners.nl/blog</loc>
-    <lastmod>2026-04-23</lastmod>
-    <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.deprocesdesigners.nl/privacybeleid</loc>
-    <lastmod>2026-04-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://www.deprocesdesigners.nl/algemene-voorwaarden</loc>
-    <lastmod>2026-04-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://www.deprocesdesigners.nl/blog</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/portfolio/beuker-bouw-en-installatie</loc>
-    <lastmod>2026-04-23</lastmod>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.deprocesdesigners.nl/portfolio/bricks-dakwerk</loc>
-    <lastmod>2026-04-23</lastmod>
+    <loc>https://www.deprocesdesigners.nl/portfolio/js-techniek</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/portfolio/martins-daktechniek</loc>
-    <lastmod>2026-04-23</lastmod>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/portfolio/bouwservice-mako</loc>
-    <lastmod>2026-04-23</lastmod>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/portfolio/dak77</loc>
-    <lastmod>2026-04-23</lastmod>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/portfolio/rechtpunt</loc>
-    <lastmod>2026-04-23</lastmod>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/portfolio/fixz24</loc>
-    <lastmod>2026-04-23</lastmod>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/portfolio/link2leads</loc>
-    <lastmod>2026-04-23</lastmod>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/portfolio/link2talent</loc>
-    <lastmod>2026-04-23</lastmod>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/portfolio/leadhuis</loc>
-    <lastmod>2026-04-23</lastmod>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-warme-overdracht-van-webformulier-naar-whatsapp-in-60-seconden</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-sticky-cta-balk-op-mobile-altijd-een-tik-verwijderd-van-contact</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/stop-met-handmatig-leads-overtypen-koppel-je-formulier-aan-je-crm</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/waarom-je-prijspagina-je-beste-leadkwalificatie-is</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/waarom-een-laadtijd-boven-3-seconden-je-advertentiebudget-verbrandt</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/waarom-je-menubalk-maar-5-items-mag-hebben-en-welke</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/het-eerste-uur-na-een-lead-waarom-snelheid-je-conversie-verdubbelt</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/lookalike-audiences-voor-lokale-bedrijven-waarom-1-niet-altijd-wint</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/waarom-je-bedankt-pagina-je-meest-onderschatte-conversiekans-is</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/waarom-je-servicepaginas-belangrijker-zijn-dan-je-homepage</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-3-seconden-regel-waarom-je-ad-creative-binnen-een-duim-wordt-weggescrolld</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/waarom-je-hero-sectie-geen-slogan-moet-zijn-maar-een-belofte</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/waarom-je-over-ons-pagina-je-tweede-best-bezochte-pagina-is</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/lead-routing-stuur-de-juiste-lead-direct-naar-de-juiste-persoon</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-faq-sectie-als-stille-verkoper-zo-neem-je-twijfels-weg</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/waarom-je-contactformulier-de-helft-van-je-leads-kost</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/waarom-je-no-show-percentage-daalt-met-1-simpele-reminder-flow</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/het-telefoonnummer-in-je-header-waarom-plek-en-vorm-cruciaal-zijn</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-boven-de-vouw-test-wat-bezoekers-zien-in-5-seconden</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

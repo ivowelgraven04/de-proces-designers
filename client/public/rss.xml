@@ -1,16 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>De Proces Designers — Blog</title>
     <link>https://www.deprocesdesigners.nl/blog</link>
     <description>Inzichten over leadgeneratie, funnels en marketing automatisering.</description>
     <language>nl-NL</language>
     <item>
+      <title>De &apos;warme overdracht&apos;: van webformulier naar WhatsApp in 60 seconden</title>
+      <link>https://www.deprocesdesigners.nl/blog/de-warme-overdracht-van-webformulier-naar-whatsapp-in-60-seconden</link>
+      <guid>https://www.deprocesdesigners.nl/blog/de-warme-overdracht-van-webformulier-naar-whatsapp-in-60-seconden</guid>
+      <pubDate>Wed, 20 May 2026 00:00:00 GMT</pubDate>
+      <description>Een lead die &apos;s avonds een formulier invult, is morgenochtend vaak al weg naar de concurrent. Zo zet je een automatische WhatsApp-flow op die binnen 60 seconden reageert.</description>
+      <content:encoded><![CDATA[https://images.unsplash.com/photo-1514464750060-00e6e34c8b8c?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHw1fHxzbWFydHBob25lJTIwbm90aWZpY2F0aW9uJTIwaGFuZHxlbnwxfDB8fHwxNzc5MjY5Mjc5fDA&ixlib=rb-4.1.0&w=1600&q=80&fm=jpg&fit=crop]]></content:encoded>
+      <enclosure url="https://images.unsplash.com/photo-1514464750060-00e6e34c8b8c?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHw1fHxzbWFydHBob25lJTIwbm90aWZpY2F0aW9uJTIwaGFuZHxlbnwxfDB8fHwxNzc5MjY5Mjc5fDA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" type="image/jpeg" />
+      <media:thumbnail url="https://images.unsplash.com/photo-1514464750060-00e6e34c8b8c?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHw1fHxzbWFydHBob25lJTIwbm90aWZpY2F0aW9uJTIwaGFuZHxlbnwxfDB8fHwxNzc5MjY5Mjc5fDA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" />
+    </item>
+    <item>
+      <title>De &apos;sticky&apos; CTA-balk op mobile: altijd één tik verwijderd van contact</title>
+      <link>https://www.deprocesdesigners.nl/blog/de-sticky-cta-balk-op-mobile-altijd-een-tik-verwijderd-van-contact</link>
+      <guid>https://www.deprocesdesigners.nl/blog/de-sticky-cta-balk-op-mobile-altijd-een-tik-verwijderd-van-contact</guid>
+      <pubDate>Tue, 19 May 2026 00:00:00 GMT</pubDate>
+      <description>70% van je mobiele bezoekers scrollt voorbij je eerste CTA — en ziet &apos;m daarna nooit meer. Met een sticky balk onderaan blijft contact opnemen altijd één tik verwijderd.</description>
+      <content:encoded><![CDATA[https://images.unsplash.com/photo-1512428559087-560fa5ceab42?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwyfHxzbWFydHBob25lJTIwaGFuZCUyMHNjcm9sbGluZ3xlbnwxfDB8fHwxNzc5MTgzNTYwfDA&ixlib=rb-4.1.0&w=1600&q=80&fm=jpg&fit=crop]]></content:encoded>
+      <enclosure url="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwyfHxzbWFydHBob25lJTIwaGFuZCUyMHNjcm9sbGluZ3xlbnwxfDB8fHwxNzc5MTgzNTYwfDA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" type="image/jpeg" />
+      <media:thumbnail url="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwyfHxzbWFydHBob25lJTIwaGFuZCUyMHNjcm9sbGluZ3xlbnwxfDB8fHwxNzc5MTgzNTYwfDA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" />
+    </item>
+    <item>
+      <title>Stop met handmatig leads overtypen: koppel je formulier aan je CRM</title>
+      <link>https://www.deprocesdesigners.nl/blog/stop-met-handmatig-leads-overtypen-koppel-je-formulier-aan-je-crm</link>
+      <guid>https://www.deprocesdesigners.nl/blog/stop-met-handmatig-leads-overtypen-koppel-je-formulier-aan-je-crm</guid>
+      <pubDate>Mon, 18 May 2026 00:00:00 GMT</pubDate>
+      <description>Handmatig leads overtypen kost je een werkdag per maand én levert typfouten en gemiste opvolging op. Zo koppel je je formulier in één middag direct aan je CRM.</description>
+      <content:encoded><![CDATA[https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwxfHxsYXB0b3AlMjBkYXNoYm9hcmQlMjB3b3JrZmxvd3xlbnwxfDB8fHwxNzc5MDk4MzIzfDA&ixlib=rb-4.1.0&w=1600&q=80&fm=jpg&fit=crop]]></content:encoded>
+      <enclosure url="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwxfHxsYXB0b3AlMjBkYXNoYm9hcmQlMjB3b3JrZmxvd3xlbnwxfDB8fHwxNzc5MDk4MzIzfDA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" type="image/jpeg" />
+      <media:thumbnail url="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwxfHxsYXB0b3AlMjBkYXNoYm9hcmQlMjB3b3JrZmxvd3xlbnwxfDB8fHwxNzc5MDk4MzIzfDA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" />
+    </item>
+    <item>
+      <title>Waarom je prijspagina je beste leadkwalificatie is</title>
+      <link>https://www.deprocesdesigners.nl/blog/waarom-je-prijspagina-je-beste-leadkwalificatie-is</link>
+      <guid>https://www.deprocesdesigners.nl/blog/waarom-je-prijspagina-je-beste-leadkwalificatie-is</guid>
+      <pubDate>Fri, 15 May 2026 00:00:00 GMT</pubDate>
+      <description>Prijzen verstoppen achter een contactformulier lijkt slim, maar kost je juist de beste leads. Ontdek waarom transparante prijscommunicatie je sales-tijd bespaart en betere klanten oplevert.</description>
+      <content:encoded><![CDATA[https://images.unsplash.com/photo-1711344397160-b23d5deaa012?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwzfHxwcmljZSUyMGNhbGN1bGF0b3IlMjBkZXNrfGVufDF8MHx8fDE3Nzg4MzQ4MDF8MA&ixlib=rb-4.1.0&w=1600&q=80&fm=jpg&fit=crop]]></content:encoded>
+      <enclosure url="https://images.unsplash.com/photo-1711344397160-b23d5deaa012?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwzfHxwcmljZSUyMGNhbGN1bGF0b3IlMjBkZXNrfGVufDF8MHx8fDE3Nzg4MzQ4MDF8MA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" type="image/jpeg" />
+      <media:thumbnail url="https://images.unsplash.com/photo-1711344397160-b23d5deaa012?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwzfHxwcmljZSUyMGNhbGN1bGF0b3IlMjBkZXNrfGVufDF8MHx8fDE3Nzg4MzQ4MDF8MA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" />
+    </item>
+    <item>
+      <title>Waarom een laadtijd boven 3 seconden je advertentiebudget verbrandt</title>
+      <link>https://www.deprocesdesigners.nl/blog/waarom-een-laadtijd-boven-3-seconden-je-advertentiebudget-verbrandt</link>
+      <guid>https://www.deprocesdesigners.nl/blog/waarom-een-laadtijd-boven-3-seconden-je-advertentiebudget-verbrandt</guid>
+      <pubDate>Thu, 14 May 2026 00:00:00 GMT</pubDate>
+      <description>Een trage site verbrandt je advertentiebudget sneller dan je denkt. We laten zien hoeveel conversies je verliest per seconde laadtijd en welke drie oorzaken bij vrijwel elke lokale site terugkomen.</description>
+      <content:encoded><![CDATA[https://images.unsplash.com/photo-1704265586142-db3e17d0dea0?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwyfHxzdG9wd2F0Y2glMjBoYW5kJTIwdGltZXJ8ZW58MXwwfHx8MTc3ODc0NzczM3ww&ixlib=rb-4.1.0&w=1600&q=80&fm=jpg&fit=crop]]></content:encoded>
+      <enclosure url="https://images.unsplash.com/photo-1704265586142-db3e17d0dea0?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwyfHxzdG9wd2F0Y2glMjBoYW5kJTIwdGltZXJ8ZW58MXwwfHx8MTc3ODc0NzczM3ww&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" type="image/jpeg" />
+      <media:thumbnail url="https://images.unsplash.com/photo-1704265586142-db3e17d0dea0?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwyfHxzdG9wd2F0Y2glMjBoYW5kJTIwdGltZXJ8ZW58MXwwfHx8MTc3ODc0NzczM3ww&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" />
+    </item>
+    <item>
+      <title>Waarom je menubalk maar 5 items mag hebben (en welke)</title>
+      <link>https://www.deprocesdesigners.nl/blog/waarom-je-menubalk-maar-5-items-mag-hebben-en-welke</link>
+      <guid>https://www.deprocesdesigners.nl/blog/waarom-je-menubalk-maar-5-items-mag-hebben-en-welke</guid>
+      <pubDate>Wed, 13 May 2026 00:00:00 GMT</pubDate>
+      <description>Te veel keuze op je website kost je klanten. Ontdek waarom 5 menu-items het maximum is en welke je precies moet kiezen om bezoekers vlot naar contact te leiden.</description>
+      <content:encoded><![CDATA[https://images.unsplash.com/photo-1634084462412-b54873c0a56d?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwzfHxtaW5pbWFsaXN0JTIwd2Vic2l0ZSUyMG5hdmlnYXRpb258ZW58MXwwfHx8MTc3ODY2MTczNnww&ixlib=rb-4.1.0&w=1600&q=80&fm=jpg&fit=crop]]></content:encoded>
+      <enclosure url="https://images.unsplash.com/photo-1634084462412-b54873c0a56d?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwzfHxtaW5pbWFsaXN0JTIwd2Vic2l0ZSUyMG5hdmlnYXRpb258ZW58MXwwfHx8MTc3ODY2MTczNnww&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" type="image/jpeg" />
+      <media:thumbnail url="https://images.unsplash.com/photo-1634084462412-b54873c0a56d?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwzfHxtaW5pbWFsaXN0JTIwd2Vic2l0ZSUyMG5hdmlnYXRpb258ZW58MXwwfHx8MTc3ODY2MTczNnww&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" />
+    </item>
+    <item>
+      <title>Het eerste uur na een lead: waarom snelheid je conversie verdubbelt</title>
+      <link>https://www.deprocesdesigners.nl/blog/het-eerste-uur-na-een-lead-waarom-snelheid-je-conversie-verdubbelt</link>
+      <guid>https://www.deprocesdesigners.nl/blog/het-eerste-uur-na-een-lead-waarom-snelheid-je-conversie-verdubbelt</guid>
+      <pubDate>Tue, 12 May 2026 00:00:00 GMT</pubDate>
+      <description>Bellen binnen 5 minuten levert 8x meer contact op dan na een uur wachten. Toch wachten de meeste bedrijven 47 uur — en wijten ze de tegenvallende resultaten aan \&quot;slechte leads\&quot;.</description>
+      <content:encoded><![CDATA[https://images.unsplash.com/photo-1431499012454-31a9601150c9?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwzfHxzdG9wd2F0Y2glMjBwaG9uZSUyMGNhbGx8ZW58MXwwfHx8MTc3ODU3NTAxN3ww&ixlib=rb-4.1.0&w=1600&q=80&fm=jpg&fit=crop]]></content:encoded>
+      <enclosure url="https://images.unsplash.com/photo-1431499012454-31a9601150c9?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwzfHxzdG9wd2F0Y2glMjBwaG9uZSUyMGNhbGx8ZW58MXwwfHx8MTc3ODU3NTAxN3ww&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" type="image/jpeg" />
+      <media:thumbnail url="https://images.unsplash.com/photo-1431499012454-31a9601150c9?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwzfHxzdG9wd2F0Y2glMjBwaG9uZSUyMGNhbGx8ZW58MXwwfHx8MTc3ODU3NTAxN3ww&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" />
+    </item>
+    <item>
+      <title>Lookalike-audiences voor lokale bedrijven: waarom 1% niet altijd wint</title>
+      <link>https://www.deprocesdesigners.nl/blog/lookalike-audiences-voor-lokale-bedrijven-waarom-1-niet-altijd-wint</link>
+      <guid>https://www.deprocesdesigners.nl/blog/lookalike-audiences-voor-lokale-bedrijven-waarom-1-niet-altijd-wint</guid>
+      <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
+      <description>Een 1% lookalike klinkt als veilig advies, maar voor lokale bedrijven werkt het vaak averechts. We laten zien waarom — en welke aanpak wél leads oplevert binnen je werkgebied.</description>
+      <content:encoded><![CDATA[https://images.unsplash.com/photo-1750147456711-272b0f72e9d5?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHw0fHxuZXRoZXJsYW5kcyUyMG1hcCUyMHJlZ2lvbnxlbnwxfDB8fHwxNzc4NDkyMTY3fDA&ixlib=rb-4.1.0&w=1600&q=80&fm=jpg&fit=crop]]></content:encoded>
+      <enclosure url="https://images.unsplash.com/photo-1750147456711-272b0f72e9d5?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHw0fHxuZXRoZXJsYW5kcyUyMG1hcCUyMHJlZ2lvbnxlbnwxfDB8fHwxNzc4NDkyMTY3fDA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" type="image/jpeg" />
+      <media:thumbnail url="https://images.unsplash.com/photo-1750147456711-272b0f72e9d5?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHw0fHxuZXRoZXJsYW5kcyUyMG1hcCUyMHJlZ2lvbnxlbnwxfDB8fHwxNzc4NDkyMTY3fDA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" />
+    </item>
+    <item>
+      <title>Waarom je &apos;Bedankt&apos;-pagina je meest onderschatte conversiekans is</title>
+      <link>https://www.deprocesdesigners.nl/blog/waarom-je-bedankt-pagina-je-meest-onderschatte-conversiekans-is</link>
+      <guid>https://www.deprocesdesigners.nl/blog/waarom-je-bedankt-pagina-je-meest-onderschatte-conversiekans-is</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
+      <description>De meeste bedrijven gooien hun beste conversiemoment weg met een lege \&quot;Bedankt\&quot;-pagina. Ontdek waarom de seconden ná het invullen van een formulier je grootste kans zijn om de deal binnen te halen.</description>
+      <content:encoded><![CDATA[https://images.unsplash.com/photo-1776797391265-01a0490d4c99?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwyfHxwaG9uZSUyMG5vdGlmaWNhdGlvbiUyMGNvbmZpcm1hdGlvbnxlbnwxfDB8fHwxNzc4MjI1MzEwfDA&ixlib=rb-4.1.0&w=1600&q=80&fm=jpg&fit=crop]]></content:encoded>
+      <enclosure url="https://images.unsplash.com/photo-1776797391265-01a0490d4c99?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwyfHxwaG9uZSUyMG5vdGlmaWNhdGlvbiUyMGNvbmZpcm1hdGlvbnxlbnwxfDB8fHwxNzc4MjI1MzEwfDA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" type="image/jpeg" />
+      <media:thumbnail url="https://images.unsplash.com/photo-1776797391265-01a0490d4c99?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwyfHxwaG9uZSUyMG5vdGlmaWNhdGlvbiUyMGNvbmZpcm1hdGlvbnxlbnwxfDB8fHwxNzc4MjI1MzEwfDA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" />
+    </item>
+    <item>
+      <title>Waarom je servicepagina&apos;s belangrijker zijn dan je homepage</title>
+      <link>https://www.deprocesdesigners.nl/blog/waarom-je-servicepaginas-belangrijker-zijn-dan-je-homepage</link>
+      <guid>https://www.deprocesdesigners.nl/blog/waarom-je-servicepaginas-belangrijker-zijn-dan-je-homepage</guid>
+      <pubDate>Thu, 07 May 2026 00:00:00 GMT</pubDate>
+      <description>De meeste ondernemers besteden hun aandacht aan de homepage, terwijl 70% van het verkeer ergens anders binnenkomt. Wat dat betekent voor waar jij je tijd in moet stoppen.</description>
+      <content:encoded><![CDATA[https://images.unsplash.com/photo-1738817628118-ad34f40733ee?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwyfHxsb2NhbCUyMGNvbnRyYWN0b3IlMjB3b3JraW5nfGVufDF8MHx8fDE3NzgxNDI3NDR8MA&ixlib=rb-4.1.0&w=1600&q=80&fm=jpg&fit=crop]]></content:encoded>
+      <enclosure url="https://images.unsplash.com/photo-1738817628118-ad34f40733ee?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwyfHxsb2NhbCUyMGNvbnRyYWN0b3IlMjB3b3JraW5nfGVufDF8MHx8fDE3NzgxNDI3NDR8MA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" type="image/jpeg" />
+      <media:thumbnail url="https://images.unsplash.com/photo-1738817628118-ad34f40733ee?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwyfHxsb2NhbCUyMGNvbnRyYWN0b3IlMjB3b3JraW5nfGVufDF8MHx8fDE3NzgxNDI3NDR8MA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" />
+    </item>
+    <item>
+      <title>De 3-seconden regel: waarom je ad-creative binnen een duim wordt weggescrolld</title>
+      <link>https://www.deprocesdesigners.nl/blog/de-3-seconden-regel-waarom-je-ad-creative-binnen-een-duim-wordt-weggescrolld</link>
+      <guid>https://www.deprocesdesigners.nl/blog/de-3-seconden-regel-waarom-je-ad-creative-binnen-een-duim-wordt-weggescrolld</guid>
+      <pubDate>Wed, 06 May 2026 00:00:00 GMT</pubDate>
+      <description>De meeste ad-budgetten verdampen in de eerste 3 seconden — niet omdat Meta te duur is, maar omdat je opening niet pakt. Zo bouw je creatives die wél blijven hangen.</description>
+      <content:encoded><![CDATA[https://images.unsplash.com/photo-1776497838698-29be9f5a5d6a?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBzY3JvbGxpbmclMjBwaG9uZXxlbnwxfDB8fHwxNzc4MDU1ODg3fDA&ixlib=rb-4.1.0&w=1600&q=80&fm=jpg&fit=crop]]></content:encoded>
+      <enclosure url="https://images.unsplash.com/photo-1776497838698-29be9f5a5d6a?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBzY3JvbGxpbmclMjBwaG9uZXxlbnwxfDB8fHwxNzc4MDU1ODg3fDA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" type="image/jpeg" />
+      <media:thumbnail url="https://images.unsplash.com/photo-1776497838698-29be9f5a5d6a?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBzY3JvbGxpbmclMjBwaG9uZXxlbnwxfDB8fHwxNzc4MDU1ODg3fDA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" />
+    </item>
+    <item>
+      <title>Waarom je hero-sectie geen slogan moet zijn maar een belofte</title>
+      <link>https://www.deprocesdesigners.nl/blog/waarom-je-hero-sectie-geen-slogan-moet-zijn-maar-een-belofte</link>
+      <guid>https://www.deprocesdesigners.nl/blog/waarom-je-hero-sectie-geen-slogan-moet-zijn-maar-een-belofte</guid>
+      <pubDate>Tue, 05 May 2026 00:00:00 GMT</pubDate>
+      <description>Je hero-sectie bepaalt of bezoekers blijven of wegklikken. Ontdek waarom een concrete belofte altijd wint van een slogan, en welke drie vragen je tekst direct moet beantwoorden.</description>
+      <content:encoded><![CDATA[https://images.unsplash.com/photo-1758600588290-1da3710565f7?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwzfHxwZXJzb24lMjByZWFkaW5nJTIwc21hcnRwaG9uZXxlbnwxfDB8fHwxNzc3OTY4NDAwfDA&ixlib=rb-4.1.0&w=1600&q=80&fm=jpg&fit=crop]]></content:encoded>
+      <enclosure url="https://images.unsplash.com/photo-1758600588290-1da3710565f7?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwzfHxwZXJzb24lMjByZWFkaW5nJTIwc21hcnRwaG9uZXxlbnwxfDB8fHwxNzc3OTY4NDAwfDA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" type="image/jpeg" />
+      <media:thumbnail url="https://images.unsplash.com/photo-1758600588290-1da3710565f7?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwzfHxwZXJzb24lMjByZWFkaW5nJTIwc21hcnRwaG9uZXxlbnwxfDB8fHwxNzc3OTY4NDAwfDA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" />
+    </item>
+    <item>
+      <title>Waarom je &apos;Over ons&apos;-pagina je tweede best bezochte pagina is</title>
+      <link>https://www.deprocesdesigners.nl/blog/waarom-je-over-ons-pagina-je-tweede-best-bezochte-pagina-is</link>
+      <guid>https://www.deprocesdesigners.nl/blog/waarom-je-over-ons-pagina-je-tweede-best-bezochte-pagina-is</guid>
+      <pubDate>Mon, 04 May 2026 00:00:00 GMT</pubDate>
+      <description>Je &apos;Over ons&apos;-pagina wordt vaker bezocht dan je denkt — en bepaalt of bezoekers je vertrouwen. Ontdek welke 4 elementen écht werken (en welke clichés je vandaag nog moet schrappen).</description>
+      <content:encoded><![CDATA[https://images.unsplash.com/photo-1753351057294-9e9b5d64dbd5?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwyfHxsb2NhbCUyMGJ1c2luZXNzJTIwdGVhbSUyMHBvcnRyYWl0fGVufDF8MHx8fDE3Nzc4ODMyNTJ8MA&ixlib=rb-4.1.0&w=1600&q=80&fm=jpg&fit=crop]]></content:encoded>
+      <enclosure url="https://images.unsplash.com/photo-1753351057294-9e9b5d64dbd5?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwyfHxsb2NhbCUyMGJ1c2luZXNzJTIwdGVhbSUyMHBvcnRyYWl0fGVufDF8MHx8fDE3Nzc4ODMyNTJ8MA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" type="image/jpeg" />
+      <media:thumbnail url="https://images.unsplash.com/photo-1753351057294-9e9b5d64dbd5?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwyfHxsb2NhbCUyMGJ1c2luZXNzJTIwdGVhbSUyMHBvcnRyYWl0fGVufDF8MHx8fDE3Nzc4ODMyNTJ8MA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" />
+    </item>
+    <item>
+      <title>Lead-routing: stuur de juiste lead direct naar de juiste persoon</title>
+      <link>https://www.deprocesdesigners.nl/blog/lead-routing-stuur-de-juiste-lead-direct-naar-de-juiste-persoon</link>
+      <guid>https://www.deprocesdesigners.nl/blog/lead-routing-stuur-de-juiste-lead-direct-naar-de-juiste-persoon</guid>
+      <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+      <description>Leads die in een gedeelde inbox belanden, verliezen hun waarde met de minuut. Ontdek hoe slimme lead-routing zorgt dat de juiste lead binnen minuten bij de juiste persoon ligt.</description>
+      <content:encoded><![CDATA[https://images.unsplash.com/photo-1639313521811-fdfb1c040ddb?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwzfHxkaXNwYXRjaCUyMGNvbnRyb2wlMjByb29tfGVufDF8MHx8fDE3Nzc2MjMwMzh8MA&ixlib=rb-4.1.0&w=1600&q=80&fm=jpg&fit=crop]]></content:encoded>
+      <enclosure url="https://images.unsplash.com/photo-1639313521811-fdfb1c040ddb?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwzfHxkaXNwYXRjaCUyMGNvbnRyb2wlMjByb29tfGVufDF8MHx8fDE3Nzc2MjMwMzh8MA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" type="image/jpeg" />
+      <media:thumbnail url="https://images.unsplash.com/photo-1639313521811-fdfb1c040ddb?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwzfHxkaXNwYXRjaCUyMGNvbnRyb2wlMjByb29tfGVufDF8MHx8fDE3Nzc2MjMwMzh8MA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" />
+    </item>
+    <item>
+      <title>De FAQ-sectie als stille verkoper: zo neem je twijfels weg</title>
+      <link>https://www.deprocesdesigners.nl/blog/de-faq-sectie-als-stille-verkoper-zo-neem-je-twijfels-weg</link>
+      <guid>https://www.deprocesdesigners.nl/blog/de-faq-sectie-als-stille-verkoper-zo-neem-je-twijfels-weg</guid>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
+      <description>Ontdek waarom de meeste FAQ-secties niets bijdragen aan je conversie en hoe je ze ombouwt tot een stille verkoper die de vijf echte bezwaren van je bezoekers wegneemt.</description>
+      <content:encoded><![CDATA[https://images.unsplash.com/photo-1758876020406-0edb3631d5f1?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHw1fHxwZXJzb24lMjB0aGlua2luZyUyMGxhcHRvcHxlbnwxfDB8fHwxNzc3NTM3MDQ0fDA&ixlib=rb-4.1.0&w=1600&q=80&fm=jpg&fit=crop]]></content:encoded>
+      <enclosure url="https://images.unsplash.com/photo-1758876020406-0edb3631d5f1?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHw1fHxwZXJzb24lMjB0aGlua2luZyUyMGxhcHRvcHxlbnwxfDB8fHwxNzc3NTM3MDQ0fDA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" type="image/jpeg" />
+      <media:thumbnail url="https://images.unsplash.com/photo-1758876020406-0edb3631d5f1?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHw1fHxwZXJzb24lMjB0aGlua2luZyUyMGxhcHRvcHxlbnwxfDB8fHwxNzc3NTM3MDQ0fDA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" />
+    </item>
+    <item>
+      <title>Waarom je contactformulier de helft van je leads kost</title>
+      <link>https://www.deprocesdesigners.nl/blog/waarom-je-contactformulier-de-helft-van-je-leads-kost</link>
+      <guid>https://www.deprocesdesigners.nl/blog/waarom-je-contactformulier-de-helft-van-je-leads-kost</guid>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 GMT</pubDate>
+      <description>Je contactformulier ziet eruit als een formulier — en dat is precies het probleem. Met drie aanpassingen haal je er aanzienlijk meer leads uit, zonder een euro extra advertentiebudget.</description>
+      <content:encoded><![CDATA[https://images.unsplash.com/photo-1625297673112-06b459140555?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHw0fHxsYXB0b3AlMjBub3RlYm9vayUyMGRlc2t8ZW58MXwwfHx8MTc3NzQ1MDQxNnww&ixlib=rb-4.1.0&w=1600&q=80&fm=jpg&fit=crop]]></content:encoded>
+      <enclosure url="https://images.unsplash.com/photo-1625297673112-06b459140555?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHw0fHxsYXB0b3AlMjBub3RlYm9vayUyMGRlc2t8ZW58MXwwfHx8MTc3NzQ1MDQxNnww&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" type="image/jpeg" />
+      <media:thumbnail url="https://images.unsplash.com/photo-1625297673112-06b459140555?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHw0fHxsYXB0b3AlMjBub3RlYm9vayUyMGRlc2t8ZW58MXwwfHx8MTc3NzQ1MDQxNnww&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" />
+    </item>
+    <item>
+      <title>Waarom je no-show percentage daalt met 1 simpele reminder-flow</title>
+      <link>https://www.deprocesdesigners.nl/blog/waarom-je-no-show-percentage-daalt-met-1-simpele-reminder-flow</link>
+      <guid>https://www.deprocesdesigners.nl/blog/waarom-je-no-show-percentage-daalt-met-1-simpele-reminder-flow</guid>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 GMT</pubDate>
+      <description>No-shows kosten je sneller €9.000 per jaar dan je denkt. Ontdek waarom één bevestigingsmail niet genoeg is en welke simpele reminder-flow je no-show percentage binnen een week halveert.</description>
+      <content:encoded><![CDATA[https://images.unsplash.com/photo-1618932376231-7253bdab2ac1?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwzfHxjYWxlbmRhciUyMHBob25lJTIwbm90aWZpY2F0aW9ufGVufDF8MHx8fDE3NzczNjQ1NzR8MA&ixlib=rb-4.1.0&w=1600&q=80&fm=jpg&fit=crop]]></content:encoded>
+      <enclosure url="https://images.unsplash.com/photo-1618932376231-7253bdab2ac1?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwzfHxjYWxlbmRhciUyMHBob25lJTIwbm90aWZpY2F0aW9ufGVufDF8MHx8fDE3NzczNjQ1NzR8MA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" type="image/jpeg" />
+      <media:thumbnail url="https://images.unsplash.com/photo-1618932376231-7253bdab2ac1?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwzfHxjYWxlbmRhciUyMHBob25lJTIwbm90aWZpY2F0aW9ufGVufDF8MHx8fDE3NzczNjQ1NzR8MA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" />
+    </item>
+    <item>
+      <title>Het telefoonnummer in je header: waarom plek én vorm cruciaal zijn</title>
+      <link>https://www.deprocesdesigners.nl/blog/het-telefoonnummer-in-je-header-waarom-plek-en-vorm-cruciaal-zijn</link>
+      <guid>https://www.deprocesdesigners.nl/blog/het-telefoonnummer-in-je-header-waarom-plek-en-vorm-cruciaal-zijn</guid>
+      <pubDate>Mon, 27 Apr 2026 00:00:00 GMT</pubDate>
+      <description>Bij urgente diensten wint de telefoon van elk formulier. Toch verstoppen veel ondernemers hun nummer in de footer — terwijl plek én vorm bepalen of een bezoeker écht belt.</description>
+      <content:encoded><![CDATA[https://images.unsplash.com/photo-1758874384152-088d79fdb8dd?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwyfHxzbWFydHBob25lJTIwY2FsbGluZyUyMGhhbmR8ZW58MXwwfHx8MTc3NzI3ODA3Nnww&ixlib=rb-4.1.0&w=1600&q=80&fm=jpg&fit=crop]]></content:encoded>
+      <enclosure url="https://images.unsplash.com/photo-1758874384152-088d79fdb8dd?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwyfHxzbWFydHBob25lJTIwY2FsbGluZyUyMGhhbmR8ZW58MXwwfHx8MTc3NzI3ODA3Nnww&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" type="image/jpeg" />
+      <media:thumbnail url="https://images.unsplash.com/photo-1758874384152-088d79fdb8dd?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwyfHxzbWFydHBob25lJTIwY2FsbGluZyUyMGhhbmR8ZW58MXwwfHx8MTc3NzI3ODA3Nnww&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" />
+    </item>
+    <item>
       <title>De &apos;boven-de-vouw&apos; test: wat bezoekers zien in 5 seconden</title>
       <link>https://www.deprocesdesigners.nl/blog/de-boven-de-vouw-test-wat-bezoekers-zien-in-5-seconden</link>
       <guid>https://www.deprocesdesigners.nl/blog/de-boven-de-vouw-test-wat-bezoekers-zien-in-5-seconden</guid>
       <pubDate>Fri, 24 Apr 2026 00:00:00 GMT</pubDate>
       <description>Bezoekers beslissen in 5 seconden of ze blijven of wegklikken. Ontdek welke 4 vragen je boven de vouw moet beantwoorden — en waarom de meeste websites de belangrijkste ruimte verspillen aan een logo.</description>
+      <content:encoded><![CDATA[https://images.unsplash.com/photo-1579667391009-20b3ec82dfa3?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjBzY3JvbGxpbmclMjBwaG9uZXxlbnwxfDB8fHwxNzc3MDE3NjIwfDA&ixlib=rb-4.1.0&w=1600&q=80&fm=jpg&fit=crop]]></content:encoded>
       <enclosure url="https://images.unsplash.com/photo-1579667391009-20b3ec82dfa3?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjBzY3JvbGxpbmclMjBwaG9uZXxlbnwxfDB8fHwxNzc3MDE3NjIwfDA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" type="image/jpeg" />
       <media:thumbnail url="https://images.unsplash.com/photo-1579667391009-20b3ec82dfa3?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjBzY3JvbGxpbmclMjBwaG9uZXxlbnwxfDB8fHwxNzc3MDE3NjIwfDA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" />
     </item>
@@ -20,44 +201,9 @@
       <guid>https://www.deprocesdesigners.nl/blog/waarom-80-van-je-leads-nooit-reageert-en-hoe-je-dat-fixt</guid>
       <pubDate>Thu, 23 Apr 2026 00:00:00 GMT</pubDate>
       <description>De meeste leads gaan niet verloren door slechte marketing, maar door trage opvolging. Ontdek waarom de eerste 5 minuten alles bepalen en hoe je dat structureel oplost.</description>
+      <content:encoded><![CDATA[https://images.unsplash.com/photo-1688762230942-627569c7c1a4?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHw1fHxzbWFydHBob25lJTIwbm90aWZpY2F0aW9uJTIwYnVzaW5lc3N8ZW58MXwwfHx8MTc3Njk1NDc4MXww&ixlib=rb-4.1.0&w=1600&q=80&fm=jpg&fit=crop]]></content:encoded>
       <enclosure url="https://images.unsplash.com/photo-1688762230942-627569c7c1a4?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHw1fHxzbWFydHBob25lJTIwbm90aWZpY2F0aW9uJTIwYnVzaW5lc3N8ZW58MXwwfHx8MTc3Njk1NDc4MXww&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" type="image/jpeg" />
       <media:thumbnail url="https://images.unsplash.com/photo-1688762230942-627569c7c1a4?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHw1fHxzbWFydHBob25lJTIwbm90aWZpY2F0aW9uJTIwYnVzaW5lc3N8ZW58MXwwfHx8MTc3Njk1NDc4MXww&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" />
-    </item>
-    <item>
-      <title>Zo stuur je automatisch een review-verzoek na elke klus</title>
-      <link>https://www.deprocesdesigners.nl/blog/zo-stuur-je-automatisch-een-review-verzoek-na-elke-klus</link>
-      <guid>https://www.deprocesdesigners.nl/blog/zo-stuur-je-automatisch-een-review-verzoek-na-elke-klus</guid>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 GMT</pubDate>
-      <description>Ontdek hoe je met een simpele automatisering na elke klus een review-verzoek verstuurt — op het juiste moment, zonder dat je er zelf aan hoeft te denken. Meer reviews, meer aanvragen.</description>
-      <enclosure url="https://images.unsplash.com/photo-1654764451028-6044fcb06ccb?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHw1fHxzbWFydHBob25lJTIwbm90aWZpY2F0aW9uJTIwY3VzdG9tZXJ8ZW58MXwwfHx8MTc3Njk1NzE3OHww&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" type="image/jpeg" />
-      <media:thumbnail url="https://images.unsplash.com/photo-1654764451028-6044fcb06ccb?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHw1fHxzbWFydHBob25lJTIwbm90aWZpY2F0aW9uJTIwY3VzdG9tZXJ8ZW58MXwwfHx8MTc3Njk1NzE3OHww&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" />
-    </item>
-    <item>
-      <title>De 5 secties die élke servicepagina nodig heeft (in deze volgorde)</title>
-      <link>https://www.deprocesdesigners.nl/blog/de-5-secties-die-elke-servicepagina-nodig-heeft-in-deze-volgorde</link>
-      <guid>https://www.deprocesdesigners.nl/blog/de-5-secties-die-elke-servicepagina-nodig-heeft-in-deze-volgorde</guid>
-      <pubDate>Thu, 16 Apr 2026 00:00:00 GMT</pubDate>
-      <description>Veel servicepagina&apos;s falen niet door de tekst of het design, maar door de volgorde. Ontdek de 5 secties die écht werken, en waarom ze in deze volgorde moeten staan.</description>
-      <enclosure url="https://images.unsplash.com/photo-1646041293273-788e7543dd3d?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHw1fHxibHVlcHJpbnQlMjBhcmNoaXRlY3QlMjBkZXNrfGVufDF8MHx8fDE3NzY5NTY3MjR8MA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" type="image/jpeg" />
-      <media:thumbnail url="https://images.unsplash.com/photo-1646041293273-788e7543dd3d?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHw1fHxibHVlcHJpbnQlMjBhcmNoaXRlY3QlMjBkZXNrfGVufDF8MHx8fDE3NzY5NTY3MjR8MA&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" />
-    </item>
-    <item>
-      <title>Waarom je Facebook-advertentie pas werkt na 3 dagen stilte</title>
-      <link>https://www.deprocesdesigners.nl/blog/waarom-je-facebook-advertentie-pas-werkt-na-3-dagen-stilte</link>
-      <guid>https://www.deprocesdesigners.nl/blog/waarom-je-facebook-advertentie-pas-werkt-na-3-dagen-stilte</guid>
-      <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
-      <description>Veel lokale ondernemers zetten hun Facebook-ads al na 2 dagen uit omdat er \&quot;niks gebeurt\&quot;. Waarom dat de duurste fout is die je kunt maken — en wat Meta&apos;s algoritme écht nodig heeft om te werken.</description>
-      <enclosure url="https://images.unsplash.com/photo-1667198402062-a7c9d6cdca39?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwyfHxwYXRpZW5jZSUyMGhvdXJnbGFzcyUyMGRlc2t8ZW58MXwwfHx8MTc3Njk1NTk5M3ww&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" type="image/jpeg" />
-      <media:thumbnail url="https://images.unsplash.com/photo-1667198402062-a7c9d6cdca39?ixid=M3w5MzMyNDV8MHwxfHNlYXJjaHwyfHxwYXRpZW5jZSUyMGhvdXJnbGFzcyUyMGRlc2t8ZW58MXwwfHx8MTc3Njk1NTk5M3ww&amp;ixlib=rb-4.1.0&amp;w=1600&amp;q=80&amp;fm=jpg&amp;fit=crop" />
-    </item>
-    <item>
-      <title>Welkom op ons blog — hier delen we hoe wij processen ontwerpen</title>
-      <link>https://www.deprocesdesigners.nl/blog/welkom-op-ons-blog</link>
-      <guid>https://www.deprocesdesigners.nl/blog/welkom-op-ons-blog</guid>
-      <pubDate>Mon, 13 Apr 2026 00:00:00 GMT</pubDate>
-      <description>Bij De Proces Designers combineren we proces-denken met slim design. Op ons blog delen we wekelijks inzichten over leadgeneratie, marketing automatisering en hoe je als lokaal bedrijf structureel kunt groeien.</description>
-      <enclosure url="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&amp;q=80" type="image/jpeg" />
-      <media:thumbnail url="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&amp;q=80" />
     </item>
   </channel>
 </rss>

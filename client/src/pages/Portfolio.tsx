@@ -9,7 +9,7 @@ import { ExternalLink, ArrowRight } from "lucide-react";
 import { Link } from "wouter";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { useSEO } from "@/hooks/useSEO";
+import { useSEO, breadcrumb } from "@/hooks/useSEO";
 import {
   getAllProjects,
   getSectors,
@@ -101,24 +101,33 @@ export default function Portfolio() {
   }, [activeSector, projects]);
 
   useSEO({
-    title: "Portfolio | Websites die wij hebben gebouwd — De Proces Designers",
+    title:
+      "Portfolio — Websites voor Dakdekkers, Boekhouders & Lokale Bedrijven | De Proces Designers",
     description:
-      "Een selectie van websites die wij hebben ontworpen en gebouwd voor lokale bedrijven — van dakdekkers tot juridisch en financieel dienstverleners.",
+      "Voorbeelden van websites die wij bouwden voor dakdekkers, boekhouders, juridisch en financieel dienstverleners. Conversiegerichte websites, mobiel-first, geoptimaliseerd voor SEO en leadcapture.",
     path: "/portfolio",
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      name: "Portfolio — De Proces Designers",
-      url: "https://www.deprocesdesigners.nl/portfolio",
-      description:
-        "Overzicht van websites gebouwd door De Proces Designers voor lokale bedrijven in meerdere sectoren.",
-      hasPart: projects.map((p) => ({
-        "@type": "CreativeWork",
-        name: p.client,
-        url: `https://www.deprocesdesigners.nl/portfolio/${p.slug}`,
-        about: p.url,
-      })),
-    },
+    imageAlt:
+      "Portfolio van De Proces Designers — websites voor dakdekkers en boekhouders",
+    schema: [
+      breadcrumb([
+        { name: "Home", path: "/" },
+        { name: "Portfolio", path: "/portfolio" },
+      ]),
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        name: "Portfolio — De Proces Designers",
+        url: "https://www.deprocesdesigners.nl/portfolio",
+        description:
+          "Overzicht van websites gebouwd door De Proces Designers voor lokale bedrijven in meerdere sectoren.",
+        hasPart: projects.map((p) => ({
+          "@type": "CreativeWork",
+          name: p.client,
+          url: `https://www.deprocesdesigners.nl/portfolio/${p.slug}`,
+          about: p.url,
+        })),
+      },
+    ],
   });
 
   return (

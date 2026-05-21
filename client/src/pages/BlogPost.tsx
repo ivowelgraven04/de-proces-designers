@@ -8,7 +8,7 @@ import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react";
 import { Streamdown } from "streamdown";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { useSEO } from "@/hooks/useSEO";
+import { useSEO, breadcrumb } from "@/hooks/useSEO";
 import {
   getPostBySlug,
   getRelatedPosts,
@@ -47,30 +47,52 @@ function PostView({ post }: { post: BlogPost }) {
     description: post.excerpt,
     path: `/blog/${post.slug}`,
     image: post.heroImage,
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      headline: post.title,
-      description: post.excerpt,
-      image: post.heroImage,
-      datePublished: post.date,
-      dateModified: post.date,
-      author: {
-        "@type": "Organization",
-        name: post.author,
-        url: "https://www.deprocesdesigners.nl",
+    imageAlt: post.heroImageAlt,
+    ogType: "article",
+    schema: [
+      breadcrumb([
+        { name: "Home", path: "/" },
+        { name: "Blog", path: "/blog" },
+        { name: post.title, path: `/blog/${post.slug}` },
+      ]),
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        headline: post.title,
+        name: post.title,
+        description: post.excerpt,
+        image: post.heroImage,
+        url: `https://www.deprocesdesigners.nl/blog/${post.slug}`,
+        datePublished: post.date,
+        dateModified: post.date,
+        inLanguage: "nl-NL",
+        wordCount:
+          typeof post.content === "string"
+            ? post.content.trim().split(/\s+/).length
+            : undefined,
+        articleSection: post.tags?.[0],
+        author: {
+          "@type": "Organization",
+          name: post.author,
+          url: "https://www.deprocesdesigners.nl",
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "De Proces Designers",
+          url: "https://www.deprocesdesigners.nl",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://www.deprocesdesigners.nl/favicon.svg",
+          },
+        },
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": `https://www.deprocesdesigners.nl/blog/${post.slug}`,
+        },
+        keywords: post.tags.join(", "),
+        about: post.tags.map((t) => ({ "@type": "Thing", name: t })),
       },
-      publisher: {
-        "@type": "Organization",
-        name: "De Proces Designers",
-        url: "https://www.deprocesdesigners.nl",
-      },
-      mainEntityOfPage: {
-        "@type": "WebPage",
-        "@id": `https://www.deprocesdesigners.nl/blog/${post.slug}`,
-      },
-      keywords: post.tags.join(", "),
-    },
+    ],
   });
 
   return (

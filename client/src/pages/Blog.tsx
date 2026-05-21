@@ -7,7 +7,7 @@ import { Link } from "wouter";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { useSEO } from "@/hooks/useSEO";
+import { useSEO, breadcrumb } from "@/hooks/useSEO";
 import { getAllPosts, formatDate } from "@/lib/blog";
 
 const fadeUp = {
@@ -20,30 +20,44 @@ export default function Blog() {
   const posts = getAllPosts();
 
   useSEO({
-    title: "Blog | Inzichten over leadgeneratie & automatisering — De Proces Designers",
+    title:
+      "Blog — Leadgeneratie, Webdesign & Marketing voor Dakdekkers en Boekhouders | De Proces Designers",
     description:
-      "Wekelijkse artikelen over leadgeneratie, funnels en marketing automatisering voor lokale ondernemers. Geen theorie, wel wat werkt in de praktijk.",
+      "Praktijkartikelen over leadgeneratie, webdesign en marketingautomatisering voor dakdekkers, boekhouders en lokale ondernemers. Geen theorie — wat in de praktijk werkt.",
     path: "/blog",
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "Blog",
-      name: "De Proces Designers Blog",
-      url: "https://www.deprocesdesigners.nl/blog",
-      description:
-        "Inzichten over leadgeneratie, funnels en marketing automatisering.",
-      publisher: {
-        "@type": "Organization",
-        name: "De Proces Designers",
-        url: "https://www.deprocesdesigners.nl",
+    imageAlt:
+      "Blog De Proces Designers — leadgeneratie en marketing voor dakdekkers en boekhouders",
+    schema: [
+      breadcrumb([
+        { name: "Home", path: "/" },
+        { name: "Blog", path: "/blog" },
+      ]),
+      {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        name: "De Proces Designers Blog",
+        url: "https://www.deprocesdesigners.nl/blog",
+        description:
+          "Praktijkartikelen over leadgeneratie, webdesign en marketingautomatisering voor dakdekkers, boekhouders en lokale ondernemers.",
+        inLanguage: "nl-NL",
+        publisher: {
+          "@type": "Organization",
+          name: "De Proces Designers",
+          url: "https://www.deprocesdesigners.nl",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://www.deprocesdesigners.nl/favicon.svg",
+          },
+        },
+        blogPost: posts.map((p) => ({
+          "@type": "BlogPosting",
+          headline: p.title,
+          url: `https://www.deprocesdesigners.nl/blog/${p.slug}`,
+          datePublished: p.date,
+          description: p.excerpt,
+        })),
       },
-      blogPost: posts.map((p) => ({
-        "@type": "BlogPosting",
-        headline: p.title,
-        url: `https://www.deprocesdesigners.nl/blog/${p.slug}`,
-        datePublished: p.date,
-        description: p.excerpt,
-      })),
-    },
+    ],
   });
 
   const [featured, ...rest] = posts;
