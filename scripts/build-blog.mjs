@@ -86,6 +86,8 @@ function readAllPosts() {
         heroImageAlt: data.heroImageAlt || data.title,
         heroImageCredit: data.heroImageCredit || "",
         tags: Array.isArray(data.tags) ? data.tags : [],
+        sector: data.sector || null,
+        postType: data.postType || null,
         readingTime: data.readingTime || estimateReadingTime(body),
         author: data.author || "De Proces Designers",
         content: body,
@@ -124,6 +126,7 @@ function buildSitemap(posts) {
   const staticPages = [
     { loc: "/", priority: "1.0", changefreq: "weekly" },
     { loc: "/diensten", priority: "0.9", changefreq: "monthly" },
+    { loc: "/letselschade", priority: "0.9", changefreq: "monthly" },
     { loc: "/over-ons", priority: "0.7", changefreq: "monthly" },
     { loc: "/werkwijze", priority: "0.8", changefreq: "monthly" },
     { loc: "/partners", priority: "0.7", changefreq: "monthly" },

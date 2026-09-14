@@ -91,9 +91,9 @@ const mainServices = [
 export default function Diensten() {
   useSEO({
     title:
-      "Marketing & Webdesign voor Dakdekkers en Boekhouders | Diensten — De Proces Designers",
+      "Marketing & Webdesign voor Dakdekkers, Letselschadekantoren en Boekhouders | Diensten — De Proces Designers",
     description:
-      "Leadgeneratie, websites en marketingautomatisering speciaal voor dakdekkers, boekhouders en financieel dienstverleners. Exclusieve leads via Meta, quizfunnels met 60–76% kwalificatie en volledige opvolging via CRM, e-mail en WhatsApp.",
+      "Leadgeneratie, websites en marketingautomatisering speciaal voor dakdekkers, letselschadekantoren en financieel dienstverleners. Exclusieve leads via Meta, quizfunnels met 60–76% kwalificatie en volledige opvolging via CRM, e-mail en WhatsApp.",
     path: "/diensten",
     imageAlt:
       "Diensten van De Proces Designers — leadgeneratie, webdesign en marketingautomatisering",
@@ -115,7 +115,7 @@ export default function Diensten() {
         audience: {
           "@type": "BusinessAudience",
           audienceType:
-            "Dakdekkers, boekhouders, financieel dienstverleners, lokale ondernemers",
+            "Dakdekkers, letselschadekantoren, boekhouders, financieel dienstverleners, lokale ondernemers",
         },
         hasOfferCatalog: {
           "@type": "OfferCatalog",
@@ -128,6 +128,15 @@ export default function Diensten() {
                 name: "Leadgeneratie voor dakdekkers",
                 description:
                   "Exclusieve dakdekker-leads via Meta-advertenties binnen jouw werkgebied.",
+              },
+            },
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Leadgeneratie voor letselschadekantoren",
+                description:
+                  "Gekwalificeerde, exclusieve cliënten-leads voor letselschade-advocaten en -bureaus — buiten de dure Google Ads-veiling om.",
               },
             },
             {

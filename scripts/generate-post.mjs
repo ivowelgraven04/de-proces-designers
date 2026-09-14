@@ -24,6 +24,9 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 const CONTENT_DIR = path.join(ROOT, "content", "blog");
+const QUEUE_FILE = path.join(CONTENT_DIR, "topic-queue.json");
+
+const SECTORS = ["dakdekkers", "letselschade", "financieel", "algemeen"];
 
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 const UNSPLASH_ACCESS_KEY = process.env.UNSPLASH_ACCESS_KEY;
@@ -123,36 +126,43 @@ lokale servicebedrijven.`,
   },
 };
 
-function pickTheme() {
-  if (BLOG_THEME_OVERRIDE && THEMES[BLOG_THEME_OVERRIDE]) {
-    return { key: BLOG_THEME_OVERRIDE, ...THEMES[BLOG_THEME_OVERRIDE] };
-  }
-  if (BLOG_THEME_OVERRIDE) {
-    console.warn(
-      `[blog-gen] Onbekend thema "${BLOG_THEME_OVERRIDE}" — kies willekeurig uit ${Object.keys(THEMES).join(", ")}`,
-    );
-  }
-  const keys = Object.keys(THEMES);
-  const key = keys[Math.floor(Math.random() * keys.length)];
-  return { key, ...THEMES[key] };
-}
-
 // ─── Topic pools per lengte/type ────────────────────────────────────────────
-// D2 uit het plan: mix korte tips (~500w) en diepgaande guides (~2000w)
+// Mix korte tips (~500w), diepgaande guides (~2000w), case studies, sector-insights en benchmarks.
 const POST_TYPES = [
   {
     type: "tip",
-    weight: 2, // vaker dan guides
+    weight: 3, // vaakst — laagste schrijfdrempel, direct toepasbaar
     wordCount: "500-700",
     description:
       "Korte, direct toepasbare tip. Eén specifiek probleem, één concrete oplossing. Geen uitgebreide intro — direct de waarde.",
   },
   {
     type: "guide",
-    weight: 1,
+    weight: 2,
     wordCount: "1600-2200",
     description:
       "Diepgaande guide over een onderwerp. Structuur: situatie-schets → waarom het misgaat → onze aanpak (stap voor stap) → concrete voorbeelden → hoe je begint. Gebruik H2 koppen om secties te scheiden.",
+  },
+  {
+    type: "case-study",
+    weight: 1,
+    wordCount: "1200-1600",
+    description:
+      "Geanonimiseerde of illustratieve case study. Structuur: situatie/uitgangspunt (cijfers, regio, sector, knelpunt) → aanpak (welke funnel, welke tools, welke keuzes) → resultaat (concrete metrics: CPL, conversie, omzet, terugverdientijd) → lessen die generaliseerbaar zijn. Vermeld nooit echte klantnamen — schrijf 'een dakdekker uit Noord-Holland' of 'een letselschadekantoor in de Randstad'. Gebruik H2 voor de fase-koppen en doe minimaal 3 concrete getallen in het resultaat.",
+  },
+  {
+    type: "sector-insight",
+    weight: 1,
+    wordCount: "800-1000",
+    description:
+      "Diepte-snede op één specifieke niche (dakdekkers, letselschade, financieel, of een andere lokale-services sector). Schrijf vanuit sector-specifieke pijnpunten: wat is uniek aan de marktdynamiek, waar lopen kantoren/bedrijven in deze sector standaard tegenaan, en hoe pak je dat aan. Vermijd algemene marketingadviezen — alles moet sector-specifiek zijn. Open met een herkenbare situatie uit die niche.",
+  },
+  {
+    type: "benchmark",
+    weight: 1,
+    wordCount: "900-1200",
+    description:
+      "Data-gedreven post met cijfers, benchmarks en vergelijkingen. Bijv. 'Wat kost een gekwalificeerde letselschade-lead in 2026?' of 'Conversieratio's per sector vergeleken'. Gebruik concrete getallen (mogen indicatief/ranges zijn), tabellen of bullet-lijsten met cijfers, en duid altijd context (welke regio, welk type campagne, welk kanaal). Sluit af met een interpretatie: wat betekenen deze cijfers voor jouw situatie.",
   },
 ];
 
@@ -178,21 +188,88 @@ function getExistingPosts() {
       const raw = fs.readFileSync(path.join(CONTENT_DIR, f), "utf-8");
       const titleMatch = raw.match(/^title:\s*["']?(.+?)["']?\s*$/m);
       const slugMatch = raw.match(/^slug:\s*["']?(.+?)["']?\s*$/m);
+      const dateMatch = raw.match(/^date:\s*["']?(.+?)["']?\s*$/m);
+      const sectorMatch = raw.match(/^sector:\s*["']?(.+?)["']?\s*$/m);
+      const postTypeMatch = raw.match(/^postType:\s*["']?(.+?)["']?\s*$/m);
+      const tagsMatch = raw.match(/^tags:\s*\[(.+?)\]\s*$/m);
+      const firstTag = tagsMatch
+        ? tagsMatch[1].split(",")[0].trim().replace(/^["']|["']$/g, "")
+        : null;
       return {
         title: titleMatch?.[1] ?? f,
         slug: slugMatch?.[1] ?? f.replace(/\.md$/, ""),
+        date: dateMatch?.[1] ?? "",
+        sector: sectorMatch?.[1] ?? null,
+        postType: postTypeMatch?.[1] ?? null,
+        firstTag,
       };
     });
 }
 
-function pickWeightedType() {
-  const total = POST_TYPES.reduce((a, b) => a + b.weight, 0);
+function getRecentPosts(limit = 5) {
+  return getExistingPosts()
+    .sort((a, b) => (a.date < b.date ? 1 : -1))
+    .slice(0, limit);
+}
+
+function pickWeightedType(avoidTypes = new Set()) {
+  // Fair distribution: tijdelijk gewicht 0 voor recent gebruikte types,
+  // tenzij dat ALLE types zou uitsluiten.
+  let pool = POST_TYPES.filter((t) => !avoidTypes.has(t.type));
+  if (pool.length === 0) pool = POST_TYPES;
+
+  const total = pool.reduce((a, b) => a + b.weight, 0);
   let r = Math.random() * total;
-  for (const t of POST_TYPES) {
+  for (const t of pool) {
     r -= t.weight;
     if (r <= 0) return t;
   }
-  return POST_TYPES[0];
+  return pool[0];
+}
+
+function pickThemeFairly(avoidThemeKeys = new Set()) {
+  const keys = Object.keys(THEMES);
+  let pool = keys.filter((k) => !avoidThemeKeys.has(k));
+  if (pool.length === 0) pool = keys;
+  const key = pool[Math.floor(Math.random() * pool.length)];
+  return { key, ...THEMES[key] };
+}
+
+function pickSectorFairly(avoidSectors = new Set()) {
+  let pool = SECTORS.filter((s) => !avoidSectors.has(s));
+  if (pool.length === 0) pool = SECTORS;
+  return pool[Math.floor(Math.random() * pool.length)];
+}
+
+// ─── Topic-queue ────────────────────────────────────────────────────────────
+function readQueue() {
+  if (!fs.existsSync(QUEUE_FILE)) return { pending: [], completed: [] };
+  try {
+    const raw = JSON.parse(fs.readFileSync(QUEUE_FILE, "utf-8"));
+    return {
+      pending: Array.isArray(raw.pending) ? raw.pending : [],
+      completed: Array.isArray(raw.completed) ? raw.completed : [],
+    };
+  } catch (err) {
+    console.warn(`[blog-gen] Kon topic-queue.json niet parsen — gebruik leeg: ${err.message}`);
+    return { pending: [], completed: [] };
+  }
+}
+
+function writeQueue(state) {
+  fs.writeFileSync(QUEUE_FILE, JSON.stringify(state, null, 2) + "\n", "utf-8");
+}
+
+function resolveThemeKey(value) {
+  if (!value) return null;
+  const key = String(value).toLowerCase();
+  return THEMES[key] ? { key, ...THEMES[key] } : null;
+}
+
+function resolvePostTypeName(value) {
+  if (!value) return null;
+  const name = String(value).toLowerCase();
+  return POST_TYPES.find((t) => t.type === name) ?? null;
 }
 
 // ─── Claude API call ────────────────────────────────────────────────────────
@@ -222,12 +299,16 @@ async function callClaude(systemPrompt, userPrompt, { maxTokens = 6000 } = {}) {
 }
 
 // ─── Topic genereren ────────────────────────────────────────────────────────
-async function generateTopic(postType, theme) {
+async function generateTopic(postType, theme, { sectorBias = null } = {}) {
   const existing = getExistingPosts();
   const existingList =
     existing.length > 0
       ? existing.map((p) => `- ${p.title}`).join("\n")
       : "(nog geen posts)";
+
+  const sectorInstruction = sectorBias
+    ? `\n\nFOCUS-SECTOR voor deze post: ${sectorBias}. Het onderwerp moet expliciet relevant zijn voor deze sector en sector-specifieke voorbeelden bevatten.`
+    : "";
 
   const systemPrompt = `${BRAND_CONTEXT}
 
@@ -235,14 +316,15 @@ THEMA VOOR DEZE POST: ${theme.name}
 FOCUS-GEBIED (blijf hier binnen):
 ${theme.focus}
 
-Je taak: verzin een concreet, waardevol onderwerp dat STRIKT binnen dit thema
-valt. Het onderwerp moet voor de doelgroep direct herkenbaar zijn ("oh ja, dát
-is bij mij ook een probleem"). NIET: algemene marketingadviezen of onderwerpen
-die buiten dit thema vallen.`;
+POST-TYPE: ${postType.type} (${postType.wordCount} woorden)
+${postType.description}${sectorInstruction}
 
-  const userPrompt = `Verzin één specifiek blog-onderwerp voor een ${
-    postType.type === "tip" ? "korte tip (500-700 woorden)" : "diepgaande guide (1600-2200 woorden)"
-  }.
+Je taak: verzin een concreet, waardevol onderwerp dat STRIKT binnen dit thema
+valt en past bij het opgegeven post-type. Het onderwerp moet voor de doelgroep
+direct herkenbaar zijn ("oh ja, dát is bij mij ook een probleem"). NIET:
+algemene marketingadviezen of onderwerpen die buiten dit thema vallen.`;
+
+  const userPrompt = `Verzin één specifiek blog-onderwerp voor een ${postType.type} (${postType.wordCount} woorden).
 
 Het thema is: **${theme.name}**.
 
@@ -257,6 +339,7 @@ Geef terug als **strict JSON** (geen markdown, geen uitleg eromheen):
   "title": "De titel van het artikel (max 70 tekens, pakkend, geen clickbait)",
   "angle": "Eén zin die de invalshoek samenvat — wat maakt dit artikel waardevol?",
   "keyPoints": ["3-5 kernpunten die in het artikel moeten komen"],
+  "sector": "Een van: dakdekkers | letselschade | financieel | algemeen. Kies de sector waarvoor dit artikel het meest relevant is. Gebruik 'algemeen' als het breed van toepassing is.",
   "unsplashQuery": "2-3 Engelse zoekwoorden voor een passende header foto (bv. 'business meeting', 'team strategy', 'construction roof'). Vermijd cliché stockfoto's — kies iets dat bij de inhoud past."
 }`;
 
@@ -278,17 +361,23 @@ Geef terug als **strict JSON** (geen markdown, geen uitleg eromheen):
 
 // ─── Artikel genereren ──────────────────────────────────────────────────────
 async function generateArticle(topic, postType) {
+  const sectorHint = topic.sector && topic.sector !== "algemeen"
+    ? `Schrijf dit artikel expliciet gericht op de sector "${topic.sector}". Gebruik voorbeelden, terminologie en marktdynamiek die voor deze sector kloppen.`
+    : "Gebruik concrete voorbeelden uit onze niches (dakdekkers, letselschade, financieel advies) waar relevant.";
+
   const systemPrompt = `${BRAND_CONTEXT}
+
+POST-TYPE: ${postType.type} (${postType.wordCount} woorden)
+${postType.description}
 
 Schrijfregels:
 - Gebruik Markdown (## voor H2, ### voor H3, **bold**, lijsten met -, nummered met 1.)
 - GEEN H1 (# titel) — de titel wordt apart bovenaan geplaatst
 - Begin direct met inhoud (geen "In dit artikel bespreken we..." of samenvatting vooraf)
-- Gebruik concrete voorbeelden uit de niches (dakdekkers, letselschade, financieel advies)
+- ${sectorHint}
 - Schrijf natuurlijk Nederlands — geen Engels jargon tenzij het gangbaar is
-- Bij een ${postType.type === "tip" ? "tip" : "guide"}: houd ${postType.wordCount} woorden aan
-- Sluit af met een regel die doorverwijst naar een gratis strategiegesprek — subtiel, niet pushy
-- ${postType.description}`;
+- Houd ${postType.wordCount} woorden aan
+- Sluit af met een regel die doorverwijst naar een gratis strategiegesprek — subtiel, niet pushy`;
 
   const userPrompt = `Schrijf het volledige artikel.
 
@@ -300,9 +389,11 @@ ${topic.keyPoints.map((p) => `- ${p}`).join("\n")}
 Geef ALLEEN de markdown body terug (zonder frontmatter, zonder H1 titel, zonder
 uitleg over wat je gaat doen — direct de inhoud).`;
 
-  const body = await callClaude(systemPrompt, userPrompt, {
-    maxTokens: postType.type === "tip" ? 3000 : 7000,
-  });
+  // Schaal max tokens met woord-target — korte tips hebben weinig nodig, langere posts meer.
+  const upperBound = parseInt(postType.wordCount.split("-")[1] || "1500", 10);
+  const maxTokens = Math.max(3000, Math.min(8000, Math.round(upperBound * 3.5)));
+
+  const body = await callClaude(systemPrompt, userPrompt, { maxTokens });
 
   return body.trim();
 }
@@ -372,15 +463,89 @@ async function fetchUnsplashImage(query) {
 async function main() {
   console.log("[blog-gen] Start generator");
 
-  const theme = pickTheme();
-  console.log(`[blog-gen] Thema: ${theme.name} (${theme.key})`);
+  // 1. Probeer eerst de topic-queue
+  const queueState = readQueue();
+  const queueItem = queueState.pending[0] ?? null;
 
-  const postType = pickWeightedType();
-  console.log(`[blog-gen] Type gekozen: ${postType.type} (${postType.wordCount} woorden)`);
+  // 2. Bepaal theme + postType + topic
+  let theme;
+  let postType;
+  let topic;
+  let usedQueue = false;
 
-  console.log("[blog-gen] Topic genereren…");
-  const topic = await generateTopic(postType, theme);
+  if (queueItem) {
+    usedQueue = true;
+    console.log(`[blog-gen] Onderwerp uit topic-queue: ${queueItem.title}`);
+
+    theme = resolveThemeKey(queueItem.theme);
+    postType = resolvePostTypeName(queueItem.postType);
+
+    // Validatie: titel + keyPoints zijn nodig. Theme/postType vallen terug op random.
+    if (!queueItem.title || !Array.isArray(queueItem.keyPoints) || queueItem.keyPoints.length === 0) {
+      throw new Error(
+        `Topic-queue item mist 'title' of 'keyPoints'. Item: ${JSON.stringify(queueItem)}`,
+      );
+    }
+    if (!theme) {
+      console.warn(`[blog-gen] Onbekend thema "${queueItem.theme}" in queue — kies willekeurig.`);
+      theme = pickThemeFairly();
+    }
+    if (!postType) {
+      console.warn(`[blog-gen] Onbekend postType "${queueItem.postType}" in queue — kies gewogen.`);
+      postType = pickWeightedType();
+    }
+
+    topic = {
+      title: queueItem.title,
+      angle: queueItem.angle ?? queueItem.title,
+      keyPoints: queueItem.keyPoints,
+      sector: queueItem.sector && SECTORS.includes(queueItem.sector) ? queueItem.sector : "algemeen",
+      unsplashQuery: queueItem.unsplashQuery ?? theme.tagHint,
+    };
+  } else {
+    // 3. Fair distribution op basis van laatste 5 posts
+    const recent = getRecentPosts(5);
+    const recentThemes = new Set(
+      recent
+        .map((p) => Object.entries(THEMES).find(([, v]) => v.tagHint === p.firstTag)?.[0])
+        .filter(Boolean)
+        .slice(0, 2), // vermijd alleen de laatste 2 thema's
+    );
+    const recentTypes = new Set(
+      recent.map((p) => p.postType).filter(Boolean).slice(0, 2),
+    );
+    const recentSectors = new Set(
+      recent.map((p) => p.sector).filter(Boolean).slice(0, 2),
+    );
+
+    // Theme: BLOG_THEME override neemt voorrang, anders fair pick
+    if (BLOG_THEME_OVERRIDE && THEMES[BLOG_THEME_OVERRIDE]) {
+      theme = { key: BLOG_THEME_OVERRIDE, ...THEMES[BLOG_THEME_OVERRIDE] };
+    } else {
+      if (BLOG_THEME_OVERRIDE) {
+        console.warn(
+          `[blog-gen] Onbekend thema "${BLOG_THEME_OVERRIDE}" — kies fair uit ${Object.keys(THEMES).join(", ")}`,
+        );
+      }
+      theme = pickThemeFairly(recentThemes);
+    }
+
+    postType = pickWeightedType(recentTypes);
+    const sectorBias = pickSectorFairly(recentSectors);
+
+    console.log(`[blog-gen] Thema: ${theme.name} (${theme.key})`);
+    console.log(`[blog-gen] Type: ${postType.type} (${postType.wordCount} woorden)`);
+    console.log(`[blog-gen] Sector-bias: ${sectorBias}`);
+
+    console.log("[blog-gen] Topic genereren…");
+    topic = await generateTopic(postType, theme, { sectorBias });
+    if (!topic.sector || !SECTORS.includes(topic.sector)) {
+      topic.sector = sectorBias;
+    }
+  }
+
   console.log(`[blog-gen] Topic: ${topic.title}`);
+  console.log(`[blog-gen] Sector: ${topic.sector}`);
 
   console.log("[blog-gen] Artikel schrijven…");
   const body = await generateArticle(topic, postType);
@@ -416,7 +581,7 @@ async function main() {
   const readingTime = Math.max(1, Math.round(wordCount / 220));
 
   // Tag-bepaling: eerste tag komt altijd uit thema, extra tags uit contentmatching
-  const contentTags = determineTagsFromContent(topic.title + " " + body);
+  const contentTags = determineTagsFromContent(topic.title + " " + body, topic.sector);
   const tags = [theme.tagHint, ...contentTags.filter((t) => t !== theme.tagHint)].slice(0, 3);
 
   const frontmatter = `---
@@ -428,6 +593,8 @@ heroImage: "${image.url}"
 heroImageAlt: "${escapeYaml(image.alt)}"
 heroImageCredit: "${escapeYaml(image.credit)}"
 tags: [${tags.map((t) => `"${t}"`).join(", ")}]
+sector: "${topic.sector}"
+postType: "${postType.type}"
 readingTime: ${readingTime}
 author: "De Proces Designers"
 ---
@@ -439,26 +606,44 @@ ${body}
   fs.mkdirSync(CONTENT_DIR, { recursive: true });
   fs.writeFileSync(filepath, frontmatter, "utf-8");
 
+  // Topic-queue update: schuif gebruikte item naar completed
+  if (usedQueue) {
+    const [usedItem, ...rest] = queueState.pending;
+    queueState.pending = rest;
+    queueState.completed = [
+      { ...usedItem, publishedAt: postDate, slug },
+      ...queueState.completed,
+    ];
+    writeQueue(queueState);
+    console.log(`[blog-gen] ✓ Topic-queue bijgewerkt — ${queueState.pending.length} pending over`);
+  }
+
   console.log(`[blog-gen] ✓ Post geschreven: ${path.relative(ROOT, filepath)}`);
   console.log(`[blog-gen] ✓ Titel:   ${topic.title}`);
   console.log(`[blog-gen] ✓ Thema:   ${theme.name}`);
+  console.log(`[blog-gen] ✓ Sector:  ${topic.sector}`);
   console.log(`[blog-gen] ✓ Datum:   ${postDate}`);
   console.log(`[blog-gen] ✓ Type:    ${postType.type} (${wordCount} woorden, ${readingTime} min)`);
   console.log(`[blog-gen] ✓ Tags:    ${tags.join(", ")}`);
+  console.log(`[blog-gen] ✓ Bron:    ${usedQueue ? "topic-queue" : "AI-fallback"}`);
 }
 
 function escapeYaml(s) {
   return String(s).replace(/\\/g, "\\\\").replace(/"/g, '\\"');
 }
 
-function determineTagsFromContent(text) {
+function determineTagsFromContent(text, sectorHint = null) {
   const lower = text.toLowerCase();
   const tags = [];
   if (/\b(lead|meta|facebook|instagram|ads?)\b/.test(lower)) tags.push("Leadgeneratie");
   if (/\b(funnel|convers|landings|quiz)\b/.test(lower)) tags.push("Funnels");
   if (/\b(automati|crm|opvolg|nurtur)\b/.test(lower)) tags.push("Automatisering");
-  if (/\b(dakdekker|dakwerk|letselschade|financieel adviseur)\b/.test(lower))
+  if (
+    sectorHint && sectorHint !== "algemeen" ||
+    /\b(dakdekker|dakwerk|zinkwerk|letselschade|cliënt|aansprakelijk|boekhouder|accountant|financieel adviseur)\b/.test(lower)
+  ) {
     tags.push("Niche");
+  }
   if (tags.length === 0) tags.push("Marketing");
   return tags.slice(0, 3);
 }

@@ -8,16 +8,48 @@ Dit project heeft een volledig geautomatiseerde blog die **3x per week** (ma/wo/
 Cron (GH Actions, ma/wo/vr 08:00)
   ↓
 scripts/generate-post.mjs
-  ├─ Claude API → verzint topic + schrijft artikel (~500w tip of ~2000w guide)
+  ├─ Topic-queue check (content/blog/topic-queue.json)
+  │   ├─ pending niet leeg → pak eerste, schuif daarna naar completed
+  │   └─ pending leeg → AI-keuze met fair distribution (thema/type/sector)
+  ├─ Claude API → schrijft artikel (tip/guide/case-study/sector-insight/benchmark)
   ├─ Unsplash API → haalt passende header-foto op
   └─ Schrijft markdown naar /content/blog/<slug>.md
   ↓
-git commit + push
+git commit + push (inclusief queue-update)
   ↓
 Vercel deploy (automatisch)
   ↓
 Artikel live op /blog/<slug>
 ```
+
+## Post-types
+
+| Type | Lengte | Wanneer gebruiken |
+|---|---|---|
+| `tip` | 500–700 woorden | Korte, direct toepasbare tip. Eén probleem, één oplossing. Hoogste publicatiefrequentie. |
+| `guide` | 1600–2200 woorden | Diepgaande guide: situatie → probleem → aanpak → voorbeelden → hoe te beginnen. |
+| `case-study` | 1200–1600 woorden | Geanonimiseerde casus: uitgangssituatie → aanpak → concrete resultaten → lessen. |
+| `sector-insight` | 800–1000 woorden | Diepte-snede op één niche (letselschade, dakdekkers, financieel). Sector-specifieke pijn + aanpak. |
+| `benchmark` | 900–1200 woorden | Data-gedreven post met cijfers, vergelijkingen, ranges. Sluit af met interpretatie. |
+
+Sectoren in frontmatter: `dakdekkers`, `letselschade`, `financieel`, `algemeen`.
+
+## Topic-queue (vooraf onderwerpen plannen)
+
+Bestand: `content/blog/topic-queue.json`. Voeg items toe aan `pending` om de eerstvolgende cron-runs een specifiek onderwerp te geven. Items worden FIFO afgehandeld en automatisch naar `completed` verplaatst met `publishedAt` + `slug`.
+
+**Minimaal vereiste velden per pending-item:**
+- `title` — exacte artikel-titel (max 70 tekens)
+- `keyPoints` — array met 3–5 kernpunten die het artikel moet bevatten
+
+**Optioneel (vallen anders terug op gewogen random):**
+- `theme` — `leadgen` | `webdesign` | `automations`
+- `postType` — `tip` | `guide` | `case-study` | `sector-insight` | `benchmark`
+- `sector` — `dakdekkers` | `letselschade` | `financieel` | `algemeen`
+- `angle` — één-zin samenvatting van de invalshoek
+- `unsplashQuery` — Engelse zoekwoorden voor de header foto
+
+**Wanneer `pending` leeg is**, kiest het script zelf — met fair distribution: het kijkt naar de laatste 5 posts en vermijdt de meest recent gebruikte thema's, post-types en sectoren. Zo voorkom je dat er 3× achter elkaar dezelfde combinatie verschijnt.
 
 ## Eenmalige setup (±5 minuten)
 
@@ -108,10 +140,12 @@ Om helemaal te stoppen: verwijder `.github/workflows/blog-cron.yml`.
 ## Structuur
 
 ```
-content/blog/            ← Markdown bron (AI + handgeschreven posts)
+content/blog/
+  *.md                   ← Markdown bron (AI + handgeschreven posts)
+  topic-queue.json       ← Geplande onderwerpen + completed-archief
 scripts/
   build-blog.mjs         ← Bouwt blog-data.json + sitemap + RSS bij elke build
-  generate-post.mjs      ← De AI generator (Claude + Unsplash)
+  generate-post.mjs      ← De AI generator (Claude + Unsplash) met queue-flow
 client/src/
   content/blog-data.json ← Auto-gegenereerd (gitignored)
   lib/blog.ts            ← Types + helpers

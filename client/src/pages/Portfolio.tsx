@@ -102,12 +102,12 @@ export default function Portfolio() {
 
   useSEO({
     title:
-      "Portfolio — Websites voor Dakdekkers, Boekhouders & Lokale Bedrijven | De Proces Designers",
+      "Portfolio — Websites voor Dakdekkers, Letselschadekantoren & Lokale Bedrijven | De Proces Designers",
     description:
-      "Voorbeelden van websites die wij bouwden voor dakdekkers, boekhouders, juridisch en financieel dienstverleners. Conversiegerichte websites, mobiel-first, geoptimaliseerd voor SEO en leadcapture.",
+      "Voorbeelden van websites die wij bouwden voor dakdekkers, letselschadekantoren, boekhouders, juridisch en financieel dienstverleners. Conversiegerichte websites, mobiel-first, geoptimaliseerd voor SEO en leadcapture.",
     path: "/portfolio",
     imageAlt:
-      "Portfolio van De Proces Designers — websites voor dakdekkers en boekhouders",
+      "Portfolio van De Proces Designers — websites voor dakdekkers, letselschadekantoren en boekhouders",
     schema: [
       breadcrumb([
         { name: "Home", path: "/" },

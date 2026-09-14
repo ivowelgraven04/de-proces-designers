@@ -2,6 +2,7 @@
   "_comment": "Portfolio-projecten. 'url' = werkelijke link (vercel of live). 'displayUrl' = wat in de browser-mockup getoond wordt (schoon, .nl domein). Metrics/challenge/approach/result zijn placeholder-teksten; per klant aan te passen.",
   "sectors": [
     { "key": "dakdekkers", "label": "Dakdekkers" },
+    { "key": "letselschade", "label": "Letselschade" },
     { "key": "juridisch", "label": "Juridisch" },
     { "key": "financieel", "label": "Financieel dienstverleners" },
     { "key": "overig", "label": "Overig" }

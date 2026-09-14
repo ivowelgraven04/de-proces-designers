@@ -45,12 +45,12 @@ function AnimatedSection({ children, className = "" }: { children: React.ReactNo
 
 export default function Home() {
   useSEO({
-    title: "Leadgeneratie & Webdesign voor Dakdekkers en Boekhouders | De Proces Designers",
+    title: "Leadgeneratie & Webdesign voor Dakdekkers, Letselschadekantoren en Boekhouders | De Proces Designers",
     description:
-      "Marketingbureau voor dakdekkers, boekhouders en financieel dienstverleners. Exclusieve leads via Meta, conversiegerichte websites en marketingautomatisering. Gevestigd in Ede, actief in heel Nederland.",
+      "Marketingbureau voor dakdekkers, letselschadekantoren en financieel dienstverleners. Exclusieve leads via Meta, conversiegerichte websites en marketingautomatisering. Gevestigd in Ede, actief in heel Nederland.",
     path: "/",
     imageAlt:
-      "De Proces Designers — Marketingbureau voor dakdekkers en boekhouders",
+      "De Proces Designers — Marketingbureau voor dakdekkers, letselschadekantoren en boekhouders",
     schema: breadcrumb([{ name: "Home", path: "/" }]),
   });
 
