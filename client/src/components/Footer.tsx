@@ -40,6 +40,7 @@ export default function Footer() {
                 { href: "/werkwijze", label: "Werkwijze" },
                 { href: "/portfolio", label: "Portfolio" },
                 { href: "/blog", label: "Blog" },
+                { href: "/linkpartners", label: "Linkpartners" },
                 { href: "/contact", label: "Contact" },
               ].map((link) => (
                 <li key={link.href}>

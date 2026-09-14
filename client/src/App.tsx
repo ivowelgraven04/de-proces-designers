@@ -18,6 +18,8 @@ import PortfolioCase from "./pages/PortfolioCase";
 import Letselschade from "./pages/Letselschade";
 import Privacybeleid from "./pages/Privacybeleid";
 import AlgemeneVoorwaarden from "./pages/AlgemeneVoorwaarden";
+import Linkpartners from "./pages/Linkpartners";
+import LinkpartnerDetail from "./pages/LinkpartnerDetail";
 import ScrollProgress from "./components/ScrollProgress";
 import { SmoothScroll, CustomCursor, PageTransition } from "./components/premium";
 
@@ -35,6 +37,8 @@ function Router() {
         <Route path="/blog/:slug" component={BlogPost} />
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/portfolio/:slug" component={PortfolioCase} />
+        <Route path="/linkpartners" component={Linkpartners} />
+        <Route path="/linkpartners/:slug" component={LinkpartnerDetail} />
         <Route path="/letselschade" component={Letselschade} />
         <Route path="/privacybeleid" component={Privacybeleid} />
         <Route path="/algemene-voorwaarden" component={AlgemeneVoorwaarden} />
