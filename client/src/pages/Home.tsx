@@ -45,7 +45,7 @@ function AnimatedSection({ children, className = "" }: { children: React.ReactNo
 
 export default function Home() {
   useSEO({
-    title: "Leadgeneratie & Webdesign voor Dakdekkers, Letselschadekantoren en Boekhouders | De Proces Designers",
+    title: "Leadgeneratie & Webdesign voor Dakdekkers & Boekhouders | De Proces Designers",
     description:
       "Marketingbureau voor dakdekkers, letselschadekantoren en financieel dienstverleners. Exclusieve leads via Meta, conversiegerichte websites en marketingautomatisering. Gevestigd in Ede, actief in heel Nederland.",
     path: "/",

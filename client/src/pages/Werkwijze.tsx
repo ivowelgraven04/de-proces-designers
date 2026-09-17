@@ -118,7 +118,7 @@ const faqs = [
 export default function Werkwijze() {
   useSEO({
     title:
-      "Werkwijze — In 4 weken een leadgeneratiesysteem voor dakdekkers & boekhouders | De Proces Designers",
+      "Onze Werkwijze — Leadgeneratie live in 4 weken | De Proces Designers",
     description:
       "In 4 weken van onboarding naar actieve leadcampagnes. Stap voor stap hoe wij voor dakdekkers en boekhouders het leadgeneratiesysteem bouwen, lanceren en opschalen.",
     path: "/werkwijze",

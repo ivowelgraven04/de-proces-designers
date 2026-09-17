@@ -50,9 +50,45 @@
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/blog</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/linkpartners</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/linkpartners/wonera</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/linkpartners/wonera-spoed-centrale</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/linkpartners/spoedcentrale</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/linkpartners/dakdekkersloket</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/linkpartners/spoed-bij-lekkage</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/portfolio/beuker-bouw-en-installatie</loc>

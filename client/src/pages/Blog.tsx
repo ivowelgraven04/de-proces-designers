@@ -21,7 +21,7 @@ export default function Blog() {
 
   useSEO({
     title:
-      "Blog — Leadgeneratie, Webdesign & Marketing voor Dakdekkers en Boekhouders | De Proces Designers",
+      "Blog — Marketing & Leadgeneratie voor Lokale Ondernemers | De Proces Designers",
     description:
       "Praktijkartikelen over leadgeneratie, webdesign en marketingautomatisering voor dakdekkers, boekhouders en lokale ondernemers. Geen theorie — wat in de praktijk werkt.",
     path: "/blog",
