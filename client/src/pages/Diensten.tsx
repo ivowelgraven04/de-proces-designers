@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import {
   TrendingUp, Target, Zap, ArrowRight,
-  CheckCircle2, Video, HelpCircle, Users, Bell, CalendarCheck,
+  CheckCircle2, Video, HelpCircle, Users, Bell, CalendarCheck, Monitor,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -85,6 +85,23 @@ const mainServices = [
     stat: "40u",
     statLabel: "Gemiddelde tijdsbesparing per maand op opvolging",
     color: "#47C8F5",
+  },
+  {
+    icon: <Monitor size={32} />,
+    title: "Webdesign",
+    subheader: "Website laten maken die klanten oplevert",
+    tagline: "Dienst",
+    desc: "Wij bouwen conversiegerichte websites voor lokale ondernemers die niet alleen mooi zijn, maar gevonden worden en bezoekers omzetten naar klanten. Mobielvriendelijk, snel en klaar in 3–4 weken.",
+    features: [
+      { icon: <Monitor size={16} />, text: "Mobielvriendelijk design — 70%+ bezoekers via telefoon" },
+      { icon: <CheckCircle2 size={16} />, text: "SEO-fundament: H1-structuur, meta-tags en schema markup" },
+      { icon: <Zap size={16} />, text: "Laadtijd onder 2 seconden op alle apparaten" },
+      { icon: <Target size={16} />, text: "Conversiegerichte aanvraagflow per branche" },
+      { icon: <TrendingUp size={16} />, text: "Van intake tot live in 3–4 weken" },
+    ],
+    stat: "3–4w",
+    statLabel: "Van intake tot live website",
+    color: "#2D9E2D",
   },
 ];
 

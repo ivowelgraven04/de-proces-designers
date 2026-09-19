@@ -117,7 +117,7 @@ export default function Home() {
               <p className="text-base mt-2 font-medium" style={{ fontFamily: "Inter, sans-serif", minHeight: "1.8em" }}>
                 <span style={{ color: "#9ca3af" }}>Specialiteit: </span>
                 <Typewriter
-                  words={["Leadgeneratie op autopiloot", "Funnels die converteren", "Marketing automatisering", "Data-gedreven groeisystemen"]}
+                  words={["Leadgeneratie op autopiloot", "Websites die converteren", "Funnels die converteren", "Marketing automatisering", "Data-gedreven groeisystemen"]}
                   className="dpd-gradient-text font-semibold"
                 />
               </p>

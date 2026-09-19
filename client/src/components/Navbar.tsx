@@ -12,6 +12,7 @@ const LOGO_URL = "/favicon.png";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/diensten", label: "Diensten" },
+  { href: "/webdesign", label: "Webdesign" },
   { href: "/over-ons", label: "Over Ons" },
   { href: "/partners", label: "Partners" },
   { href: "/portfolio", label: "Portfolio" },
