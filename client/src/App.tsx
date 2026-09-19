@@ -22,6 +22,11 @@ import Linkpartners from "./pages/Linkpartners";
 import LinkpartnerDetail from "./pages/LinkpartnerDetail";
 import Webdesign from "./pages/Webdesign";
 import WebdesignStad from "./pages/WebdesignStad";
+import SEO from "./pages/SEO";
+import SEOLokaal from "./pages/SEOLokaal";
+import BeterVindbaarGoogle from "./pages/BeterVindbaarGoogle";
+import HoeScoorIkInChatGPT from "./pages/HoeScoorIkInChatGPT";
+import HoeScoorIkInAI from "./pages/HoeScoorIkInAI";
 import ScrollProgress from "./components/ScrollProgress";
 import { SmoothScroll, CustomCursor, PageTransition } from "./components/premium";
 
@@ -41,6 +46,11 @@ function Router() {
         <Route path="/portfolio/:slug" component={PortfolioCase} />
         <Route path="/webdesign" component={Webdesign} />
         <Route path="/webdesign-:stad" component={WebdesignStad} />
+        <Route path="/seo" component={SEO} />
+        <Route path="/seo/lokale-seo" component={SEOLokaal} />
+        <Route path="/beter-vindbaar-in-google" component={BeterVindbaarGoogle} />
+        <Route path="/hoe-scoor-ik-in-chatgpt" component={HoeScoorIkInChatGPT} />
+        <Route path="/hoe-scoor-ik-in-ai" component={HoeScoorIkInAI} />
         <Route path="/linkpartners" component={Linkpartners} />
         <Route path="/linkpartners/:slug" component={LinkpartnerDetail} />
         <Route path="/letselschade" component={Letselschade} />

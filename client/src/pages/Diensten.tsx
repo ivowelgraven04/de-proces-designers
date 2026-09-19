@@ -7,6 +7,7 @@ import { Link } from "wouter";
 import {
   TrendingUp, Target, Zap, ArrowRight,
   CheckCircle2, Video, HelpCircle, Users, Bell, CalendarCheck, Monitor,
+  BarChart2, MapPin, Search, Star,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -102,6 +103,23 @@ const mainServices = [
     stat: "3–4w",
     statLabel: "Van intake tot live website",
     color: "#2D9E2D",
+  },
+  {
+    icon: <BarChart2 size={32} />,
+    title: "SEO",
+    subheader: "Gevonden worden in Google én AI-zoekmachines",
+    tagline: "Nieuwe dienst",
+    desc: "Wij optimaliseren jouw website voor Google, Google Maps én AI-platformen zoals ChatGPT en Perplexity. Van technische SEO tot content-strategie — resultaat in 3-6 maanden.",
+    features: [
+      { icon: <MapPin size={16} />, text: "Lokale SEO: Google Maps & stadspecifieke landingspagina's" },
+      { icon: <Search size={16} />, text: "AI-zoekmachines: ChatGPT, Perplexity, Google AI Overviews" },
+      { icon: <CheckCircle2 size={16} />, text: "Technische SEO: laadtijd, schema markup, crawlbaarheid" },
+      { icon: <TrendingUp size={16} />, text: "Content-strategie: zoekwoorden, FAQ-schema, featured snippets" },
+      { icon: <Star size={16} />, text: "Rapportage: maandelijkse SEO-updates met concrete acties" },
+    ],
+    stat: "3-6m",
+    statLabel: "Gemiddeld tot eerste stabiele rankings",
+    color: "#FF6B35",
   },
 ];
 
