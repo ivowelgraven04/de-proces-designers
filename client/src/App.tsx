@@ -21,6 +21,7 @@ import AlgemeneVoorwaarden from "./pages/AlgemeneVoorwaarden";
 import Linkpartners from "./pages/Linkpartners";
 import LinkpartnerDetail from "./pages/LinkpartnerDetail";
 import Webdesign from "./pages/Webdesign";
+import WebdesignStad from "./pages/WebdesignStad";
 import ScrollProgress from "./components/ScrollProgress";
 import { SmoothScroll, CustomCursor, PageTransition } from "./components/premium";
 
@@ -39,6 +40,7 @@ function Router() {
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/portfolio/:slug" component={PortfolioCase} />
         <Route path="/webdesign" component={Webdesign} />
+        <Route path="/webdesign-:stad" component={WebdesignStad} />
         <Route path="/linkpartners" component={Linkpartners} />
         <Route path="/linkpartners/:slug" component={LinkpartnerDetail} />
         <Route path="/letselschade" component={Letselschade} />
