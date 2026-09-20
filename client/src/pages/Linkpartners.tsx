@@ -42,7 +42,7 @@ export const LINKPARTNERS = [
   {
     slug: "dakdekkersloket",
     naam: "Dakdekkersloket",
-    url: "https://www.dakdekkersloket.nl",
+    url: "https://www.dakdekkerloket.nl",
     tagline: "Specialist in dakdekkers en dakreparaties",
     intro:
       "Dakdekkersloket.nl koppelt woningeigenaren en vastgoedbeheerders aan erkende dakdekkers voor inspectie, reparatie en volledige dakrenovatie. Snel, vakkundig en met heldere prijsafspraken.",
