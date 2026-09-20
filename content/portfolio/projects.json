@@ -243,8 +243,8 @@
     {
       "slug": "wonera-spoed-centrale",
       "client": "Wonera Spoed Centrale",
-      "url": "https://www.wonera.nl/spoed",
-      "displayUrl": "wonera.nl/spoed",
+      "url": "https://www.woneraspoedcentrale.nl",
+      "displayUrl": "woneraspoedcentrale.nl",
       "sector": "netwerk",
       "excerpt": "24/7 spoedservice voor acute woningproblemen — onder het Wonera-dak, met eigen urgente identiteit.",
       "featured": false,
@@ -306,8 +306,8 @@
     {
       "slug": "spoed-bij-lekkage",
       "client": "Spoed bij Lekkage",
-      "url": "https://www.spoedbijekkage.nl",
-      "displayUrl": "spoedbijekkage.nl",
+      "url": "https://www.spoedbijlekkage.nl",
+      "displayUrl": "spoedbijlekkage.nl",
       "sector": "netwerk",
       "excerpt": "Direct hulp bij waterlekkage en waterschade — urgente positionering voor een van de meest stressvolle thuissituaties.",
       "featured": false,

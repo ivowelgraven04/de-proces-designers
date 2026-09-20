@@ -18,7 +18,7 @@ export const LINKPARTNERS = [
   {
     slug: "wonera-spoed-centrale",
     naam: "Wonera Spoed Centrale",
-    url: "https://www.wonera.nl/spoed",
+    url: "https://www.woneraspoedcentrale.nl",
     tagline: "24/7 spoedservice voor acute woning­problemen",
     intro:
       "Wonera Spoed Centrale is de spoedafdeling van het Wonera-netwerk en bereikbaar 24 uur per dag, 7 dagen per week. Bij acute situaties zoals een lekkend dak, kapotte cv-ketel of wateroverlast regelt Wonera Spoed Centrale binnen korte tijd een gecertificeerde vakman.",
@@ -54,7 +54,7 @@ export const LINKPARTNERS = [
   {
     slug: "spoed-bij-lekkage",
     naam: "Spoed bij Lekkage",
-    url: "https://www.spoedbijekkage.nl",
+    url: "https://www.spoedbijlekkage.nl",
     tagline: "Direct hulp bij waterlekkage en waterschade",
     intro:
       "Spoed bij Lekkage is de specia­list voor acute lekkage­problemen in huis. Wateroverlast, lekkende leidingen of indringing van buitenaf: het platform schakelt direct een erkende lekkage­specialist in uw omgeving in.",
