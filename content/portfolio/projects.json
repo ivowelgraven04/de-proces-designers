@@ -5,7 +5,8 @@
     { "key": "letselschade", "label": "Letselschade" },
     { "key": "juridisch", "label": "Juridisch" },
     { "key": "financieel", "label": "Financieel dienstverleners" },
-    { "key": "overig", "label": "Overig" }
+    { "key": "overig", "label": "Overig" },
+    { "key": "netwerk", "label": "Netwerk & Platforms" }
   ],
   "projects": [
     {
@@ -217,6 +218,111 @@
         "Heldere bewijsvoering en werkwijze-uitleg op de tweede vouw, voor twijfelaars die meer context nodig hebben."
       ],
       "result": "Bezoekers die écht interesse hebben vinden direct hun weg. Mensen die alleen komen rondkijken haken vanzelf af — beide is precies de bedoeling bij een platform als dit."
+    },
+    {
+      "slug": "wonera",
+      "client": "Wonera",
+      "url": "https://www.wonera.nl",
+      "displayUrl": "wonera.nl",
+      "sector": "netwerk",
+      "excerpt": "Slimme woningplatformen voor heel Nederland — één herkenbaar merk voor meerdere woning- en vastgoeddiensten.",
+      "featured": true,
+      "launched": "2025",
+      "metrics": [
+        { "value": "7+", "label": "Aangesloten subplatformen" },
+        { "value": "100%", "label": "Mobielvriendelijk" }
+      ],
+      "challenge": "Een overkoepelend merk opbouwen dat vertrouwen wekt voor meerdere woning-gerelateerde diensten tegelijk — zonder dat de individuele platforms hun eigen identiteit verliezen. De uitdaging zat in merksamenhang én differentiatie.",
+      "approach": [
+        "Merkarchitectuur opgezet met Wonera als paraplu-brand: één visuele taal, meerdere duidelijk onderscheiden diensten eronder.",
+        "Navigatie en interne linksstructuur ontworpen zodat bezoekers snel de juiste subdienst vinden zonder te verdwalen.",
+        "Consistente tone-of-voice en CTA-logica doorgevoerd op alle onderliggende platforms voor herkenbaarheid."
+      ],
+      "result": "Wonera staat als herkenbaar overkoepelend merk in de woningmarkt. Bezoekers navigeren vlot tussen de diensten en de merkwaarde accumuleert over alle platforms heen."
+    },
+    {
+      "slug": "wonera-spoed-centrale",
+      "client": "Wonera Spoed Centrale",
+      "url": "https://www.wonera.nl/spoed",
+      "displayUrl": "wonera.nl/spoed",
+      "sector": "netwerk",
+      "excerpt": "24/7 spoedservice voor acute woningproblemen — onder het Wonera-dak, met eigen urgente identiteit.",
+      "featured": false,
+      "launched": "2025",
+      "metrics": [
+        { "value": "24/7", "label": "Beschikbaarheid spoedlijn" },
+        { "value": "< 2 klikken", "label": "Tot directe belactie" }
+      ],
+      "challenge": "Spoedklanten hebben geen tijd voor toelichting. De pagina moest binnen seconden duidelijk maken: wij zijn beschikbaar, wij lossen dit op, bel nu. Tegelijkertijd moest het herkenbaar blijven als onderdeel van Wonera.",
+      "approach": [
+        "Boven de vouw: uitsluitend essentiële informatie — wat, wanneer, hoe bellen. Geen afleidingen.",
+        "Urgente kleurcodes en iconografie die snel scannen aanmoedigt, ook voor gestresste bezoekers.",
+        "Merkbinding met Wonera bewaard via consistente typografie en logo-positie zonder de spoed-energie te temperen."
+      ],
+      "result": "Spoedklanten bereiken de belactie in minder dan twee klikken. De directe stijl laat geen twijfel bestaan: hulp is direct beschikbaar."
+    },
+    {
+      "slug": "spoedcentrale",
+      "client": "Spoedcentrale",
+      "url": "https://www.spoedcentrale.nl",
+      "displayUrl": "spoedcentrale.nl",
+      "sector": "netwerk",
+      "excerpt": "De centrale voor alle spoedklussen thuis — snel vindbaar, direct bellen, altijd bereikbaar.",
+      "featured": false,
+      "launched": "2025",
+      "metrics": [
+        { "value": "24/7", "label": "Bereikbaarheid" },
+        { "value": "< 3s", "label": "Laadtijd" }
+      ],
+      "challenge": "Spoedcentrale bedient een breed spectrum aan thuisklussen maar moet per type spoedgeval razendsnel het juiste gevoel geven. Te breed en je verliest urgentie; te smal en je mist klanten die anders perfect zouden passen.",
+      "approach": [
+        "Heldere categoriestructuur per type spoedgeval zodat bezoekers zichzelf direct herkennen in de propositie.",
+        "Belactie op elke sectie aanwezig — geen enkel moment waarop een bezoeker het nummer moet gaan zoeken.",
+        "Lichte, toegankelijke uitstraling die vertrouwen wekt zonder formeel of bureaucratisch over te komen."
+      ],
+      "result": "Spoedcentrale converteert breed: van lekkage tot slot, van elektra tot dak. De centrale aanpak werkt doordat elke bezoeker snel z'n eigen situatie herkent en direct actie kan nemen."
+    },
+    {
+      "slug": "dakdekkersloket",
+      "client": "Dakdekkersloket",
+      "url": "https://www.dakdekkersloket.nl",
+      "displayUrl": "dakdekkersloket.nl",
+      "sector": "netwerk",
+      "excerpt": "Specialist in dakdekkers en dakreparaties — matchplatform voor huiseigenaren en vakkundige dakdekkers.",
+      "featured": false,
+      "launched": "2026",
+      "metrics": [
+        { "value": "100%", "label": "Mobielvriendelijk" },
+        { "value": "< 4 wkn", "label": "Van concept tot live" }
+      ],
+      "challenge": "Een nieuw platform in een competitieve niche neerzetten met direct vertrouwen, zonder trackrecord of reviews. De uitstraling moest vakkundigheid en betrouwbaarheid uitstralen.",
+      "approach": [
+        "Positionering als specialist — niet een zoekmachine maar een loket met kennis en selectie.",
+        "Visuele taal leunt op dakbeeldmateriaal en technische terminologie die herkenning opwekt bij de doelgroep.",
+        "Aanvraagflow kort gehouden: situatie beschrijven, locatie, contact — klaar."
+      ],
+      "result": "Dakdekkersloket staat als herkenbaar platform in de dakreparatiemarkt met een propositie die meteen duidelijk is voor zowel huiseigenaren als vakmannen."
+    },
+    {
+      "slug": "spoed-bij-lekkage",
+      "client": "Spoed bij Lekkage",
+      "url": "https://www.spoedbijekkage.nl",
+      "displayUrl": "spoedbijekkage.nl",
+      "sector": "netwerk",
+      "excerpt": "Direct hulp bij waterlekkage en waterschade — urgente positionering voor een van de meest stressvolle thuissituaties.",
+      "featured": false,
+      "launched": "2025",
+      "metrics": [
+        { "value": "24/7", "label": "Bereikbaarheid" },
+        { "value": "< 2 klikken", "label": "Tot directe hulpoproep" }
+      ],
+      "challenge": "Lekkage is een van de meest urgente thuiscrises. Bezoekers zijn gestrest, willen geen uitleg — ze willen weten dat er nu iemand komt. De site moest dat gevoel geven in de eerste drie seconden.",
+      "approach": [
+        "Hero volledig ingericht op urgentie: wat, nu bellen, we komen. Geen pagina's scrollen voor de essentie.",
+        "Kleurgebruik en taalgebruik afgestemd op crisisgevoel zonder paniek te versterken — professioneel en kalm maar snel.",
+        "SEO gericht op directe zoektermen als 'lekkage spoed' en 'waterlekkage direct' voor organisch spoedverkeer."
+      ],
+      "result": "Bezoekers die via Google binnenkomen op een spoedzoekterm vinden direct bevestiging: dit is het juiste adres, nu bellen werkt. Conversie zit in het directe karakter van de flow."
     }
   ]
 }
