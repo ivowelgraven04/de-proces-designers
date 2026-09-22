@@ -12,6 +12,7 @@ export default function LinkpartnerDetail() {
       ? `${partner.naam} – Linkpartner van De Proces Designers`
       : "Linkpartner niet gevonden",
     description: partner ? partner.intro : "",
+    path: `/linkpartners/${slug}`,
   });
 
   if (!partner) {

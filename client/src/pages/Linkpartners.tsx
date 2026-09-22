@@ -70,6 +70,7 @@ export default function Linkpartners() {
     title: "Linkpartners – De Proces Designers",
     description:
       "Onze linkpartners: Wonera, Wonera Spoed Centrale, Spoedcentrale, Dakdekkersloket en Spoed bij Lekkage. Betrouwbare platforms voor woning­gerelateerde diensten in heel Nederland.",
+    path: "/linkpartners",
   });
 
   return (

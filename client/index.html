@@ -11,10 +11,8 @@
     <meta name="author" content="De Proces Designers" />
     <meta name="theme-color" content="#0f172a" />
 
-    <!-- Canonical wordt per route dynamisch gezet door useSEO() in elke pagina -->
-
-    <!-- Google Search Console verificatie (placeholder — vervang content="..." met je eigen GSC token) -->
-    <meta name="google-site-verification" content="REPLACE_WITH_GSC_VERIFICATION_TOKEN" />
+    <!-- Canonical fallback voor crawlers die JS niet renderen; useSEO() overschrijft dit per route -->
+    <link rel="canonical" href="https://www.deprocesdesigners.nl/" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
