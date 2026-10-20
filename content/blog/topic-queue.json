@@ -1,21 +1,5 @@
 {
-  "_comment": "Topic-queue voor het blog-generatie-script. Items in 'pending' worden eerst verwerkt door scripts/generate-post.mjs (één per run, FIFO). Als 'pending' leeg is valt het script terug op AI-keuze met fair distribution. Gebruikte items schuiven automatisch naar 'completed' met publishedAt + slug. Verplichte velden per pending-item: title + keyPoints. Optionele velden: theme (leadgen|webdesign|automations), postType (tip|guide|case-study|sector-insight|benchmark), sector (dakdekkers|letselschade|financieel|algemeen), angle, unsplashQuery. Ontbrekende theme/postType vallen terug op gewogen random.",
   "pending": [
-    {
-      "title": "Waarom Google Ads voor letselschade onbetaalbaar is geworden — en wat wel werkt",
-      "theme": "leadgen",
-      "postType": "sector-insight",
-      "sector": "letselschade",
-      "angle": "Letselschade-kantoren betalen €50–150 per klik tegen de grote spelers. Meta-funnels met pre-kwalificatie zijn een fundamenteel ander, betaalbaarder kanaal.",
-      "keyPoints": [
-        "Het Google Ads-mechanisme: waarom letselschade in de top-3 duurste verticals zit",
-        "Het verschil tussen gedeelde leadplatforms en exclusieve eigen funnels",
-        "Waarom Meta voor letselschade werkt (intentie vs. ontdekking)",
-        "Concrete pre-kwalificatie-criteria die wij in de quiz inbouwen",
-        "Wat een realistische CPL is voor een gekwalificeerde letselschade-lead in 2026"
-      ],
-      "unsplashQuery": "law office documents"
-    },
     {
       "title": "Case: hoe een letselschadekantoor stopte met Google Ads en €0 budget verloor",
       "theme": "leadgen",
@@ -47,5 +31,23 @@
       "unsplashQuery": "data analytics dashboard"
     }
   ],
-  "completed": []
+  "completed": [
+    {
+      "title": "Waarom Google Ads voor letselschade onbetaalbaar is geworden — en wat wel werkt",
+      "theme": "leadgen",
+      "postType": "sector-insight",
+      "sector": "letselschade",
+      "angle": "Letselschade-kantoren betalen €50–150 per klik tegen de grote spelers. Meta-funnels met pre-kwalificatie zijn een fundamenteel ander, betaalbaarder kanaal.",
+      "keyPoints": [
+        "Het Google Ads-mechanisme: waarom letselschade in de top-3 duurste verticals zit",
+        "Het verschil tussen gedeelde leadplatforms en exclusieve eigen funnels",
+        "Waarom Meta voor letselschade werkt (intentie vs. ontdekking)",
+        "Concrete pre-kwalificatie-criteria die wij in de quiz inbouwen",
+        "Wat een realistische CPL is voor een gekwalificeerde letselschade-lead in 2026"
+      ],
+      "unsplashQuery": "law office documents",
+      "publishedAt": "2026-10-20",
+      "slug": "waarom-google-ads-voor-letselschade-onbetaalbaar-is-geworden-en-wat-wel-werkt"
+    }
+  ]
 }
