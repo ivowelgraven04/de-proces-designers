@@ -1,21 +1,6 @@
 {
   "pending": [
     {
-      "title": "Case: hoe een letselschadekantoor stopte met Google Ads en €0 budget verloor",
-      "theme": "leadgen",
-      "postType": "case-study",
-      "sector": "letselschade",
-      "angle": "Geanonimiseerde case: van €8.000/maand Google Ads naar een exclusief Meta-instroomkanaal in 90 dagen, met 68% lagere kosten per gekwalificeerde lead.",
-      "keyPoints": [
-        "Uitgangssituatie: €8.000/maand Google Ads, veel ongekwalificeerde leads",
-        "De diagnose: waar het oude systeem stuk ging",
-        "De aanpak: Meta funnel + pre-kwalificatie + automatische opvolging",
-        "Concrete resultaten: 68% lagere CPL, verdubbelde cliënten-instroom in 4 maanden, Google Ads-budget naar €0",
-        "Lessen die generaliseerbaar zijn naar andere letselschade-kantoren"
-      ],
-      "unsplashQuery": "legal consultation meeting"
-    },
-    {
       "title": "Wat een gekwalificeerde letselschade-lead écht kost in 2026 — benchmarks per kanaal",
       "theme": "leadgen",
       "postType": "benchmark",
@@ -32,6 +17,23 @@
     }
   ],
   "completed": [
+    {
+      "title": "Case: hoe een letselschadekantoor stopte met Google Ads en €0 budget verloor",
+      "theme": "leadgen",
+      "postType": "case-study",
+      "sector": "letselschade",
+      "angle": "Geanonimiseerde case: van €8.000/maand Google Ads naar een exclusief Meta-instroomkanaal in 90 dagen, met 68% lagere kosten per gekwalificeerde lead.",
+      "keyPoints": [
+        "Uitgangssituatie: €8.000/maand Google Ads, veel ongekwalificeerde leads",
+        "De diagnose: waar het oude systeem stuk ging",
+        "De aanpak: Meta funnel + pre-kwalificatie + automatische opvolging",
+        "Concrete resultaten: 68% lagere CPL, verdubbelde cliënten-instroom in 4 maanden, Google Ads-budget naar €0",
+        "Lessen die generaliseerbaar zijn naar andere letselschade-kantoren"
+      ],
+      "unsplashQuery": "legal consultation meeting",
+      "publishedAt": "2026-10-21",
+      "slug": "case-hoe-een-letselschadekantoor-stopte-met-google-ads-en-0-budget-verloor"
+    },
     {
       "title": "Waarom Google Ads voor letselschade onbetaalbaar is geworden — en wat wel werkt",
       "theme": "leadgen",
