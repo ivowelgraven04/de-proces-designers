@@ -23,6 +23,8 @@ const PUBLIC_DIR = path.join(ROOT, "client", "public");
 const SITEMAP_PATH = path.join(PUBLIC_DIR, "sitemap.xml");
 const RSS_PATH = path.join(PUBLIC_DIR, "rss.xml");
 const PORTFOLIO_FILE = path.join(ROOT, "content", "portfolio", "projects.json");
+const STEDEN_FILE = path.join(ROOT, "client", "src", "pages", "WebdesignStad.tsx");
+const LINKPARTNERS_FILE = path.join(ROOT, "client", "src", "pages", "Linkpartners.tsx");
 
 const SITE_URL = "https://www.deprocesdesigners.nl";
 
@@ -118,6 +120,21 @@ function readPortfolioProjects() {
   }
 }
 
+/**
+ * De stadspagina's komen uit de STEDEN-tabel in WebdesignStad.tsx en de
+ * linkpartners uit Linkpartners.tsx. Bewust uitlezen in plaats van hier
+ * overtikken: deze pagina's stonden eerder niet in de sitemap, en een
+ * tweede lijst die je met de hand moet bijwerken loopt opnieuw achter.
+ */
+function leesSlugs(bestand, patroon) {
+  if (!fs.existsSync(bestand)) {
+    console.warn(`[sitemap] bronbestand niet gevonden: ${bestand}`);
+    return [];
+  }
+  const inhoud = fs.readFileSync(bestand, "utf-8");
+  return [...new Set([...inhoud.matchAll(patroon)].map((m) => m[1]))];
+}
+
 function buildSitemap(posts) {
   // Alleen indexable & SEO-waardevolle pagina's in de sitemap.
   // /privacybeleid en /algemene-voorwaarden staan op noindex (zie pages/*.tsx)
@@ -133,6 +150,25 @@ function buildSitemap(posts) {
     { loc: "/portfolio", priority: "0.8", changefreq: "monthly" },
     { loc: "/contact", priority: "0.8", changefreq: "monthly" },
     { loc: "/blog", priority: "0.8", changefreq: "weekly" },
+    // Dienstpagina's. Deze stonden hier niet in, waardoor ze bij elke build uit
+    // de sitemap verdwenen terwijl ze wel live en indexeerbaar zijn.
+    { loc: "/webdesign", priority: "0.9", changefreq: "monthly" },
+    { loc: "/seo", priority: "0.9", changefreq: "monthly" },
+    { loc: "/seo/lokale-seo", priority: "0.8", changefreq: "monthly" },
+    { loc: "/beter-vindbaar-in-google", priority: "0.8", changefreq: "monthly" },
+    { loc: "/hoe-scoor-ik-in-chatgpt", priority: "0.8", changefreq: "monthly" },
+    { loc: "/hoe-scoor-ik-in-ai", priority: "0.8", changefreq: "monthly" },
+    { loc: "/linkpartners", priority: "0.5", changefreq: "monthly" },
+    ...leesSlugs(STEDEN_FILE, /"(webdesign-[a-z-]+)":\s*\{/g).map((slug) => ({
+      loc: `/${slug}`,
+      priority: "0.8",
+      changefreq: "monthly",
+    })),
+    ...leesSlugs(LINKPARTNERS_FILE, /\bslug:\s*"([a-z0-9-]+)"/g).map((slug) => ({
+      loc: `/linkpartners/${slug}`,
+      priority: "0.4",
+      changefreq: "monthly",
+    })),
   ];
   const today = new Date().toISOString().slice(0, 10);
   const portfolioProjects = readPortfolioProjects();

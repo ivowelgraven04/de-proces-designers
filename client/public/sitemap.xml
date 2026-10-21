@@ -2,253 +2,715 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.deprocesdesigners.nl/</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/diensten</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/letselschade</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/over-ons</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/werkwijze</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/partners</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/portfolio</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/contact</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/blog</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/webdesign</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.deprocesdesigners.nl/webdesign-ede</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.deprocesdesigners.nl/webdesign-arnhem</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.deprocesdesigners.nl/webdesign-nijmegen</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.deprocesdesigners.nl/webdesign-wageningen</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.deprocesdesigners.nl/webdesign-apeldoorn</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.deprocesdesigners.nl/webdesign-gelderland</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.deprocesdesigners.nl/seo</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/seo/lokale-seo</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/beter-vindbaar-in-google</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/hoe-scoor-ik-in-chatgpt</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/hoe-scoor-ik-in-ai</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/linkpartners</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/webdesign-ede</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/webdesign-arnhem</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/webdesign-nijmegen</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/webdesign-wageningen</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/webdesign-apeldoorn</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/webdesign-gelderland</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/linkpartners/wonera</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/linkpartners/wonera-spoed-centrale</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/linkpartners/spoedcentrale</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/linkpartners/dakdekkersloket</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/linkpartners/spoed-bij-lekkage</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/portfolio/beuker-bouw-en-installatie</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/portfolio/js-techniek</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/portfolio/martins-daktechniek</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/portfolio/bouwservice-mako</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/portfolio/dak77</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/portfolio/rechtpunt</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/portfolio/fixz24</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/portfolio/link2leads</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/portfolio/link2talent</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/portfolio/leadhuis</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/portfolio/wonera</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/portfolio/wonera-spoed-centrale</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/portfolio/spoedcentrale</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/portfolio/dakdekkersloket</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.deprocesdesigners.nl/portfolio/spoed-bij-lekkage</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/waarom-google-ads-voor-letselschade-onbetaalbaar-is-geworden-en-wat-wel-werkt</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-biedbodem-waarom-te-laag-bieden-je-campagne-doodt</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-offerte-timer-automatische-opvolging-op-dag-2-5-en-10</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-breadcrumb-truc-zo-houd-je-bezoekers-op-je-site</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-whatsapp-opvolgflow-4-berichten-die-leads-warm-houden</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-ad-copy-taal-match-schrijf-zoals-je-klant-zoekt-niet-zoals-jij-spreekt</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-taal-trigger-laat-je-crm-automatisch-de-juiste-mail-sturen</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-ad-tekst-lengte-kort-scoort-aandacht-lang-scoort-leads</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-alt-tekst-die-niemand-ziet-behalve-google-en-je-conversie</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-uitgesloten-doelgroep-wie-je-niet-moet-targeten-in-je-ads</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-duplicaat-lead-filter-zo-voorkom-je-dat-je-2x-achter-dezelfde-klant-aanbelt</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-accordeon-truc-hoe-je-lange-servicepaginas-leesbaar-houdt</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-formulier-fout-melding-waarom-rood-alleen-niet-werkt</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-ad-hoek-rotatie-waarom-je-elke-3-weken-van-invalshoek-wisselt</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-vertrouwensbalk-4-logos-die-je-homepage-direct-geloofwaardig-maken</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-formulier-plek-waarom-rechtsboven-beter-converteert-dan-onderaan</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-lead-bron-tag-weet-welke-ad-echt-klanten-oplevert-in-je-crm</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-verloren-lead-herinnering-automatische-ping-na-48-uur-stilte</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-no-show-killer-3-reminders-die-je-agenda-vol-houden</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-sticky-header-waarom-je-bovenbalk-moet-meescrollen</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-interesse-versus-intentie-test-welke-lead-is-klaar-om-te-kopen</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-pixel-warmup-waarom-je-facebook-pixel-eerst-data-nodig-heeft</loc>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-formulier-veld-volgorde-waarom-je-met-de-makkelijkste-vraag-begint</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-ad-koptekst-formule-zo-win-je-aandacht-in-5-woorden</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-scroll-diepte-kaart-waar-bezoekers-echt-afhaken-op-je-site</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-above-the-fold-checklist-wat-er-echt-boven-de-vouw-moet</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-sneltoets-voor-terugkerende-klussen-templates-in-je-crm</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-contrastregel-waarom-je-cta-knop-moet-schreeuwen-en-de-rest-niet</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-placement-keuze-waarom-automatische-plaatsingen-je-geld-kosten</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-klikbare-telefoonlink-waarom-tel-je-mobiele-leads-verdubbelt</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-whitelist-truc-zo-bereik-je-concurrenten-hun-beste-klanten</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-belafspraak-bevestiger-3-touchpoints-tussen-boeking-en-gesprek</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-biedstrategie-keuze-laagste-kosten-of-kostenlimiet</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-404-pagina-die-alsnog-leads-oplevert-in-plaats-van-weg-te-sturen</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-iconen-valkuil-waarom-symbolen-zonder-tekst-je-bezoekers-verwarren</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-weer-trigger-laat-je-ads-reageren-op-regen-en-storm</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-klik-versus-scroll-knop-welke-cta-past-waar-op-je-pagina</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-formulier-lengte-paradox-waarom-6-velden-meer-leads-oplevert-dan-3</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-h1-fout-waarom-je-koptekst-zegt-wat-je-doet-niet-wat-je-oplost</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-verjaardag-trigger-waarom-automatische-felicitaties-leads-terugbrengen</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-ad-copy-volgorde-probleem-bewijs-actie-in-die-volgorde</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-carrousel-ad-waarom-3-slides-beter-werken-dan-1-foto</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-ad-account-structuur-1-campagne-of-5-zo-voorkom-je-datachaos</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-3-vraag-kwalificatie-filter-tijdverspillers-uit-je-leadformulier</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-sms-bevestiging-waarom-e-mail-alleen-niet-meer-werkt</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-dubbele-entry-val-waarom-je-team-dezelfde-lead-3x-invoert</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-favicon-test-waarom-dit-mini-icoontje-je-professionaliteit-maakt</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-doelgroep-uitputting-wanneer-je-lokale-publiek-op-is</loc>
+    <lastmod>2026-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-klik-hier-link-waarom-vage-links-je-bezoekers-wegjagen</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-dagpauze-regel-waarom-je-ads-s-nachts-uitzetten-geld-kost</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-wedstrijd-fase-waarom-je-eerste-50-leads-geen-winst-hoeven-te-zijn</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-plek-van-je-adres-waarom-naw-gegevens-je-lokale-ranking-maken</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-plek-van-je-reviews-waarom-een-aparte-pagina-niet-werkt</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-handoff-trigger-van-crm-status-naar-automatische-actie</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-vergeten-footer-waarom-de-onderkant-van-je-site-verkoopt</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-zombie-lead-detector-zo-herken-je-leads-die-nooit-klant-worden</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-video-ad-versus-de-foto-ad-wat-werkt-wanneer-voor-lokale-diensten</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-lead-status-workflow-zo-weet-je-crm-altijd-wat-de-volgende-stap-is</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-ad-frequentie-val-wanneer-je-doelgroep-je-zat-is</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-form-knop-tekst-waarom-verstuur-je-leads-kost</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-interne-notificatie-stack-wie-krijgt-welk-signaal-bij-een-nieuwe-lead</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-seizoens-bid-waarom-je-biedingen-mee-moeten-ademen-met-de-vraag</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-mobiele-duim-zone-waarom-je-belangrijkste-knop-te-hoog-staat</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-agenda-buffer-waarom-afspraken-zonder-pauze-je-dag-slopen</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-cpl-illusie-waarom-goedkope-leads-je-duurste-fout-zijn</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-utm-discipline-zo-weet-je-echt-welke-ad-je-klanten-oplevert</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/waarom-witruimte-je-belangrijkste-designkeuze-is</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-tag-strategie-in-je-crm-zo-wordt-elke-lead-vindbaar</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-offerte-opvolger-3-berichten-die-deals-over-de-streep-trekken</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-stille-lead-lekken-4-plekken-waar-leads-tussen-wal-en-schip-vallen</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-win-back-flow-hoe-je-oude-leads-na-90-dagen-reactiveert</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-budget-verdeling-tussen-prospecting-en-retargeting-7030-of-toch-anders</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-fotos-op-je-website-waarom-stockfotos-je-geloofwaardigheid-slopen</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-campagne-leeftijd-waarom-nieuwe-ads-pas-na-week-2-winstgevend-worden</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-drip-campagne-voor-koude-leads-7-mails-over-30-dagen</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/het-budget-plafond-wanneer-schaalt-je-facebook-campagne-niet-meer</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deprocesdesigners.nl/blog/de-terugbel-bot-vang-gemiste-telefoontjes-automatisch-op</loc>
+    <lastmod>2026-05-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
