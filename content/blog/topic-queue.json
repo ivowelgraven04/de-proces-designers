@@ -1,5 +1,6 @@
 {
-  "pending": [
+  "pending": [],
+  "completed": [
     {
       "title": "Wat een gekwalificeerde letselschade-lead écht kost in 2026 — benchmarks per kanaal",
       "theme": "leadgen",
@@ -13,10 +14,10 @@
         "Belangrijk: lead-kosten zeggen niets zonder kwaliteit-context",
         "Hoe je de écht eerlijke vergelijking maakt voor jouw kantoor"
       ],
-      "unsplashQuery": "data analytics dashboard"
-    }
-  ],
-  "completed": [
+      "unsplashQuery": "data analytics dashboard",
+      "publishedAt": "2026-10-22",
+      "slug": "wat-een-gekwalificeerde-letselschade-lead-echt-kost-in-2026-benchmarks-per-kanaa"
+    },
     {
       "title": "Case: hoe een letselschadekantoor stopte met Google Ads en €0 budget verloor",
       "theme": "leadgen",
