@@ -1,9 +1,9 @@
 name: Generate Blog Post
 
 on:
-  # Maandag t/m vrijdag om 08:00 Amsterdam-tijd (06:00 UTC)
+  # Elke dag om 07:00 (winter) of 08:00 (zomer) Amsterdam-tijd (06:00 UTC), besluit Ivo 11-11-2026
   schedule:
-    - cron: "0 6 * * 1-5"
+    - cron: "0 6 * * *"
   # Handmatig triggerbaar vanuit de Actions tab
   workflow_dispatch:
     inputs:
